@@ -352,6 +352,10 @@ Version         : 1.3
     $('.flexslider-thumbnails').flexslider({
         animation: "slide",
         controlNav: "thumbnails",
+        start: function (slider) {
+            slider.find('.flex-prev').attr('aria-label', 'Photo précédente');
+            slider.find('.flex-next').attr('aria-label', 'Photo suivante');
+        }
      });
     }
 

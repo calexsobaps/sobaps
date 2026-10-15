@@ -58,12 +58,20 @@
        --------------------------------------------------------------- */
     var mainNav = document.querySelector(".main-navigation");
     var navbar = mainNav && mainNav.querySelector(".navbar");
+    var mainNavCollapse = document.getElementById("main_nav");
     function reserveNav() {
         if (!mainNav || !navbar || navbar.classList.contains("fixed-top")) return;
+        if (mainNavCollapse && mainNavCollapse.matches(".show, .collapsing")) return; // jamais mesurer le menu ouvert
         mainNav.style.minHeight = navbar.offsetHeight + "px";
     }
     reserveNav();
     window.addEventListener("resize", reserveNav);
+
+    if (mainNavCollapse) {
+        mainNavCollapse.addEventListener("show.bs.collapse", function () { document.documentElement.classList.add("sb-nav-open"); });
+        mainNavCollapse.addEventListener("hide.bs.collapse", function () { document.documentElement.classList.remove("sb-nav-open"); });
+        mainNavCollapse.addEventListener("hidden.bs.collapse", reserveNav);
+    }
 
     // Ferme le menu mobile après un clic sur un lien
     if (navbar) {
@@ -130,12 +138,23 @@
         if (next && !next.id) next.id = "sb-after-hero";
         bar.style.setProperty("--sb-slide-time", SLIDE_TIME + "ms");
 
+        var userPaused = false;
         function restartBar() {
             var i = bar.firstChild;
             i.classList.remove("run");
             void i.offsetWidth;
-            if (!reduceMotion) i.classList.add("run");
+            if (!reduceMotion && !userPaused && total > 1) i.classList.add("run");
         }
+
+        // Seule la diapositive visible est atteignable au clavier / lecteur d'écran
+        function syncSlidesA11y() {
+            $hero.find(".owl-item").each(function () {
+                var on = this.classList.contains("active");
+                this.inert = !on;
+                this.setAttribute("aria-hidden", on ? "false" : "true");
+            });
+        }
+        $hero.on("initialized.owl.carousel translated.owl.carousel refreshed.owl.carousel", syncSlidesA11y);
 
         $hero.on("initialized.owl.carousel changed.owl.carousel", function (e) {
             if (!e.namespace || !e.page) return;
@@ -162,9 +181,20 @@
                 "<i class='fas fa-arrow-right'></i>"
             ]
         });
+        syncSlidesA11y();
+        $section.find(".owl-prev").attr("aria-label", "Diapositive précédente");
+        $section.find(".owl-next").attr("aria-label", "Diapositive suivante");
+        $section.find(".owl-dot").each(function (i) { this.setAttribute("aria-label", "Diapositive " + (i + 1)); });
+        $section.on("focusin", function () {
+            if (userPaused) return;
+            userPaused = true;
+            $hero.trigger("stop.owl.autoplay");
+            bar.firstChild.classList.remove("run");
+        });
 
         // Le slider se met en pause si l'onglet n'est pas visible
         document.addEventListener("visibilitychange", function () {
+            if (userPaused || total < 2) return;
             $hero.trigger(document.hidden ? "stop.owl.autoplay" : "play.owl.autoplay", [SLIDE_TIME]);
             if (!document.hidden) restartBar();
         });
@@ -178,17 +208,6 @@
             if (e.key === "ArrowLeft") $hero.trigger("prev.owl.carousel");
         });
 
-        // Léger parallaxe du contenu
-        if (!reduceMotion) {
-            window.addEventListener("scroll", function () {
-                var y = window.scrollY;
-                if (y > window.innerHeight) return;
-                $hero.find(".owl-item.active .hero-content").css({
-                    transform: "translate3d(0," + (y * 0.25) + "px,0)",
-                    opacity: Math.max(0, 1 - y / 700)
-                });
-            }, { passive: true });
-        }
     }
 
     /* ---------------------------------------------------------------
@@ -204,15 +223,6 @@
         n.insertBefore(media, n.firstChild);
     });
 
-    // Compte à rebours terminé : on masque les compteurs à zéro
-    var countdown = document.getElementById("countdown");
-    if (countdown) {
-        setTimeout(function () {
-            var nums = countdown.querySelectorAll("h2");
-            var done = nums.length && Array.prototype.every.call(nums, function (h) { return h.textContent.trim() === "0"; });
-            if (done) countdown.style.display = "none";
-        }, 1500);
-    }
 
     /* ---------------------------------------------------------------
        5. Révélation au scroll
@@ -310,7 +320,7 @@
             var f = ov.querySelectorAll("button, a[href], [tabindex]:not([tabindex='-1'])");
             if (!f.length) return;
             var first = f[0], last = f[f.length - 1];
-            if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+            if (e.shiftKey && (document.activeElement === first || document.activeElement === ov.querySelector(".sb-modal"))) { e.preventDefault(); last.focus(); }
             else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
         }
     });
@@ -337,17 +347,18 @@
         ov.addEventListener("click", function (e) {
             if (e.target === ov || e.target.closest("[data-sb-close]")) closeOverlay(ov);
         });
+        ov.querySelector(".sb-modal").setAttribute("tabindex", "-1");
         if (!opts.image) ov.querySelector(".sb-modal").style.gridTemplateColumns = "1fr";
         return ov;
     }
     window.sbModal = function (opts) { var ov = makeModal(opts); openOverlay(ov); return ov; };
 
     // Popup de bienvenue (page d'accueil, une fois par session)
-    if ($hero.length) {
+    if ($hero.closest(".sb-hero-home").length) {
         var ss = storage("sessionStorage");
         var seen = ss && ss.getItem("sb-welcome");
         if (!seen) {
-            setTimeout(function () {
+            var showWelcome = function () {
                 if (document.querySelector(".sb-overlay.open")) return;
                 window.sbModal({
                     image: "assets/img/slider/OCE_3837.JPG",
@@ -361,6 +372,16 @@
                     ]
                 });
                 try { ss && ss.setItem("sb-welcome", "1"); } catch (e) { }
+            };
+            setTimeout(function () {
+                if (!/(^|;\s*)cookieConsent=/.test(document.cookie)) {
+                    ["btn-accept-all", "btn-decline-all"].forEach(function (id) {
+                        var b = document.getElementById(id);
+                        if (b) b.addEventListener("click", function () { setTimeout(showWelcome, 1200); }, { once: true });
+                    });
+                    return;
+                }
+                showWelcome();
             }, 4500);
         }
     }
@@ -398,6 +419,7 @@
             pre.onload = pre.onerror = function () {
                 if (items[idx] !== src) return;
                 img.src = src;
+                img.alt = "Photo " + (idx + 1) + " sur " + items.length;
                 spin.style.display = "none";
                 requestAnimationFrame(function () { img.classList.add("in"); });
             };
@@ -507,5 +529,19 @@
         var timer = setTimeout(hide, ms);
         t.addEventListener("click", function () { clearTimeout(timer); hide(); });
     };
+
+    /* ---------------------------------------------------------------
+       11. Formulaires d'abonnement
+       --------------------------------------------------------------- */
+    document.querySelectorAll(".newsletter-form, .subscribe-form form").forEach(function (f) {
+        f.addEventListener("submit", function (e) {
+            e.preventDefault();
+            var i = f.querySelector("input[type=email]");
+            if (!i) return;
+            if (!i.value || !i.checkValidity()) { i.reportValidity(); return; }
+            window.location.href = "mailto:contact@sobaps.bj?subject=" + encodeURIComponent("Abonnement aux actualités SoBAPS") +
+                "&body=" + encodeURIComponent("Merci de m’inscrire avec l’adresse : " + i.value);
+        });
+    });
 
 })(jQuery);

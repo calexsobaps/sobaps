@@ -21,12 +21,12 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
 
 <main class="main">
 
-    <div class="site-breadcrumb" style="background: url(./assets/img/breadcrumb/localisation.jpg)">
+    <div class="site-breadcrumb" style="background: url(./assets/img/service/ag_para.jpg)">
         <div class="container">
-            <h2 class="breadcrumb-title">Agence régionale de Parakou</h2>
+            <h1 class="breadcrumb-title">Agence régionale de <span>Parakou</span></h1>
             <ul class="breadcrumb-menu">
                 <li><a href="accueil"><i class="far fa-home"></i> Accueil</a></li>
-                <li class="active">Agence régionale de Parakou</li>
+                <li class="active">Parakou</li>
             </ul>
         </div>
     </div>
@@ -37,8 +37,8 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
             <div class="row rows">
                 <div class="col-lg-12">
                     <div class="site-heading text-center">
-                        <span class="site-title-tagline">SoBAPS S.A</span>
-                        <h2 class="site-title">Agence Régionale de <span>Parakou</span></h2>
+                        <span class="site-title-tagline">Présentation</span>
+                        <h2 class="site-title">L’agence <span>en bref</span></h2>
                         <div class="heading-divider"></div>
                         <p>
                         </p>
@@ -69,7 +69,7 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                 </div>
                 <div class="col-lg-6 mb-4">
                     <div class="single-item-info">
-                        <p class="mb-4" style="text-align: justify;">
+                        <p class="mb-4">
                             L’Agence régionale de Parakou vient en deuxième position, pour sa contribution au chiffre d’affaires (environ 15% des ventes).
                             <br>
                             Elle est quasi-mitoyenne au Centre de santé de Parakou et se situe dans le prolongement de la voie pavée passant devant l’institut français.
@@ -159,6 +159,7 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                                         </div>
                                     <?php endforeach; ?>
 
+                                    <?php if ($totalPages > 1): ?>
                                     <div class="pagination-area">
                                         <div aria-label="Page navigation example">
                                             <ul class="pagination">
@@ -170,6 +171,7 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                                             </ul>
                                         </div>
                                     </div>
+                                    <?php endif; ?>
 
 
                                 </div>

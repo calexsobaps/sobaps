@@ -14,10 +14,10 @@ include_once 'function/mail.php';
                         <div class="col-md-8 col-lg-8">
                             <div class="hero-content">
                                 <h6 class="hero-sub-title wow animate__animated animate__fadeInUp"
-                                    data-wow-duration="1s" data-wow-delay=".25s">Certifiée ISO 9001, 14001 et 45001</h6>
+                                    data-wow-duration="1s" data-wow-delay=".25s">Grossiste pharmaceutique public · Bénin</h6>
                                 <h1 class="hero-title wow animate__animated animate__fadeInUp"
                                     data-wow-duration="1s" data-wow-delay=".50s">
-                                    Bienvenue à la <span>SoBAPS S.A</span> <br>Votre partenaire pour la santé
+                                    Bienvenue à la <span>SoBAPS&nbsp;S.A</span> <br>Votre partenaire pour&nbsp;la&nbsp;santé
                                 </h1>
                                 <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
                                     data-wow-delay=".75s">
@@ -43,11 +43,11 @@ include_once 'function/mail.php';
                         <div class="col-md-8 col-lg-8">
                             <div class="hero-content">
                                 <h6 class="hero-sub-title wow animate__animated animate__fadeInUp"
-                                    data-wow-duration="1s" data-wow-delay=".25s">Certifiée ISO 9001, 14001 et 45001</h6>
-                                <h1 class="hero-title wow animate__animated animate__fadeInUp"
+                                    data-wow-duration="1s" data-wow-delay=".25s">Qualité &amp; durabilité</h6>
+                                <h2 class="hero-title wow animate__animated animate__fadeInUp"
                                     data-wow-duration="1s" data-wow-delay=".50s">
                                     Approvisionnement de <span>Qualité Certifiée</span><br>Et Durable
-                                </h1>
+                                </h2>
                                 <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
                                     data-wow-delay=".75s">
                                     <span><i class="fa fa-check-circle"></i></span>&ensp;Fournir des produits de santé de qualité à nos clients pour une meilleure santé
@@ -70,11 +70,11 @@ include_once 'function/mail.php';
                         <div class="col-md-8 col-lg-8">
                             <div class="hero-content">
                                 <h6 class="hero-sub-title wow animate__animated animate__fadeInUp"
-                                    data-wow-duration="1s" data-wow-delay=".25s">Certifiée ISO 9001, 14001 et 45001</h6>
-                                <h1 class="hero-title wow animate__animated animate__fadeInUp"
+                                    data-wow-duration="1s" data-wow-delay=".25s">Service client</h6>
+                                <h2 class="hero-title wow animate__animated animate__fadeInUp"
                                     data-wow-duration="1s" data-wow-delay=".50s">
                                     Un service client <span>Exceptionnel</span><br>et fiable
-                                </h1>
+                                </h2>
                                 <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
                                     data-wow-delay=".75s">
                                     <span><i class="fa fa-check-circle"></i></span>&ensp;Engagés à soutenir nos partenaires avec des services personnalisés
@@ -97,17 +97,16 @@ include_once 'function/mail.php';
                         <div class="col-md-8 col-lg-8">
                             <div class="hero-content">
                                 <h6 class="hero-sub-title wow animate__animated animate__fadeInUp"
-                                    data-wow-duration="1s" data-wow-delay=".25s">Bienvenue à la SoBAPS S.A</h6>
-                                <h1 class="hero-title wow animate__animated animate__fadeInUp"
+                                    data-wow-duration="1s" data-wow-delay=".25s">Certifications internationales</h6>
+                                <h2 class="hero-title wow animate__animated animate__fadeInUp"
                                     data-wow-duration="1s" data-wow-delay=".50s">
-                                    SoBAPS S.A certifiée <span>ISO 9001 : 2015,<br> ISO 45001 : 2018,<br> ISO 14001 : 2015</span><br>
-                                </h1>
+                                    SoBAPS S.A, <span>triplement</span> certifiée
+                                </h2>
                                 <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
                                     data-wow-delay=".75s">
-                                    <span>Notre engagement envers : </span>
-                                    <br> <span><i class="fa fa-check-circle"></i></span>&ensp;L'Excellence & la Sécurité
-                                    <br> <span><i class="fa fa-check-circle"></i></span>&ensp;La Qualité & la Durabilité
-                                    <br> <span>Est reconnu à l’échelle internationale à travers trois certifications majeures</span>
+                                    <span><i class="fa fa-check-circle"></i></span>&ensp;ISO 9001 : 2015 — Management de la qualité
+                                    <br> <span><i class="fa fa-check-circle"></i></span>&ensp;ISO 45001 : 2018 — Santé et sécurité au travail
+                                    <br> <span><i class="fa fa-check-circle"></i></span>&ensp;ISO 14001 : 2015 — Management environnemental
                                 </p>
                                 <div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s"
                                     data-wow-delay="1s">
@@ -132,23 +131,10 @@ include_once 'function/mail.php';
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 mx-auto">
-                    <div class="site-heading text-center">
-                        <span class="site-title-tagline">SoBAPS S.A</span>
-                        <h2 class="site-title">Présentation &amp; <span>Mission</span></h2>
-                        <div class="heading-divider"></div>
-                        <p>
-                            Société Béninoise pour l'Approvisionnement en Produits de Santé
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
                 <div class="col-lg-6">
                     <div class="about-left">
                         <div class="about-img" style="height: 580px;">
-                            <img src="./assets/img/slider/sobaps.jpg" alt="image" style="height: 580px;">
+                            <img src="./assets/img/slider/sobaps.jpg" alt="Siège de la SoBAPS S.A à Cotonou" style="height: 580px;">
                         </div>
                         <div class="about-experience">
                             <span style="font-size: 20px;"><i class="fa fa-home"></i></span>
@@ -163,7 +149,7 @@ include_once 'function/mail.php';
                             <h2 class="site-title">Société Béninoise pour l'Approvisionnement en <span>Produits de Santé</span> (SoBAPS S.A)
                             </h2>
                         </div>
-                        <p class="about-text mb-4" style="text-align: justify !important;">
+                        <p class="about-text mb-4">
                             Créée par décret n°2020-324 du 24 juin 2020, la Société Béninoise pour l’Approvisionnement en Produits de Santé (SoBAPS S.A) a démarré ses activités le 4 septembre 2020. Sa création résulte d’une série de réformes opérées dans le secteur de la santé. La SoBAPS S.A est une initiative de l’État béninois, actionnaire unique. Il s'agit d'une société anonyme unipersonnelle, sans recours public à l’épargne, régie par les lois et règlements en vigueur en République du Bénin, notamment la loi 2020-20 du 02 septembre 2020 portant création, organisation et fonctionnement des entreprises publiques en République du Bénin. D’un capital social de 11 872 380 000 FCFA, la société a pour objet l'approvisionnement, le stockage et la distribution en gros de produits de santé, en veillant à assurer une cession desdits produits à un prix accessible aux populations.
                         </p>
 
@@ -191,7 +177,7 @@ include_once 'function/mail.php';
                 <div class="col-md-6 ">
                     <div class="feature-item">
                         <div class="feature-icon">
-                            <i class="flaticon-board-with-list"></i>
+                            <i class="fa fa-clipboard-list"></i>
                         </div>
                         <div class="feature-content">
                             <h4>Critères d'accès</h4>
@@ -261,11 +247,7 @@ include_once 'function/mail.php';
 
                 <div class="col-lg-6">
                     <div class="about">
-                        <div class="site-heading mb-3">
-                            <span class="site-title-tagline">Assurance Qualité</span>
-                            <h2 class="site-title">Nos engagements <span>Concrets</span>
-                            </h2>
-                        </div>
+                        <h3 class="sb-subtitle">Nos engagements concrets</h3>
                         <div class="about-list-wrapper">
                             <ul class="about-list list-unstyled">
                                 <li class="mb-4">
@@ -298,7 +280,7 @@ include_once 'function/mail.php';
                 <div class="col-lg-6">
                     <div class="about-right">
                         <div class="about-img" style="height: 500px;">
-                            <img src="./assets/img/slider/slider_p.JPG" alt="image" style="height: 500px;">
+                            <img src="./assets/img/slider/slider_p.JPG" alt="Contrôle des produits au magasin de la SoBAPS S.A" style="height: 500px;">
                         </div>
                     </div>
                 </div>
@@ -314,12 +296,11 @@ include_once 'function/mail.php';
                         <div class="col-lg-12">
                             <div class="hero-content">
                                 <h6 class="hero-sub-title animate__ animate__fadeInUp animated">Renforcement de capacités</h6>
-                                <h1 class="hero-title animate__animated animate__fadeInUp">
+                                <h2 class="hero-title animate__animated animate__fadeInUp">
                                     Investir dans <span> l'Humain</span> pour mieux servir la <span>Santé Publique</span>
-                                </h1>
+                                </h2>
                                 <p class="animate__animated animate__fadeInUp about-text">
                                     Une chaîne d’approvisionnement forte repose sur des hommes et des femmes bien formés.
-                                    <br>
                                     Ainsi, la SOBAPS S.A développe continuellement les compétences de son personnel grâce à <b>des formations certifiantes</b> et <b>des mises à niveau sur des normes ISO</b>
 
                                 </p>
@@ -376,7 +357,7 @@ include_once 'function/mail.php';
     </div>
 
 
-    <div class="diet-plan py-120">
+    <div class="diet-plan py-120" id="certifications">
         <div class="container">
             <div class="row rows">
                 <div class="col-lg-6 mx-auto">
@@ -447,9 +428,9 @@ include_once 'function/mail.php';
 
 
                     <div class="appointment-content">
-                        <h1 class="mb-10">
+                        <h2 class="mb-10">
                             Contactez-nous
-                        </h1>
+                        </h2>
                         <p class="text-dark">
                             Vous pouvez nous contacter par téléphone, email ou formulaire de contact !
                         </p>
@@ -578,7 +559,7 @@ include_once 'function/mail.php';
     </div>
 
 
-    <div class="team-area pt-70">
+    <div class="team-area pt-70 pb-120">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -604,34 +585,6 @@ include_once 'function/mail.php';
     </div>
 
 
-    <div class="partner-area pt-70 pb-70">
-        <div class="container">
-            <div class="partner-wrapper partner-slider owl-carousel owl-theme">
-                <img src="./assets/img/iso9001.png" alt="thumb">
-                <img src="./assets/img/iso45001.png" alt="thumb">
-                <img src="./assets/img/iso14001.png" alt="thumb">
-                <img src="./assets/img/iso9001.png" alt="thumb">
-                <img src="./assets/img/iso45001.png" alt="thumb">
-                <img src="./assets/img/iso14001.png" alt="thumb">
-                <img src="./assets/img/iso9001.png" alt="thumb">
-                <img src="./assets/img/iso45001.png" alt="thumb">
-                <img src="./assets/img/iso14001.png" alt="thumb">
-                <img src="./assets/img/iso9001.png" alt="thumb">
-                <img src="./assets/img/iso45001.png" alt="thumb">
-                <img src="./assets/img/iso14001.png" alt="thumb">
-                <img src="./assets/img/iso9001.png" alt="thumb">
-                <img src="./assets/img/iso45001.png" alt="thumb">
-                <img src="./assets/img/iso14001.png" alt="thumb">
-                <img src="./assets/img/iso9001.png" alt="thumb">
-                <img src="./assets/img/iso45001.png" alt="thumb">
-                <img src="./assets/img/iso14001.png" alt="thumb">
-                <img src="./assets/img/iso9001.png" alt="thumb">
-                <img src="./assets/img/iso45001.png" alt="thumb">
-                <img src="./assets/img/iso14001.png" alt="thumb">
-            </div>
-        </div>
-    </div>
-
     <div class="hero-section sb-band-grey">
         <div class="hero-static">
             <div class="hero-single">
@@ -639,9 +592,10 @@ include_once 'function/mail.php';
                     <div class="row align-items-center">
                         <div class="col-md-8 col-lg-8">
                             <div class="hero-content">
-                                <h1 class="hero-title animate__animated animate__fadeInUp">
+                                <h6 class="hero-sub-title">Notre engagement</h6>
+                                <h2 class="hero-title animate__animated animate__fadeInUp">
                                     L’engagement <span>Fort</span> de la SoBAPS S.A pour la <span>Santé au Bénin</span>
-                                </h1>
+                                </h2>
                                 <p class="animate__animated animate__fadeInUp">
                                     La SoBAPS S.A place l’accès aux médicaments essentiels au cœur de sa mission, en adoptant une démarche stratégique et rigoureuse. Elle œuvre chaque jour pour assurer aux structures sanitaires béninoises un approvisionnement fiable, équitable et sécurisé, au service du bien-être des populations.
 
@@ -649,7 +603,7 @@ include_once 'function/mail.php';
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-4">
-                            <img src="./assets/img/slider/appro.png" alt="hero-img">
+                            <img src="./assets/img/slider/mag.jpg" alt="Allée de stockage d’un entrepôt de la SoBAPS S.A">
                         </div>
                     </div>
                 </div>
@@ -690,17 +644,11 @@ include_once 'function/mail.php';
             );
 
             ?>
-            <div class="testimonial-slider owl-carousel owl-theme">
+            <ul class="sb-chips">
                 <?php foreach ($vue as $v) { ?>
-                    <div class="testimonial-single">
-                        <div class="testimonial-quote">
-                            <span class="testimonial-quote-icon"><i class="flaticon-care"></i></span>
-                            <h6 class="text-white" style="font-size: 18px !important;"> <?php echo $v; ?></h6>
-                        </div>
-
-                    </div>
+                    <li><?php echo $v; ?></li>
                 <?php } ?>
-            </div>
+            </ul>
         </div>
     </div>
 
@@ -726,73 +674,64 @@ include_once 'function/mail.php';
                 ["poste" => "C/CSI", "nom" => "Mr. Hyacinthe TOKOU", "img" => "./assets/img/team/csi.jpg", "link" => "#"],
                 ["poste" => "C/RM", "nom" => "Mr. Ismaël MIGAN", "img" => "./assets/img/team/RM.jpg", "link" => "#"],
                 ["poste" => "C/CAQMI", "nom" => "Dr. Molly D'OLIVEIRA", "img" => "./assets/img/team/AQ.jpg", "link" => "#"],
-                ["poste" => "<span>Pharmacien Assistant<br> PRMP</span>", "nom" => "Jamal ADOMOU", "img" => "./assets/img/team/jamal.png", "link" => "#"],
-                ["poste" => "<span>Pharmacien Assistant<br>PRMP</span>", "nom" => "Janice GBAGUIDI", "img" => "./assets/img/team/janice.png", "link" => "#"],
-                ["poste" => "<span>R\PSE</span>", "nom" => "Jauriac AOUANOU", "img" => "./assets/img/team/rpse.png", "link" => "#"],
+                ["poste" => "Pharmacien assistant PRMP", "nom" => "Jamal ADOMOU", "img" => "./assets/img/team/jamal.png", "link" => "#"],
+                ["poste" => "Pharmacien assistant PRMP", "nom" => "Janice GBAGUIDI", "img" => "./assets/img/team/janice.png", "link" => "#"],
+                ["poste" => "R/RPSE", "nom" => "Jauriac AOUANOU", "img" => "./assets/img/team/rpse.png", "link" => "#"],
             );
 
             ?>
 
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-3">
+            <?php
+                        $motcle = array(
+                            "DG" => "Directeur Général (DG)",
+                            "C/DE" => "Chef Cellule de la Direction de l'Exploitation (C/DE)",
+                            "C/DC" => "Chef Cellule de la Direction Commerciale (C/DC)",
+                            "C/DAF" => "Chef Cellule de l'Administration des Finances (C/DAF)",
+                            "CST" => "Chef Service Trésorerie (CST)",
+                            "C/CSI" => "Chef Cellule des Systèmes d'Information (C/CSI)",
+                            "C/RM" => "Chef Cellule du Management des Risques (C/RM)",
+                            "C/CAQMI" => "Chef Cellule de l'Assurance Qualité et du Management Intégré (C/CAQMI)",
+                            "C/CJ" => "Chef Cellule Juridique (C/CJ)",
+                            "C/PRMP" => "Chef Cellule des Personnes Responsables des Marchés Publics (C/PRMP)",
+                            "R/RPSE" => "Responsable à la Planification et au Suivi-Evaluation (R/RPSE)",
+                        );
+            ?>
+            <?php
+                        $roles = array();
+                        foreach ($motcle as $k => $l) {
+                            $roles[$k] = trim(preg_replace('/\s*\([^)]*\)\s*$/', '', $l));
+                        }
+            ?>
+
+            <div class="row justify-content-center sb-codir">
+                <div class="col-8 col-md-4 col-lg-3">
                     <div class="team-item sb-team-lead">
                         <img src="./assets/img/team/dg.png" alt="Dr. Dèhoumon Louis KOUKPEMEDJI">
                         <div class="team-content">
                             <div class="team-bio">
-                                <h6><a class="text-white" href="sobaps#directeur">Dr. Dèhoumon Louis</a></h6>
-                                <span><b>Directeur Général</b></span>
+                                <h6><a class="text-white" href="sobaps#directeur">Dr. Dèhoumon Louis KOUKPEMEDJI</a></h6>
+                                <span>Directeur Général</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row sb-codir">
                 <?php foreach ($codir as $c) { ?>
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-6 col-md-4 col-lg-3">
                         <div class="team-item">
                             <img src="<?php echo $c['img']; ?>" alt="<?php echo $c['nom']; ?>">
                             <div class="team-content">
                                 <div class="team-bio">
                                     <h6><?php echo $c['nom']; ?></h6>
-                                    <span><b><?php echo $c['poste']; ?></b></span>
+                                    <span><?php echo isset($roles[$c['poste']]) ? $roles[$c['poste']] : $c['poste']; ?></span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 <?php } ?>
 
-                <div class="col-12">
-                    <h4 class="site-title mt-4">Mots <span>Clés</span></h4>
-                    <div class="heading-divider"></div>
-
-                    <div class="mt-2">
-                        <?php
-                        $motcle = array(
-                            "DG" => "Directeur Général (DG)",
-                            "C/DE" => "Chef Cellule de la Direction de L'Exploitation (C/DE)",
-                            "C/DC" => "Chef Cellule de la Direction Commerciale (C/DC)",
-                            "C/DAF" => "Chef Cellule de l'Administration Des Finances (C/DAF)",
-                            "CST" => "Chef Service Trésorerie (CST)",
-                            "C/CSI" => "Chef Cellule des Systèmes d'Information (C/CSI)",
-                            "C/RM" => "Chef Cellule du Managament des Risques (C/RM)",
-                            "C/CAQMI" => "Chef Cellule de l'Assurance Qualité et du Management Intégré (C/CAQMI)",
-                            "C/CJ" => "Chef Cellule Juridique (C/CJ)",
-                            "C/PRMP" => "Chef Cellule des Personnes Responsables des Marchés Publics (C/PRMP)",
-                            "R/RPSE" => "Responsable à la Planification et au Suivi-Evaluation (R/RPSE)",
-                        );
-                        ?>
-                        <dl class="sb-glossary">
-                            <?php foreach ($motcle as $sigle => $libelle) { ?>
-                                <div class="sb-glossary-item">
-                                    <dt><?php echo $sigle; ?></dt>
-                                    <dd><?php echo trim(preg_replace('/\s*\([^)]*\)\s*$/', '', $libelle)); ?></dd>
-                                </div>
-                            <?php } ?>
-                        </dl>
-
-                    </div>
-                </div>
 
             </div>
         </div>
@@ -804,13 +743,13 @@ include_once 'function/mail.php';
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 mb-4">
-                    <div class="site-heading">
-                        <span class="site-title-tagline">Ensemble, pour un meilleur accès aux produits de santé au Bénin</span>
+                    <div class="site-heading text-center sb-partners">
+                        <span class="site-title-tagline">Ensemble, pour un meilleur accès aux produits de santé</span>
                         <h2 class="site-title">Nos <span>Partenaires</span> Stratégiques</h2>
                         <div class="heading-divider"></div>
                         <p class="about-text">La SoBAPS S.A. exprime sa profonde gratitude à l’ensemble de ses partenaires et collaborateurs pour leur engagement constant à nos côtés.
                             <br>
-                            Grâce à votre confiance, votre appui technique et votre collaboration active, nous poursuivons chaque jour notre mission <i class="fa fa-handshake"></i> <span class="montexte" style="font-size: 18px !important; font-weight: 800 !important;">Garantir un accès équitable, Sécurisé et Durable aux produits de santé essentiels au Bénin</span>.
+                            Grâce à votre confiance, votre appui technique et votre collaboration active, nous poursuivons chaque jour notre mission : <span class="montexte">garantir un accès équitable, Sécurisé et Durable aux produits de santé essentiels au Bénin</span>.
                             <br>
                             Ensemble, nous bâtissons un système de santé plus fort, au service de toutes les populations.
                         </p>
@@ -838,7 +777,7 @@ include_once 'function/mail.php';
                 <div class="col-md-6 col-lg-4">
                     <div class="blog-item">
                         <div class="blog-item-img">
-                            <img src="assets/img/blog/17_07_2025.jpg" alt="Thumb" class="monimage">
+                            <img src="assets/img/blog/17_07_2025.jpg" alt="" class="monimage">
                         </div>
                         <div class="blog-item-info">
                             <div class="blog-item-meta">
@@ -857,7 +796,7 @@ include_once 'function/mail.php';
                 <div class="col-md-6 col-lg-4">
                     <div class="blog-item">
                         <div class="blog-item-img">
-                            <img src="assets/img/blog/14_07_2025.jpg" alt="Thumb" class="monimage">
+                            <img src="assets/img/blog/14_07_2025.jpg" alt="" class="monimage">
                         </div>
                         <div class="blog-item-info">
                             <div class="blog-item-meta">
@@ -876,7 +815,7 @@ include_once 'function/mail.php';
                 <div class="col-md-6 col-lg-4">
                     <div class="blog-item">
                         <div class="blog-item-img">
-                            <img src="assets/img/blog/11_07_2025.jpg" alt="Thumb" class="monimage">
+                            <img src="assets/img/blog/11_07_2025.jpg" alt="" class="monimage">
                         </div>
                         <div class="blog-item-info">
                             <div class="blog-item-meta">

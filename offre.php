@@ -12,7 +12,7 @@ include_once 'models/header.php';
                     <span class="site-title-tagline">Publications</span>
                     <h1 class="sb-soon-title">Appels d’offres <span>&amp;</span> offres d’emploi</h1>
                     <p class="lead">Retrouvez bientôt ici toutes nos opportunités de collaboration pour renforcer ensemble la chaîne d’approvisionnement en produits de santé au Bénin.</p>
-                    <div id="countdown" class="countdown-wrap my-4"></div>
+                    <?php if (time() < strtotime("2025-11-30")): ?><div id="countdown" class="countdown-wrap my-4"></div><?php endif; ?>
                     <form class="newsletter-form">
                         <input type="email" class="input-newsletter form-control" placeholder="Entrez un mail valide"
                             name="email" autocomplete="off" id="email" aria-label="Votre email" required>

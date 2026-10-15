@@ -72,7 +72,7 @@
                             <p>Abonnez-vous pour avoir nos nouvelles au quotidien</p>
                             <div class="subscribe-form">
                                 <form action="#">
-                                    <input type="email" class="form-control" placeholder="Votre email" aria-label="Votre email">
+                                    <input type="email" name="email" class="form-control" placeholder="Votre email" aria-label="Votre email" required>
                                     <button class="theme-btn" type="submit">
                                         Abonnez-vous <span class="far fa-envelope"></span>
                                     </button>

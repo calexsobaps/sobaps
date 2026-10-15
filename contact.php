@@ -6,9 +6,9 @@ include_once 'function/mail.php';
 ?>
 <main class="main">
 
-    <div class="site-breadcrumb" style="background: url(./assets/img/breadcrumb/contact.jpg)">
+    <div class="site-breadcrumb" style="background: url(./assets/img/slider/imma.JPG)">
         <div class="container">
-            <h2 class="breadcrumb-title">Contactez-nous</h2>
+            <h1 class="breadcrumb-title">Contactez-<span>nous</span></h1>
             <ul class="breadcrumb-menu">
                 <li><a href="accueil"><i class="far fa-home"></i>&nbsp;Accueil</a></li>
                 <li class="active">Contact</li>
@@ -24,7 +24,7 @@ include_once 'function/mail.php';
                 <div class="col-lg-6 mx-auto">
                     <div class="site-heading text-center">
                         <span class="site-title-tagline">SoBAPS S.A</span>
-                        <h2 class="site-title"> Avez-vous <span>Des questions?</span></h2>
+                        <h2 class="site-title">Avez-vous <span>des questions&nbsp;?</span></h2>
                         <div class="heading-divider"></div>
                     </div>
                 </div>
@@ -34,16 +34,16 @@ include_once 'function/mail.php';
                 <div class="container">
                     <div class="contact-wrapper">
                         <div class="row">
-                            <div class="col-md-8 align-self-center">
+                            <div class="col-lg-8 order-2 order-lg-1 align-self-center">
                                 <div class="contact-form">
                                     <div class="contact-form-header">
-                                        <h2>Contactez-nous</h2>
+                                        <h2>Écrivez-nous</h2>
                                         <p>Vous pouvez nous contacter directement par email ou téléphone pour toute question ou demande d'information.</p>
                                     </div>
                                     <?php MonMail($token); ?>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-lg-4 order-1 order-lg-2">
                                 <div class="contact-content">
                                     <div class="contact-info">
                                         <div class="contact-info-icon">
@@ -60,7 +60,7 @@ include_once 'function/mail.php';
                                         </div>
                                         <div class="contact-info-content">
                                             <h5>Téléphone</h5>
-                                            <p>(+229) 01 95 77 32 32 <br>(+229) 01 67 04 33 33</p>
+                                            <p><a href="tel:+2290195773232">(+229) 01 95 77 32 32</a><br><a href="tel:+2290167043333">(+229) 01 67 04 33 33</a></p>
                                         </div>
                                     </div>
                                     <div class="contact-info">
