@@ -83,7 +83,7 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                     </div>
                 </div>
                 <hr>
-                <div class="col-md-4 mb-4 mt-5">
+                <div class="col-lg-4 mb-4 mt-4 mt-lg-5">
                     <div class="contact-content">
 
                         <div class="contact-info">
@@ -91,7 +91,7 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                                 <i class="fal fa-phone"></i>
                             </div>
                             <div class="contact-info-content">
-                                <h5>Téléphone 1</h5>
+                                <h3>Téléphone 1</h3>
                                 <p><a href="tel:+2290191484646">+229 01 91 48 46 46</a></p>
                             </div>
                         </div>
@@ -100,7 +100,7 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                                 <i class="fal fa-phone"></i>
                             </div>
                             <div class="contact-info-content">
-                                <h5>Téléphone 2</h5>
+                                <h3>Téléphone 2</h3>
                                 <p><a href="tel:+2290199430505">+229 01 99 43 05 05</a></p>
                             </div>
                         </div>
@@ -109,7 +109,7 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                                 <i class="fal fa-envelope"></i>
                             </div>
                             <div class="contact-info-content">
-                                <h5>Email</h5>
+                                <h3>Email</h3>
                                 <p><a href="mailto:natitingou@soaps.bj">natitingou@soaps.bj</a></p>
                             </div>
                         </div>
@@ -118,13 +118,13 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                                 <i class="fal fa-clock"></i>
                             </div>
                             <div class="contact-info-content">
-                                <h5>Horaires d'ouverture</h5>
+                                <h3>Horaires d'ouverture</h3>
                                 <p>Lun - Dim (08h - 18h)</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8 mt-5">
+                <div class="col-lg-8 mt-lg-5">
                     <div class="contact-map" style="margin-top: 0px !important;">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.3744531550224!2d1.3748553735870905!3d10.311887567593404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x102cbcdac220c6fb%3A0x6598913da5e24ba7!2sAgence%20r%C3%A9gionale%20CAME%20de%20Natitingou!5e0!3m2!1sfr!2sbj!4v1701698599110!5m2!1sfr!2sbj"

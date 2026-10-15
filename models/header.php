@@ -1,4 +1,26 @@
+<div id="cookie-banner" role="dialog" aria-live="polite" aria-label="Préférences de cookies">
+    <div class="cookie-container">
+        <div class="cookie-icon"><i class="fas fa-cookie-bite"></i></div>
+        <div class="cookie-copy">
+            <div class="cookie-title">Préférences de cookies</div>
+            <p class="cookie-text">
+                Nous respectons votre vie privée. Ce site utilise des cookies pour améliorer votre expérience et analyser l’utilisation de nos services.
+                Vous pouvez accepter tous les cookies ou refuser ceux qui ne sont pas essentiels.
+            </p>
+        </div>
+        <div class="cookie-buttons">
+            <button class="cookie-btn cookie-btn-decline" id="btn-decline-all" type="button">
+                <i class="fas fa-times"></i> Refuser
+            </button>
+            <button class="cookie-btn cookie-btn-accept" id="btn-accept-all" type="button">
+                <i class="fas fa-check"></i> Accepter tout
+            </button>
+        </div>
+    </div>
+</div>
+
 <header class="header">
+    <a class="sb-skip" href="#contenu">Aller au contenu</a>
 
     <div class="header-top">
         <div class="container">
@@ -42,7 +64,7 @@
                 </a>
                 <div class="mobile-menu-right">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                        data-bs-target="#main_nav" aria-expanded="false" aria-label="Menu principal">
                         <span class="navbar-toggler-icon"><i class="far fa-stream"></i></span>
                     </button>
                 </div>
@@ -112,7 +134,7 @@
 
                 <div class="mobile-menu-right">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                        data-bs-target="#main_nav" aria-expanded="false" aria-label="Menu principal">
                         <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
                     </button>
                 </div>

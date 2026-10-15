@@ -7,6 +7,8 @@
     "use strict";
 
     var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var mainEl = document.querySelector("main");
+    if (mainEl && !mainEl.id) mainEl.id = "contenu";
     var finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 
     function el(tag, cls, html) {
@@ -88,7 +90,7 @@
        --------------------------------------------------------------- */
     document.addEventListener("click", function (e) {
         var a = e.target.closest('a[href*="#"]');
-        if (!a || a.hasAttribute("data-bs-toggle") || a.closest(".sb-overlay")) return;
+        if (!a || a.hasAttribute("data-bs-toggle") || a.closest(".sb-overlay") || a.classList.contains("sb-skip")) return;
         var url = new URL(a.href, location.href);
         if (url.pathname !== location.pathname || !url.hash || url.hash.length < 2) return;
         var target = document.getElementById(decodeURIComponent(url.hash.slice(1)));
@@ -160,6 +162,7 @@
             if (!e.namespace || !e.page) return;
             var idx = e.page.index < 0 ? 0 : e.page.index;
             counter.firstChild.textContent = String(idx + 1).padStart(2, "0");
+            $section.find(".owl-dot").each(function (i) { this.setAttribute("aria-current", i === idx ? "true" : "false"); });
             restartBar();
         });
 
@@ -184,13 +187,23 @@
         syncSlidesA11y();
         $section.find(".owl-prev").attr("aria-label", "Diapositive précédente");
         $section.find(".owl-next").attr("aria-label", "Diapositive suivante");
-        $section.find(".owl-dot").each(function (i) { this.setAttribute("aria-label", "Diapositive " + (i + 1)); });
-        $section.on("focusin", function () {
-            if (userPaused) return;
-            userPaused = true;
-            $hero.trigger("stop.owl.autoplay");
-            bar.firstChild.classList.remove("run");
+        $section.find(".owl-dot").each(function (i) {
+            this.setAttribute("aria-label", "Diapositive " + (i + 1));
+            this.setAttribute("aria-current", i === 0 ? "true" : "false");
         });
+        var pauseBtn = el("button", "sb-hero-pause", "<i class='fas fa-pause' aria-hidden='true'></i>");
+        pauseBtn.type = "button";
+        pauseBtn.setAttribute("aria-label", "Mettre le diaporama en pause");
+        if (total > 1 && !reduceMotion) $section.append(pauseBtn);
+        function setPaused(p) {
+            userPaused = p;
+            pauseBtn.innerHTML = "<i class='fas fa-" + (p ? "play" : "pause") + "' aria-hidden='true'></i>";
+            pauseBtn.setAttribute("aria-label", p ? "Relancer le diaporama" : "Mettre le diaporama en pause");
+            $hero.trigger(p ? "stop.owl.autoplay" : "play.owl.autoplay", [SLIDE_TIME]);
+            restartBar();
+        }
+        pauseBtn.addEventListener("click", function () { setPaused(!userPaused); });
+        $section.on("focusin", function (e) { if (userPaused || e.target === pauseBtn) return; setPaused(true); });
 
         // Le slider se met en pause si l'onglet n'est pas visible
         document.addEventListener("visibilitychange", function () {
@@ -296,6 +309,7 @@
     var lastFocus = null;
     function openOverlay(ov) {
         lastFocus = document.activeElement;
+        document.querySelectorAll("#sb-toasts .sb-toast").forEach(function (t) { t.click(); });
         document.body.appendChild(ov);
         document.body.classList.add("sb-lock");
         requestAnimationFrame(function () {
@@ -373,16 +387,11 @@
                 });
                 try { ss && ss.setItem("sb-welcome", "1"); } catch (e) { }
             };
-            setTimeout(function () {
-                if (!/(^|;\s*)cookieConsent=/.test(document.cookie)) {
-                    ["btn-accept-all", "btn-decline-all"].forEach(function (id) {
-                        var b = document.getElementById(id);
-                        if (b) b.addEventListener("click", function () { setTimeout(showWelcome, 1200); }, { once: true });
-                    });
-                    return;
-                }
-                showWelcome();
-            }, 4500);
+            if (/(^|;\s*)cookieConsent=/.test(document.cookie)) setTimeout(showWelcome, 4500);
+            else ["btn-accept-all", "btn-decline-all"].forEach(function (id) {
+                var b = document.getElementById(id);
+                if (b) b.addEventListener("click", function () { setTimeout(showWelcome, 1200); }, { once: true });
+            });
         }
     }
 
@@ -505,15 +514,13 @@
     /* ---------------------------------------------------------------
        10. Notifications (toasts)
        --------------------------------------------------------------- */
-    var toastBox = null;
+    var toastBox = el("div");
+    toastBox.id = "sb-toasts";
+    toastBox.setAttribute("role", "status");
+    toastBox.setAttribute("aria-live", "polite");
+    document.body.appendChild(toastBox);
     window.sbToast = function (title, message, type, ms) {
         ms = ms || 5000;
-        if (!toastBox) {
-            toastBox = el("div");
-            toastBox.id = "sb-toasts";
-            toastBox.setAttribute("aria-live", "polite");
-            document.body.appendChild(toastBox);
-        }
         var t = el("div", "sb-toast" + (type === "error" ? " error" : ""));
         t.style.setProperty("--sb-t", ms + "ms");
         t.innerHTML = '<div class="ic"><i class="fas ' + (type === "error" ? "fa-exclamation" : "fa-check") + '"></i></div>' +
@@ -541,6 +548,7 @@
             if (!i.value || !i.checkValidity()) { i.reportValidity(); return; }
             window.location.href = "mailto:contact@sobaps.bj?subject=" + encodeURIComponent("Abonnement aux actualités SoBAPS") +
                 "&body=" + encodeURIComponent("Merci de m’inscrire avec l’adresse : " + i.value);
+            if (window.sbToast) window.sbToast("Presque terminé", "Votre messagerie s’ouvre : envoyez le message prérempli pour confirmer votre abonnement.");
         });
     });
 

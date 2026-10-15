@@ -1,24 +1,3 @@
-<div id="cookie-banner" role="dialog" aria-live="polite" aria-label="Préférences de cookies">
-    <div class="cookie-container">
-        <div class="cookie-icon"><i class="fas fa-cookie-bite"></i></div>
-        <div class="cookie-copy">
-            <div class="cookie-title">Préférences de cookies</div>
-            <p class="cookie-text">
-                Nous respectons votre vie privée. Ce site utilise des cookies pour améliorer votre expérience et analyser l’utilisation de nos services.
-                Vous pouvez accepter tous les cookies ou refuser ceux qui ne sont pas essentiels.
-            </p>
-        </div>
-        <div class="cookie-buttons">
-            <button class="cookie-btn cookie-btn-decline" id="btn-decline-all" type="button">
-                <i class="fas fa-times"></i> Refuser
-            </button>
-            <button class="cookie-btn cookie-btn-accept" id="btn-accept-all" type="button">
-                <i class="fas fa-check"></i> Accepter tout
-            </button>
-        </div>
-    </div>
-</div>
-
 <footer class="footer-area">
     <div class="footer-widget">
         <div class="container">
@@ -41,21 +20,21 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="footer-widget-box">
-                        <h4 class="footer-widget-title">Contactez-nous</h4>
+                        <h2 class="footer-widget-title">Contactez-nous</h2>
                         <ul class="footer-contact">
                             <li><i class="far fa-map-marker-alt"></i>Agence régionale de Cotonou</li>
-                            <li><a href="tel:+2290191484040"><i class="far fa-phone"></i>0191484040 / 0199430303</a></li>
+                            <li><i class="far fa-phone" aria-hidden="true"></i><span><a href="tel:+2290191484040">01 91 48 40 40</a> / <a href="tel:+2290199430303">01 99 43 03 03</a></span></li>
                             <li><i class="far fa-map-marker-alt"></i>Agence régionale de Parakou</li>
-                            <li><a href="tel:+2290191484242"><i class="far fa-phone"></i>0191484242 / 0199430404</a></li>
+                            <li><i class="far fa-phone" aria-hidden="true"></i><span><a href="tel:+2290191484242">01 91 48 42 42</a> / <a href="tel:+2290199430404">01 99 43 04 04</a></span></li>
                             <li><i class="far fa-map-marker-alt"></i>Agence régionale de Natitingou</li>
-                            <li><a href="tel:+2290191484646"><i class="far fa-phone"></i>0191484646 / 0199430505</a></li>
+                            <li><i class="far fa-phone" aria-hidden="true"></i><span><a href="tel:+2290191484646">01 91 48 46 46</a> / <a href="tel:+2290199430505">01 99 43 05 05</a></span></li>
                             <li><i class="far fa-clock"></i>Lundi - Vendredi (08h - 20h)</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-2">
                     <div class="footer-widget-box list">
-                        <h4 class="footer-widget-title">Liens utiles</h4>
+                        <h2 class="footer-widget-title">Liens utiles</h2>
                         <ul class="footer-list">
                             <li><a href="accueil"><i class="fas fa-chevron-right"></i> Accueil</a></li>
                             <li><a href="sobaps"><i class="fas fa-chevron-right"></i> SoBAPS S.A ?</a></li>
@@ -67,7 +46,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="footer-widget-box list">
-                        <h4 class="footer-widget-title">Boîte à lettres</h4>
+                        <h2 class="footer-widget-title">Boîte à lettres</h2>
                         <div class="footer-newsletter">
                             <p>Abonnez-vous pour avoir nos nouvelles au quotidien</p>
                             <div class="subscribe-form">
@@ -154,14 +133,14 @@
     document.addEventListener("DOMContentLoaded", function() {
         function applyFragmentHighlight(fragment) {
             if (!fragment) return;
-            document.querySelectorAll('a[href*="#"]').forEach(link => {
+            const links = document.querySelectorAll(`#main_nav .dropdown-item[href$="${fragment}"]`);
+            if (!links.length) return;
+            document.querySelectorAll("#main_nav .dropdown-item").forEach(link => {
                 link.classList.remove("text-success", "fw-bold");
             });
             document.querySelectorAll(".nav-link.dropdown-toggle[data-has-fragment]").forEach(link => {
                 link.classList.remove("active");
             });
-
-            const links = document.querySelectorAll(`a[href$="${fragment}"]`);
             links.forEach(link => {
                 link.classList.add("text-success", "fw-bold");
             });
@@ -178,10 +157,7 @@
         document.querySelectorAll('a[href*="#"]').forEach(link => {
             link.addEventListener("click", function(e) {
                 const hash = this.getAttribute("href").split("#")[1];
-                if (hash) {
-                    history.pushState(null, null, `#${hash}`);
-                    applyFragmentHighlight(`#${hash}`);
-                }
+                if (hash && this.pathname === location.pathname) applyFragmentHighlight('#' + hash);
             });
         });
     });

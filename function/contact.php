@@ -15,6 +15,12 @@ if (empty($_POST['csrf_token']) || $_POST['csrf_token'] !== ($_SESSION['csrf_tok
     exit;
 }
 
+// Pot de miel : un robot remplit le champ caché « website »
+if (!empty($_POST['website'])) {
+    echo json_encode(['message' => 'Votre message a bien été envoyé. Merci !']);
+    exit;
+}
+
 function clean_input($data)
 {
     $data = strip_tags($data);

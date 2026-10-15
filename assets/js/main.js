@@ -352,9 +352,19 @@ Version         : 1.3
     $('.flexslider-thumbnails').flexslider({
         animation: "slide",
         controlNav: "thumbnails",
+        slideshow: false,
         start: function (slider) {
+            slider.find('.flex-direction-nav').appendTo(slider.find('.flex-viewport'));
             slider.find('.flex-prev').attr('aria-label', 'Photo précédente');
             slider.find('.flex-next').attr('aria-label', 'Photo suivante');
+            slider.find('.slides > li.clone').attr('aria-hidden', 'true');
+            slider.find('.flex-control-thumbs img').each(function (i) {
+                this.alt = 'Afficher la photo ' + (i + 1);
+                this.tabIndex = 0;
+                this.setAttribute('role', 'button');
+            }).on('keydown', function (e) {
+                if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); $(this).trigger('click'); }
+            });
         }
      });
     }
