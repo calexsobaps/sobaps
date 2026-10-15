@@ -40,8 +40,8 @@ include_once 'models/header.php';
                 <div class="col-12 mb-4">
                     <div class="blog-single-wrapper">
                         <div class="blog-single-content">
-                            <div class="blog-thumb-img">
-                                <img src="./assets/img/slider/sobaps.jpg" alt="thumb">
+                            <div class="blog-thumb-img sb-cover">
+                                <img src="./assets/img/slider/sobaps.jpg" alt="Siège de la SoBAPS S.A">
                             </div>
                         </div>
                     </div>
@@ -183,8 +183,8 @@ include_once 'models/header.php';
                 <div class="col-12">
                     <div class="blog-single-wrapper">
                         <div class="blog-single-content">
-                            <div class="blog-thumb-img">
-                                <img src="./assets/img/choose/dg.JPG" alt="thumb">
+                            <div class="blog-thumb-img sb-cover sb-cover-top">
+                                <img src="./assets/img/choose/dg.JPG" alt="Dr Dèhoumon Louis KOUKPEMEDJI, Directeur Général">
                             </div>
                         </div>
                     </div>
@@ -230,7 +230,7 @@ include_once 'models/header.php';
                     <div class="blog-single-wrapper">
                         <div class="blog-single-content">
                             <div class="blog-thumb-img">
-                                <img src="./assets/img/choose/rc.png" alt="thumb">
+                                <img src="./assets/img/choose/rc.png" alt="Organigramme de la SoBAPS S.A">
                             </div>
                         </div>
                     </div>

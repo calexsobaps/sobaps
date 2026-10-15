@@ -3,14 +3,6 @@ include_once 'models/head.php';
 include_once 'models/preloard.php';
 include_once 'models/header.php';
 ?>
-
-<style>
-    mark {
-        background-color: yellow;
-        font-weight: bold;
-    }
-</style>
-
 <main class="main">
 
     <div class="site-breadcrumb" style="background: url(./assets/img/breadcrumb/nouvelle-1040x220.jpg)">
@@ -69,7 +61,7 @@ include_once 'models/header.php';
                                         Sous le leadership éclairé du Ministre, le <b class="montexte">Professeur Benjamin HOUNKPATIN</b>, du Gouvernement et de son Chef, Son Excellence le <b class="montexte">Président Patrice TALON</b>, nous poursuivons notre action avec une détermination renouvelée. Nous leur exprimons notre profonde gratitude.
 
                                     </p>
-                                    <p class="text-end"><b style="font-weight: 800 !important;color: #000;" class="blockqoute-author">Dr Louis Dèhoumon KOUKPEMEDJI</b></p>
+                                    <p class="text-end"><b class="blockqoute-author d-inline-flex">Dr Louis Dèhoumon KOUKPEMEDJI</b></p>
                                     <hr>
                                 </div>
                             </div>

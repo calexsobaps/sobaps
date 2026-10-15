@@ -6,7 +6,7 @@ include_once 'function/mail.php';
 ?>
 <main class="main">
 
-    <div class="hero-section">
+    <div class="hero-section sb-hero-home">
         <div class="hero-slider owl-carousel owl-theme">
             <div class="hero-single" style="background-image: url(./assets/img/slider/OCE_3837.JPG)">
                 <div class="container">
@@ -120,6 +120,10 @@ include_once 'function/mail.php';
                 </div>
             </div>
         </div>
+        <div class="sb-hero-badge" aria-hidden="true">
+            <div class="ic"><i class="fas fa-award"></i></div>
+            <div><b>Société certifiée</b><span>ISO 9001 · 14001 · 45001</span></div>
+        </div>
     </div>
 
 
@@ -178,7 +182,7 @@ include_once 'function/mail.php';
                     <div class="site-heading">
                         <span class="site-title-tagline">Nos Produits</span>
                         <h2 class="site-title">Politique Assurance <br><span>Qualité des médicaments</span> à la SoBAPS S.A</h2>
-                        <div class="heading-divider" style="width: 485px"></div>
+                        <div class="heading-divider"></div>
                     </div>
                 </div>
             </div>
@@ -205,7 +209,7 @@ include_once 'function/mail.php';
                         <div class="feature-content">
                             <h4>Catalogue de prix</h4>
                             <p>Nous mettons à la disposition de notre clientèle, un catalogue de prix complet.</p>
-                            <br> <a class="theme-btn theme-btn2" href="ccpc#politique" style="background-color: #fff !important; color: #000 !important;"> Voir plus &ensp;<i class="fa fa-arrow-right"></i></a>
+                            <br> <a class="theme-btn" href="ccpc#catalogue"> Voir plus &ensp;<i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -383,113 +387,58 @@ include_once 'function/mail.php';
                     </div>
                 </div>
             </div>
-            <div class="diet-plan-wrapper">
-
-                <div class="banner-item" style="padding: 0 !important;">
-                    <div class="row align-items-center">
-                        <div class="col-xl-6 col-lg-6 mb-4">
-                            <div class="banner-thumb">
-                                <center>
-                                    <img src="./assets/img/dqs-iso-9001-logo-png_seeklogo-449569.png" alt="ISO 9001" style="width: 60%; height: auto;" />
-                                </center>
-                            </div>
+            <div class="row g-4 sb-certs">
+                <div class="col-lg-4">
+                    <article class="sb-cert">
+                        <div class="sb-cert-logo">
+                            <img src="./assets/img/dqs-iso-9001-logo-png_seeklogo-449569.png" alt="ISO 9001">
                         </div>
-                        <div class="col-xl-6 col-lg-6 mb-4">
-                            <div class="banner-info mrl-50 mrl-lg-0">
-                                <h1 class="site-title mb-3"><span>ISO 9001 : 2015</span><br> Management de la Qualité</h1>
-                                <p class="about-text mrb-4">La certification ISO 9001 atteste de notre capacité à fournir des produits et services conformes aux exigences de nos clients tout en visant l'amélioration continue. <br>
-                                    Elle démontre que la qualité est au cœur de toutes nos activités, depuis la gestion interne jusqu’aux relations avec nos partenaires.
-                                </p>
-                                <div class="col-12 mb-5 mt-2">
-                                    <ul class="service-single-list">
-                                        <li>
-                                            <p><i class="fa fa-check-circle"></i>&nbsp;Meilleure satisfaction client</p>
-                                        </li>
-                                        <li>
-                                            <p><i class="fa fa-check-circle"></i>&nbsp;Processus rigoureux et maîtrisés</p>
-                                        </li>
-                                        <li>
-                                            <p><i class="fa fa-check-circle"></i>&nbsp;Engagement pour une amélioration continue</p>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
+                        <span class="sb-cert-code">ISO 9001 : 2015</span>
+                        <h3 class="sb-cert-title">Management de la Qualité</h3>
+                        <p>La certification ISO 9001 atteste de notre capacité à fournir des produits et services conformes aux exigences de nos clients tout en visant l'amélioration continue. Elle démontre que la qualité est au cœur de toutes nos activités, depuis la gestion interne jusqu’aux relations avec nos partenaires.</p>
+                        <ul class="service-single-list">
+                            <li><i class="fa fa-check-circle"></i>Meilleure satisfaction client</li>
+                            <li><i class="fa fa-check-circle"></i>Processus rigoureux et maîtrisés</li>
+                            <li><i class="fa fa-check-circle"></i>Engagement pour une amélioration continue</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <article class="sb-cert">
+                        <div class="sb-cert-logo">
+                            <img src="./assets/img/iso45001.png" alt="ISO 45001">
                         </div>
-
-                        <hr>
-                        <div class="col-xl-6 col-lg-6 mb-4">
-                            <div class="banner-thumb">
-                                <center>
-                                    <img src="./assets/img/iso45001.png" alt="ISO 45001" style="width: 60%; height: auto;" />
-                                </center>
-                            </div>
+                        <span class="sb-cert-code">ISO 45001 : 2018</span>
+                        <h3 class="sb-cert-title">Santé et Sécurité au Travail</h3>
+                        <p>Avec la certification ISO 45001, la SoBAPS S.A. garantit un environnement de travail sain et sécurisé pour l’ensemble de ses collaborateurs. Nous mettons en œuvre des politiques strictes pour prévenir les accidents, réduire les risques professionnels et promouvoir le bien-être au travail.</p>
+                        <ul class="service-single-list">
+                            <li><i class="fa fa-check-circle"></i>Sécurité des employés et des sous-traitants</li>
+                            <li><i class="fa fa-check-circle"></i>Culture de prévention des risques</li>
+                            <li><i class="fa fa-check-circle"></i>Respect des obligations légales et réglementaires</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <article class="sb-cert">
+                        <div class="sb-cert-logo">
+                            <img src="./assets/img/DQS-Logo_DT-14001-umweltmanagement.png" alt="ISO 14001">
                         </div>
-
-                        <div class="col-xl-6 col-lg-6 mb-4">
-                            <div class="banner-info mrl-50 mrl-lg-0">
-                                <h1 class="site-title mb-3"><span>ISO 45001 : 2018</span><br>Santé et Sécurité au Travail</h1>
-                                <p class="about-text mrb-4">Avec la certification ISO 45001, la SoBAPS S.A. garantit un environnement de travail sain et sécurisé pour l’ensemble de ses collaborateurs. <br>
-                                    Nous mettons en œuvre des politiques strictes pour prévenir les accidents, réduire les risques professionnels et promouvoir le bien-être au travail.
-                                </p>
-                                <div class="col-12 mb-5 mt-2">
-                                    <ul class="service-single-list">
-                                        <li>
-                                            <p><i class="fa fa-check-circle"></i>&nbsp;Sécurité des employés et des sous-traitants</p>
-                                        </li>
-                                        <li>
-                                            <p><i class="fa fa-check-circle"></i>&nbsp;Culture de prévention des risques</p>
-                                        </li>
-                                        <li>
-                                            <p><i class="fa fa-check-circle"></i>&nbsp;Respect des obligations légales et réglementaires</p>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <hr>
-
-                        <div class="col-xl-6 col-lg-6 mb-4">
-                            <div class="banner-thumb">
-                                <center>
-                                    <img src="./assets/img/DQS-Logo_DT-14001-umweltmanagement.png" alt="ISO 14001" style="width: 60%; height: auto;" />
-                                </center>
-                            </div>
-                        </div>
-                        <div class="col-lg-10 col-xl-6 mb-4">
-                            <div class="banner-info mrl-50 mrl-lg-0">
-                                <h1 class="site-title mb-3"><span>ISO 14001 : 2015</span><br>Management Environnemental</h1>
-                                <p class="about-text mrb-4">La certification ISO 14001 reflète notre engagement pour la protection de l’environnement.<br>
-                                    Elle guide notre stratégie pour réduire notre empreinte écologique, optimiser l’utilisation des ressources et prévenir toute forme de pollution.
-                                </p>
-                                <div class="col-12 mt-2">
-                                    <ul class="service-single-list">
-                                        <li>
-                                            <p><i class="fa fa-check-circle"></i>&nbsp;Gestion responsable des déchets</p>
-                                        </li>
-                                        <li>
-                                            <p><i class="fa fa-check-circle"></i>&nbsp;Réduction de la consommation énergétique</p>
-                                        </li>
-                                        <li>
-                                            <p><i class="fa fa-check-circle"></i>&nbsp;Maîtrise des impacts environnementaux</p>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                    </div>
+                        <span class="sb-cert-code">ISO 14001 : 2015</span>
+                        <h3 class="sb-cert-title">Management Environnemental</h3>
+                        <p>La certification ISO 14001 reflète notre engagement pour la protection de l’environnement. Elle guide notre stratégie pour réduire notre empreinte écologique, optimiser l’utilisation des ressources et prévenir toute forme de pollution.</p>
+                        <ul class="service-single-list">
+                            <li><i class="fa fa-check-circle"></i>Gestion responsable des déchets</li>
+                            <li><i class="fa fa-check-circle"></i>Réduction de la consommation énergétique</li>
+                            <li><i class="fa fa-check-circle"></i>Maîtrise des impacts environnementaux</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="appointment-area">
-        <div class="container-fuild">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 madiv">
                     <div class="appointment-img"></div>
@@ -530,7 +479,7 @@ include_once 'function/mail.php';
                 <div class="col-md-6 col-lg-4">
                     <div class="service-item">
                         <div class="service-img">
-                            <img src="assets/img/service/ag_cotonou.jpg" alt="Agence régionale de Cotonou">
+                            <img src="assets/img/service/ag_cotonou.JPG" alt="Agence régionale de Cotonou">
                         </div>
                         <div class="service-icon">
                             <i class="fa fa-home"></i>
@@ -572,7 +521,7 @@ include_once 'function/mail.php';
                 <div class="col-md-6 col-lg-4">
                     <div class="service-item">
                         <div class="service-img">
-                            <img src="assets/img/service/ag_nati.jpg" alt="Agence régionale de Natitingou">
+                            <img src="assets/img/service/ag_nati.JPG" alt="Agence régionale de Natitingou">
                         </div>
                         <div class="service-icon">
                             <i class="fa fa-home"></i>
@@ -645,7 +594,7 @@ include_once 'function/mail.php';
             </div>
             <div class="row">
                 <div class="col-12 mb-2">
-                    <blockquote class="blockqoute">
+                    <blockquote class="blockqoute sb-quote-lg">
                         La vision de la SoBAPS S.A est d’être à l’horizon 2028, une société pharmaceutique de référence, bien gouvernée, résiliente et au rayonnement sous-régional assurant la disponibilité permanente des produits de santé de qualité et financièrement accessibles aux populations.
                         <h6 class="blockqoute-author">Dr Dèhoumon Louis KOUKPEMEDJI</h6>
                     </blockquote>
@@ -683,7 +632,7 @@ include_once 'function/mail.php';
         </div>
     </div>
 
-    <div class="hero-section">
+    <div class="hero-section sb-band-grey">
         <div class="hero-static">
             <div class="hero-single">
                 <div class="container">
@@ -784,37 +733,29 @@ include_once 'function/mail.php';
 
             ?>
 
-            <div class="row">
-                <div class="12">
-                    <center>
-                        <div class="col-3 col-3">
-                            <div class="team-item">
-                                <img src="./assets/img/team/dg.png" alt="Dr. Dèhoumon Louis">
-                                <div class="team-social">
-                                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <div class="team-content">
-                                    <div class="team-bio">
-                                        <h6 class="text-bold"><a class="text-white" href="#" target="_blank">Dr. Dèhoumon Louis</a></h6>
-                                        <span class="text-bold"><b>DG</b></span>
-                                    </div>
-                                </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-item sb-team-lead">
+                        <img src="./assets/img/team/dg.png" alt="Dr. Dèhoumon Louis KOUKPEMEDJI">
+                        <div class="team-content">
+                            <div class="team-bio">
+                                <h6><a class="text-white" href="sobaps#directeur">Dr. Dèhoumon Louis</a></h6>
+                                <span><b>Directeur Général</b></span>
                             </div>
                         </div>
-                    </center>
+                    </div>
                 </div>
+            </div>
 
+            <div class="row">
                 <?php foreach ($codir as $c) { ?>
                     <div class="col-md-6 col-lg-3">
                         <div class="team-item">
                             <img src="<?php echo $c['img']; ?>" alt="<?php echo $c['nom']; ?>">
-                            <div class="team-social">
-                                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
                             <div class="team-content">
                                 <div class="team-bio">
-                                    <h6 class="text-bold"><a class="text-white" href="#" target="_blank"><?php echo $c['nom']; ?></a></h6>
-                                    <span class="text-bold"><b><?php echo $c['poste']; ?></b></span>
+                                    <h6><?php echo $c['nom']; ?></h6>
+                                    <span><b><?php echo $c['poste']; ?></b></span>
                                 </div>
                             </div>
                         </div>
@@ -825,7 +766,7 @@ include_once 'function/mail.php';
                     <h4 class="site-title mt-4">Mots <span>Clés</span></h4>
                     <div class="heading-divider"></div>
 
-                    <div class="diet-plan-wrapper mt-4">
+                    <div class="mt-2">
                         <?php
                         $motcle = array(
                             "DG" => "Directeur Général (DG)",
@@ -841,13 +782,14 @@ include_once 'function/mail.php';
                             "R/RPSE" => "Responsable à la Planification et au Suivi-Evaluation (R/RPSE)",
                         );
                         ?>
-                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                            <?php foreach ($motcle as $m) { ?>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-tab0" data-bs-toggle="pill" data-bs-target="#tab0" type="button" role="tab" aria-controls="tab0" aria-selected="true" style="text-align: left;"><?php echo $m; ?></button>
-                                </li>
+                        <dl class="sb-glossary">
+                            <?php foreach ($motcle as $sigle => $libelle) { ?>
+                                <div class="sb-glossary-item">
+                                    <dt><?php echo $sigle; ?></dt>
+                                    <dd><?php echo trim(preg_replace('/\s*\([^)]*\)\s*$/', '', $libelle)); ?></dd>
+                                </div>
                             <?php } ?>
-                        </ul>
+                        </dl>
 
                     </div>
                 </div>

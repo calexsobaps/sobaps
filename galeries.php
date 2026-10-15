@@ -5,7 +5,7 @@ include_once 'models/header.php';
 $imagesDir = "photos/";
 $imagesPerPage = 21;
 
-$images = array_filter(scandir($imagesDir), function ($file) use ($imagesDir) {
+$images = array_filter(is_dir($imagesDir) ? scandir($imagesDir) : [], function ($file) use ($imagesDir) {
     return preg_match('/\.(jpg|jpeg|png|gif)$/i', $file) && is_file($imagesDir . $file);
 });
 

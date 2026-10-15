@@ -77,7 +77,7 @@ include_once 'models/header.php';
                     <div class="row align-items-center rows">
                         <div class="col-lg-12">
                             <div class="hero-content">
-                                <h6 class="hero-sub-title animate__ animate__fadeInUp animated" style="color: #009d3a !important">Note d'Information</h6>
+                                <h6 class="hero-sub-title animate__ animate__fadeInUp animated">Note d'Information</h6>
                                 <h1 class="hero-title animate__animated animate__fadeInUp">
                                     Critères d'accès <span>Aux produits de Santé</span> de la SoBAPS S.A
                                 </h1>

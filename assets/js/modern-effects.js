@@ -103,13 +103,19 @@
             .removeAttr("data-wow-duration data-wow-delay").css({ visibility: "", animationName: "" });
 
         $hero.trigger("destroy.owl.carousel");
+        var isHome = $hero.closest(".sb-hero-home").length > 0;
         $hero.find(".hero-single").each(function () {
             var bg = this.style.backgroundImage;
             if (bg) {
                 var layer = el("div", "sb-hero-bg");
                 layer.style.backgroundImage = bg;
                 this.style.backgroundImage = "none";
-                this.insertBefore(layer, this.firstChild);
+                var holder = layer;
+                if (isHome) {
+                    holder = el("div", "sb-hero-media");
+                    holder.appendChild(layer);
+                }
+                this.insertBefore(holder, this.firstChild);
             }
         });
 
@@ -187,6 +193,18 @@
     }
 
     /* ---------------------------------------------------------------
+       4b. Bandeaux photo en duotone vert / blanc
+       --------------------------------------------------------------- */
+    document.querySelectorAll(".site-breadcrumb, .coming-soon, .widget-banner").forEach(function (n) {
+        var bg = getComputedStyle(n).backgroundImage;
+        if (!bg || bg === "none") return;
+        var layer = el("div", "sb-duo");
+        layer.style.backgroundImage = bg;
+        n.insertBefore(layer, n.firstChild);
+        n.classList.add("sb-has-duo");
+    });
+
+    /* ---------------------------------------------------------------
        5. Révélation au scroll
        --------------------------------------------------------------- */
     var revealSel = [
@@ -194,7 +212,7 @@
         ".counter-box", ".case-item", ".blockqoute", ".about-left", ".about-right",
         ".about-list li", ".banner-thumb", ".banner-info", ".footer-widget-box",
         ".appointment-content", ".choose-content", ".hero-static .hero-content",
-        ".testimonial-slider", ".partner-wrapper"
+        ".testimonial-slider", ".partner-wrapper", ".sb-glossary-item", ".contact-info"
     ].join(",");
 
     var revealEls = Array.prototype.filter.call(document.querySelectorAll(revealSel), function (n) {
@@ -227,7 +245,7 @@
     }
 
     /* ---------------------------------------------------------------
-       6. Tilt 3D des cartes + halo qui suit le curseur (desktop)
+       6. Léger tilt 3D des cartes (desktop)
        --------------------------------------------------------------- */
     if (finePointer && !reduceMotion) {
         document.querySelectorAll(".service-item, .blog-item, .feature-item, .team-item, .case-item").forEach(function (card) {
@@ -240,7 +258,7 @@
                 cancelAnimationFrame(raf);
                 raf = requestAnimationFrame(function () {
                     card.style.transition = "transform .15s ease-out, box-shadow .6s";
-                    card.style.transform = "perspective(1000px) rotateX(" + (-y * 6) + "deg) rotateY(" + (x * 6) + "deg) translateY(-8px)";
+                    card.style.transform = "perspective(1200px) rotateX(" + (-y * 3) + "deg) rotateY(" + (x * 3) + "deg) translateY(-6px)";
                 });
             });
             card.addEventListener("mouseleave", function () {
@@ -250,20 +268,6 @@
             });
         });
 
-        var glow = el("div");
-        glow.id = "sb-glow";
-        document.body.appendChild(glow);
-        var gx = 0, gy = 0, tx = 0, ty = 0, glowOn = false;
-        window.addEventListener("mousemove", function (e) {
-            tx = e.clientX; ty = e.clientY;
-            if (!glowOn) { glowOn = true; glow.style.opacity = 1; loop(); }
-        }, { passive: true });
-        document.addEventListener("mouseleave", function () { glow.style.opacity = 0; });
-        function loop() {
-            gx += (tx - gx) * 0.12; gy += (ty - gy) * 0.12;
-            glow.style.transform = "translate3d(" + gx + "px," + gy + "px,0)";
-            requestAnimationFrame(loop);
-        }
     }
 
     /* ---------------------------------------------------------------
@@ -311,7 +315,7 @@
         }).join("");
         ov.innerHTML =
             '<div class="sb-modal">' +
-            (opts.image ? '<div class="sb-modal-media" style="background-image:url(\'' + opts.image + '\')">' +
+            (opts.image ? '<div class="sb-modal-media sb-has-duo"><div class="sb-duo" style="background-image:url(\'' + opts.image + '\')"></div>' +
                 (opts.badge ? '<div class="sb-badge">' + opts.badge + '</div>' : '') + '</div>' : '') +
             '<div class="sb-modal-body">' +
             (opts.eyebrow ? '<div class="sb-eyebrow">' + opts.eyebrow + '</div>' : '') +
@@ -458,8 +462,8 @@
             (href.match(/vimeo\.com\/(\d+)/) ? "https://player.vimeo.com/video/" + RegExp.$1 + "?autoplay=1" : href);
         var ov = el("div", "sb-overlay sb-lightbox");
         ov.innerHTML =
-            '<div class="sb-lb-stage"><div style="width:min(1100px,92vw);aspect-ratio:16/9;border-radius:18px;overflow:hidden;box-shadow:0 40px 100px rgba(0,0,0,.6)">' +
-            '<iframe src="' + src + '" style="width:100%;height:100%;border:0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Vidéo"></iframe></div></div>' +
+            '<div class="sb-lb-stage"><div class="sb-lb-frame">' +
+            '<iframe src="' + src + '" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Vidéo"></iframe></div></div>' +
             '<button type="button" class="sb-lb-btn sb-lb-close" aria-label="Fermer"><i class="fas fa-times"></i></button>';
         ov.querySelector(".sb-lb-close").onclick = function () { closeOverlay(ov); };
         ov.querySelector(".sb-lb-stage").addEventListener("click", function (ev) { if (ev.target === this) closeOverlay(ov); });

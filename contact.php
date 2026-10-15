@@ -4,25 +4,6 @@ include_once 'models/preloard.php';
 include_once 'models/header.php';
 include_once 'function/mail.php';
 ?>
-<style>
-    .feature-item {
-        background: #009d3a !important;
-        color: #fff !important;
-    }
-
-    .feature-content h4,
-    .feature-content p,
-    .feature-icon {
-        color: #fff !important;
-        font-weight: 800 !important;
-        font-family: 'Times New Roman', Times, serif !important;
-    }
-
-    .feature-content p {
-        font-size: 18px !important;
-    }
-</style>
-
 <main class="main">
 
     <div class="site-breadcrumb" style="background: url(./assets/img/breadcrumb/contact.jpg)">

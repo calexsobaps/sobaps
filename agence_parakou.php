@@ -5,7 +5,7 @@ include_once 'models/header.php';
 $imagesDir = "parakou/";
 $imagesPerPage = 9;
 
-$images = array_filter(scandir($imagesDir), function ($file) use ($imagesDir) {
+$images = array_filter(is_dir($imagesDir) ? scandir($imagesDir) : [], function ($file) use ($imagesDir) {
     return preg_match('/\.(jpg|jpeg|png|gif)$/i', $file) && is_file($imagesDir . $file);
 });
 
@@ -38,7 +38,7 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                 <div class="col-lg-12">
                     <div class="site-heading text-center">
                         <span class="site-title-tagline">SoBAPS S.A</span>
-                        <h2 class="site-title">Agence Régionale De<span>Parakou</span></h2>
+                        <h2 class="site-title">Agence Régionale de <span>Parakou</span></h2>
                         <div class="heading-divider"></div>
                         <p>
                         </p>
