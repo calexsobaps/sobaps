@@ -17,8 +17,8 @@
 .ctn-preloader .animation-preloader .spinner {
   animation: spinner 1s infinite linear;
   border-radius: 50%;
-  border: 3px solid rgba(0, 0, 0, 0.2);
-  border-top-color: #009d3a;
+  border: 3px solid rgba(0, 156, 57, 0.2);
+  border-top-color: #009c39;
   height: 9em;
   margin: 0 auto 3.5em auto;
   width: 9em;
@@ -30,7 +30,7 @@
 }
 .ctn-preloader .animation-preloader .txt-loading .letters-loading:before {
   animation: letters-loading 4s infinite;
-  color: #009d3a;
+  color: #009c39;
   content: attr(data-text-preloader);
   left: 0;
   opacity: 0;
@@ -39,7 +39,7 @@
   transform: rotateY(-90deg);
 }
 .ctn-preloader .animation-preloader .txt-loading .letters-loading {
-  color: rgba(13, 58, 98, 0.3);
+  color: rgba(0, 156, 57, 0.3);
   position: relative;
 }
 .ctn-preloader

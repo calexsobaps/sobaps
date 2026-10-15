@@ -8,14 +8,14 @@ include_once 'models/header.php';
 
     <div class="hero-section">
         <div class="hero-slider owl-carousel owl-theme">
-            <div class="hero-single" style="background-image: url(./assets/img/slider/coeur-sante.jpg)">
+            <div class="hero-single" style="background-image: url(./assets/img/slider/IMG_1687@mac15.jpg)">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-12 col-lg-12 text-center">
                             <div class="hero-content">
                                 <h1 class="hero-title wow animate__animated animate__fadeInUp"
                                     data-wow-duration="1s" data-wow-delay=".50s">
-                                    Société Béninoise <br>pour l’Approvisionnement <br>en<br><span>Produits de Santé</span>
+                                    Société Béninoise pour l’Approvisionnement en <span>Produits de Santé</span>
                                 </h1>
                             </div>
                         </div>
@@ -40,8 +40,8 @@ include_once 'models/header.php';
                 <div class="col-12 mb-4">
                     <div class="blog-single-wrapper">
                         <div class="blog-single-content">
-                            <div class="blog-thumb-img">
-                                <img src="./assets/img/slider/sobaps.jpg" alt="thumb">
+                            <div class="blog-thumb-img sb-cover">
+                                <img src="./assets/img/slider/sobaps.jpg" alt="Siège de la SoBAPS S.A">
                             </div>
                         </div>
                     </div>
@@ -180,16 +180,16 @@ include_once 'models/header.php';
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
+                <div class="col-lg-5">
                     <div class="blog-single-wrapper">
                         <div class="blog-single-content">
-                            <div class="blog-thumb-img">
-                                <img src="./assets/img/choose/dg.JPG" alt="thumb">
+                            <div class="blog-thumb-img sb-cover sb-cover-top">
+                                <img src="./assets/img/choose/dg.JPG" alt="Dr Dèhoumon Louis KOUKPEMEDJI, Directeur Général">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-lg-7">
                     <blockquote class="blockqoute">
                         Chers internautes et chers partenaires,
                         <br>
@@ -230,7 +230,7 @@ include_once 'models/header.php';
                     <div class="blog-single-wrapper">
                         <div class="blog-single-content">
                             <div class="blog-thumb-img">
-                                <img src="./assets/img/choose/rc.png" alt="thumb">
+                                <img src="./assets/img/choose/rc.png" alt="Organigramme de la SoBAPS S.A">
                             </div>
                         </div>
                     </div>

@@ -5,7 +5,7 @@ include_once 'models/header.php';
 $imagesDir = "photos/";
 $imagesPerPage = 21;
 
-$images = array_filter(scandir($imagesDir), function ($file) use ($imagesDir) {
+$images = array_filter(is_dir($imagesDir) ? scandir($imagesDir) : [], function ($file) use ($imagesDir) {
     return preg_match('/\.(jpg|jpeg|png|gif)$/i', $file) && is_file($imagesDir . $file);
 });
 
@@ -21,9 +21,9 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
 
 <main class="main">
 
-    <div class="site-breadcrumb" style="background: url(./assets/img/breadcrumb/L1004610-scaled.jpg)">
+    <div class="site-breadcrumb" style="background: url(./assets/img/slider/Image25.jpeg)">
         <div class="container">
-            <h2 class="breadcrumb-title">Photothèque</h2>
+            <h1 class="breadcrumb-title">Photo<span>thèque</span></h1>
             <ul class="breadcrumb-menu">
                 <li><a href="accueil"><i class="far fa-home"></i>&nbsp;Accueil</a></li>
                 <li class="active">Photothèque</li>
@@ -58,16 +58,19 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                             <div class="case-img">
                                 <img src="<?= $imagesDir . $img ?>"
                                     class="img-fluid"
+                                    alt="Photothèque SoBAPS S.A — photo <?= $start + $index + 1 ?>"
+                                    loading="lazy"
                                     data-index="<?= $index ?>"
                                     data-src="<?= $imagesDir . $img ?>"
                                     data-title="<?= htmlspecialchars($img) ?>">
-                                <a class="popup-img case-link" href="<?= $imagesDir . $img ?>">
+                                <a class="popup-img case-link" href="<?= $imagesDir . $img ?>" aria-label="Agrandir la photo <?= $start + $index + 1 ?>">
                                     <i class="far fa-camera"></i></a>
                             </div>
                         </div>
                     </div>
                 <?php endforeach; ?>
 
+                <?php if ($totalPages > 1): ?>
                 <div class="pagination-area">
                     <div aria-label="Page navigation example">
                         <ul class="pagination">
@@ -79,6 +82,7 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                         </ul>
                     </div>
                 </div>
+                <?php endif; ?>
 
 
             </div>

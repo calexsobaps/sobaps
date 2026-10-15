@@ -15,77 +15,36 @@ include_once 'models/header.php';
                             <div class="hero-content">
                                 <h1 class="hero-title wow animate__animated animate__fadeInUp"
                                     data-wow-duration="1s" data-wow-delay=".50s">
-                                    Critères <span>d'accès aux produits</span> <br>SoBAPS S.A
+                                    Critères <span>d'accès aux produits</span> SoBAPS&nbsp;S.A
                                 </h1>
+                                <div class="hero-btn">
+                                    <a class="theme-btn" href="#catalogue">Catalogue des prix <i class="far fa-arrow-down"></i></a>
+                                    <a class="theme-btn theme-btn2" href="#canevas">Canevas 2025 <i class="far fa-arrow-down"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="hero-single" style="background-image: url(./assets/img/slider/magas.jpg)">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-12 col-lg-12 text-center">
-                            <div class="hero-content">
-                                <h1 class="hero-title wow animate__animated animate__fadeInUp"
-                                    data-wow-duration="1s" data-wow-delay=".50s">
-                                    Catalogue des <span>Prix</span> <br>SoBAPS S.A
-                                </h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hero-single" style="background-image: url(./assets/img/slider/magas.jpg)">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-12 col-lg-12 text-center">
-                            <div class="hero-content">
-                                <h1 class="hero-title wow animate__animated animate__fadeInUp"
-                                    data-wow-duration="1s" data-wow-delay=".50s">
-                                    Politique de <span>Qualité</span> <br>SoBAPS S.A
-                                </h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hero-single" style="background-image: url(./assets/img/slider/magas.jpg)">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-12 col-lg-12 text-center">
-                            <div class="hero-content">
-                                <h1 class="hero-title wow animate__animated animate__fadeInUp"
-                                    data-wow-duration="1s" data-wow-delay=".50s">
-                                    Canevas de <span>Besoins</span> <br>SoBAPS S.A
-                                </h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 
     <div class="hero-section testimonial-area bg py-120">
-        <div class="hero-static">
+        <div class="hero-static" id="critere">
             <div class="hero-single">
                 <div class="container">
                     <div class="row align-items-center rows">
                         <div class="col-lg-12">
                             <div class="hero-content">
-                                <h6 class="hero-sub-title animate__ animate__fadeInUp animated" style="color: #009d3a !important">Note d'Information</h6>
-                                <h1 class="hero-title animate__animated animate__fadeInUp">
-                                    Critères d'accès <span>Aux produits de Santé</span> de la SoBAPS S.A
-                                </h1>
+                                <h6 class="hero-sub-title animate__ animate__fadeInUp animated">Note d'Information</h6>
+                                <h2 class="hero-title animate__animated animate__fadeInUp">
+                                    Critères d'accès <span>aux produits de santé</span> de la SoBAPS S.A
+                                </h2>
                                 <p class="animate__animated animate__fadeInUp about-text">
                                     Les spécificités de nos produits nous obligent à définir des critères obligatoires pour leur accès.
                                 </p>
                                 <div>
-                                    <a href="pdfs/CRITERES.pdf" target="_blank" class="theme-btn"><i class="far fa-download"></i>&ensp;Télécharger le document PDF</a>
+                                    <a href="pdfs/CRITERES.pdf" target="_blank" class="theme-btn">Télécharger le document PDF <i class="far fa-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -116,13 +75,13 @@ include_once 'models/header.php';
                         </div>
                         <div class="service-content">
                             <h3 class="service-title">
-                                <a href="#">CATALOGUE DE PRIX</a>
+                                <a href="pdfs/MEDICAMENTS.pdf" target="_blank">Médicaments et produits de santé humaine</a>
                             </h3>
                             <p class="service-text">
-                                DE CESSION MEDICAMENTS ET PRODUITS DE SANTE HUMAINE
+                                Catalogue des prix de cession, à télécharger au format PDF.
                             </p>
                             <div class="service-arrow">
-                                <a href="pdfs/MEDICAMENTS.pdf" target="_blank" class="theme-btn"><i class="far fa-download"></i>&ensp;Télécharger le PDF</a>
+                                <a href="pdfs/MEDICAMENTS.pdf" target="_blank" class="theme-btn">Télécharger le PDF <i class="far fa-download"></i></a>
                             </div>
                         </div>
                     </div>
@@ -134,13 +93,13 @@ include_once 'models/header.php';
                         </div>
                         <div class="service-content">
                             <h3 class="service-title">
-                                <a href="#">CATALOGUE DE PRIX</a>
+                                <a href="pdfs/OXY.pdf" target="_blank">Oxygène médical et accessoires</a>
                             </h3>
                             <p class="service-text">
-                                DE CESSION OXYGENE MEDICAL ET ACCESSOIRES
+                                Catalogue des prix de cession, à télécharger au format PDF.
                             </p>
                             <div class="service-arrow">
-                                <a href="pdfs/OXY.pdf" target="_blank" class="theme-btn"><i class="far fa-download"></i>&ensp;Télécharger le PDF</a>
+                                <a href="pdfs/OXY.pdf" target="_blank" class="theme-btn">Télécharger le PDF <i class="far fa-download"></i></a>
                             </div>
                         </div>
                     </div>
@@ -152,13 +111,13 @@ include_once 'models/header.php';
                         </div>
                         <div class="service-content">
                             <h3 class="service-title">
-                                <a href="#">CATALOGUE DE PRIX</a>
+                                <a href="pdfs/VET.pdf" target="_blank">Produits de santé animale</a>
                             </h3>
                             <p class="service-text">
-                                DE CESSION PRODUITS DE SANTE ANIMALE
+                                Catalogue des prix de cession, à télécharger au format PDF.
                             </p>
                             <div class="service-arrow">
-                                <a href="pdfs/VET.pdf" target="_blank" class="theme-btn"><i class="far fa-download"></i>&ensp;Télécharger le PDF</a>
+                                <a href="pdfs/VET.pdf" target="_blank" class="theme-btn">Télécharger le PDF <i class="far fa-download"></i></a>
                             </div>
                         </div>
                     </div>
@@ -346,21 +305,22 @@ include_once 'models/header.php';
     </div>
 
 
-    <div class="hero-section testimonial-area bg py-120" id="canevas">
+    <div class="hero-section sb-band-grey" id="canevas">
         <div class="hero-static">
             <div class="hero-single">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-12">
                             <div class="hero-content">
-                                <h4 class="hero-title animate__animated animate__fadeInUp">
-                                    <span>Canevas de Besoins</span> 2025
-                                </h4>
+                                <h6 class="hero-sub-title">Canevas de besoins</h6>
+                                <h2 class="hero-title animate__animated animate__fadeInUp">
+                                    <span>Canevas de besoins</span> 2025
+                                </h2>
                                 <p class="animate__animated animate__fadeInUp about-text">
                                     Notre canevas de besoins pour les produits de santé.
                                 </p>
                                 <div>
-                                    <a href="pdfs/CANEVAS_DE_BESOINS_2025.xlsx" target="_blank" class="theme-btn"><i class="far fa-download"></i>&ensp;Télécharger le document PDF</a>
+                                    <a href="pdfs/CANEVAS_DE_BESOINS_2025.xlsx" target="_blank" class="theme-btn">Télécharger le canevas (Excel) <i class="far fa-file-excel"></i></a>
                                 </div>
                             </div>
                         </div>

@@ -5,7 +5,7 @@ include_once 'models/header.php';
 $imagesDir = "cotonou/";
 $imagesPerPage = 9;
 
-$images = array_filter(scandir($imagesDir), function ($file) use ($imagesDir) {
+$images = array_filter(is_dir($imagesDir) ? scandir($imagesDir) : [], function ($file) use ($imagesDir) {
     return preg_match('/\.(jpg|jpeg|png|gif)$/i', $file) && is_file($imagesDir . $file);
 });
 
@@ -21,12 +21,12 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
 
 <main class="main">
 
-    <div class="site-breadcrumb" style="background: url(./assets/img/breadcrumb/localisation.jpg)">
+    <div class="site-breadcrumb" style="background: url(./assets/img/service/ag_cotonou.JPG)">
         <div class="container">
-            <h2 class="breadcrumb-title">Agence régionale de Cotonou</h2>
+            <h1 class="breadcrumb-title">Agence régionale de <span>Cotonou</span></h1>
             <ul class="breadcrumb-menu">
                 <li><a href="accueil"><i class="far fa-home"></i> Accueil</a></li>
-                <li class="active">Agence régionale de Cotonou</li>
+                <li class="active">Cotonou</li>
             </ul>
         </div>
     </div>
@@ -37,8 +37,8 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
             <div class="row rows">
                 <div class="col-lg-12">
                     <div class="site-heading text-center">
-                        <span class="site-title-tagline">SoBAPS S.A</span>
-                        <h2 class="site-title">Agence Régionale De<span>Cotonou</span></h2>
+                        <span class="site-title-tagline">Présentation</span>
+                        <h2 class="site-title">L’agence <span>en bref</span></h2>
                         <div class="heading-divider"></div>
                         <p>
                         </p>
@@ -51,17 +51,17 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                     <div class="item-gallery">
                         <div class="flexslider-thumbnails">
                             <ul class="slides">
-                                <li data-thumb="assets/img/service/ca1.jpg" rel="adjustX:10, adjustY:">
-                                    <img src="assets/img/service/ca1.jpg" alt="Agence Régionale de Cotonou">
+                                <li data-thumb="assets/img/service/ca1.JPG" rel="adjustX:10, adjustY:">
+                                    <img src="assets/img/service/ca1.JPG" alt="Agence Régionale de Cotonou">
                                 </li>
-                                <li data-thumb="assets/img/service/ca2.jpg">
-                                    <img src="assets/img/service/ca2.jpg" alt="Agence Régionale de Cotonou">
+                                <li data-thumb="assets/img/service/ca2.JPG">
+                                    <img src="assets/img/service/ca2.JPG" alt="Agence Régionale de Cotonou">
                                 </li>
-                                <li data-thumb="assets/img/service/ca3.jpg">
-                                    <img src="assets/img/service/ca3.jpg" alt="Agence Régionale de Cotonou">
+                                <li data-thumb="assets/img/service/ca3.JPG">
+                                    <img src="assets/img/service/ca3.JPG" alt="Agence Régionale de Cotonou">
                                 </li>
-                                <li data-thumb="assets/img/service/ca4.jpg">
-                                    <img src="assets/img/service/ca4.jpg" alt="Agence Régionale de Cotonou">
+                                <li data-thumb="assets/img/service/ca4.JPG">
+                                    <img src="assets/img/service/ca4.JPG" alt="Agence Régionale de Cotonou">
                                 </li>
                             </ul>
                         </div>
@@ -69,7 +69,7 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                 </div>
                 <div class="col-lg-6 mb-4">
                     <div class="single-item-info">
-                        <p class="mb-4" style="text-align: justify;">
+                        <p class="mb-4">
                             L’Agence régionale de Cotonou est l’agence principale de la SoBAPS S.A pour sa contribution au chiffre d’affaires (environ 75% des ventes).
                             <br>
                             Elle est basée dans l’enceinte du Ministère de la santé à PK3 Akpakpa.
@@ -78,7 +78,7 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                             <br>
                             Compte tenu du flux des opérations, elle dispose de deux postes de facturation, contrairement aux deux autres agences de la partie septentrionale.
                             <br>
-                            Proche des centres nationaux de référence ainsi que des agences et programmes spécifiques de lutte contre les affections prioritaires en République du Bénin, l’Agende de Cotonou a la particularité de détenir quelques intrants rares qui participent aux soins des populations des départements du sud et du centre.
+                            Proche des centres nationaux de référence ainsi que des agences et programmes spécifiques de lutte contre les affections prioritaires en République du Bénin, l’Agence de Cotonou a la particularité de détenir quelques intrants rares qui participent aux soins des populations des départements du sud et du centre.
                             <br>
                             Son effectif jeune d’une quarantaine d’agents, dynamiques, courtois et avenants saura donner satisfaction à vos besoins.
                         </p>
@@ -162,6 +162,7 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                                         </div>
                                     <?php endforeach; ?>
 
+                                    <?php if ($totalPages > 1): ?>
                                     <div class="pagination-area">
                                         <div aria-label="Page navigation example">
                                             <ul class="pagination">
@@ -173,6 +174,7 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                                             </ul>
                                         </div>
                                     </div>
+                                    <?php endif; ?>
 
 
                                 </div>

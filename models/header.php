@@ -18,10 +18,10 @@
                 <div class="header-top-right">
                     <div class="header-top-social">
                         <span>Suivez-nous:</span>
-                        <a href="https://web.facebook.com/sobaps/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://api.whatsapp.com/send/?phone=%2B22996863877&text&type=phone_number&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://www.linkedin.com/company/sobaps-sa/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.youtube.com/@SoBAPSSA" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://web.facebook.com/sobaps/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=%2B22996863877&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/company/sobaps-sa/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/@SoBAPSSA" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
@@ -105,8 +105,9 @@
 
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="accueil">
-                    <img src="assets/img/logo/logo_sobaps_white_v1.png" alt="SoBAPS S.A">
+                <a class="navbar-brand sb-brand" href="accueil" aria-label="SoBAPS S.A — Accueil">
+                    <img src="assets/img/logo/os.png" alt="SoBAPS" width="88" height="46">
+                    <span class="sb-brand-text">Société Béninoise pour<br>l’Approvisionnement en<br>Produits de Santé S.A</span>
                 </a>
 
                 <div class="mobile-menu-right">
@@ -133,7 +134,7 @@
                                 <li><a class="dropdown-item" href="sobaps#directeur">
                                         <i class="fas fa-comment-alt me-2"></i>Mot du Directeur Général
                                     </a></li>
-                                <li><a class="dropdown-item <?php if ($active == 'certificats') echo $color; ?>" href="certificats">
+                                <li><a class="dropdown-item" href="accueil#certifications">
                                         <i class="fas fa-certificate me-2"></i>Nos Certificats
                                     </a></li>
                                 <li><a class="dropdown-item" href="sobaps#organigramme">

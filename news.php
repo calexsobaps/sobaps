@@ -3,19 +3,11 @@ include_once 'models/head.php';
 include_once 'models/preloard.php';
 include_once 'models/header.php';
 ?>
-
-<style>
-    mark {
-        background-color: yellow;
-        font-weight: bold;
-    }
-</style>
-
 <main class="main">
 
-    <div class="site-breadcrumb" style="background: url(./assets/img/breadcrumb/nouvelle-1040x220.jpg)">
+    <div class="site-breadcrumb" style="background: url(./assets/img/slider/1751641210984.jpg)">
         <div class="container">
-            <h2 class="breadcrumb-title">Actualités</h2>
+            <h1 class="breadcrumb-title">Actualités</h1>
             <ul class="breadcrumb-menu">
                 <li><a href="accueil"><i class="far fa-home"></i>&nbsp;Accueil</a></li>
                 <li class="active">Actualités</li>
@@ -56,7 +48,7 @@ include_once 'models/header.php';
                                 <div class="blog-meta mt-4">
                                     <div class="blog-meta-left">
                                         <ul>
-                                            <li><i class="far fa-comments"></i>Publié le 09 Août 2025</li>
+                                            <li><i class="far fa-calendar-alt"></i>Publié le 09 Août 2025</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -69,7 +61,7 @@ include_once 'models/header.php';
                                         Sous le leadership éclairé du Ministre, le <b class="montexte">Professeur Benjamin HOUNKPATIN</b>, du Gouvernement et de son Chef, Son Excellence le <b class="montexte">Président Patrice TALON</b>, nous poursuivons notre action avec une détermination renouvelée. Nous leur exprimons notre profonde gratitude.
 
                                     </p>
-                                    <p class="text-end"><b style="font-weight: 800 !important;color: #000;" class="blockqoute-author">Dr Louis Dèhoumon KOUKPEMEDJI</b></p>
+                                    <p class="text-end"><b class="blockqoute-author d-inline-flex">Dr Louis Dèhoumon KOUKPEMEDJI</b></p>
                                     <hr>
                                 </div>
                             </div>
@@ -93,7 +85,7 @@ include_once 'models/header.php';
                                 <div class="blog-meta mt-4">
                                     <div class="blog-meta-left">
                                         <ul>
-                                            <li><i class="far fa-comments"></i>Publié le 09 Août 2025</li>
+                                            <li><i class="far fa-calendar-alt"></i>Publié le 09 Août 2025</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -136,7 +128,7 @@ include_once 'models/header.php';
                                 <div class="blog-meta mt-4">
                                     <div class="blog-meta-left">
                                         <ul>
-                                            <li><i class="far fa-comments"></i>Publié le 18 juillet 2025</li>
+                                            <li><i class="far fa-calendar-alt"></i>Publié le 18 juillet 2025</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -144,9 +136,9 @@ include_once 'models/header.php';
                                     <p class="mb-10">
                                         Dans le cadre de l’exécution de son plan de travail annuel, le Directeur Général de la SoBAPS S.A, Dr Louis Dèhoumon KOUKPEMEDJI, a effectué les 4, 8 et 10 juillet 2025 des missions de supervision administrative au sein des agences régionales de :
                                     <ul class="service-single-list" style="line-height:2;">
-                                        <li> <i class="fas fa-check-circle"></i> Cotonou</li>
-                                        <li> <i class="fas fa-check-circle"></i> Natitingou</li>
-                                        <li> <i class="fas fa-check-circle"></i> Parakou</li>
+                                        <li> <i class="far fa-check-circle"></i> Cotonou</li>
+                                        <li> <i class="far fa-check-circle"></i> Natitingou</li>
+                                        <li> <i class="far fa-check-circle"></i> Parakou</li>
                                     </ul>
 
                                     Accompagné de plusieurs directeurs techniques, le Directeur Général a saisi cette occasion pour rappeler aux équipes les grands objectifs de l’année 2025 et faire le point sur les performances atteintes à mi-parcours.
@@ -188,7 +180,7 @@ include_once 'models/header.php';
                                 <div class="blog-meta mt-4">
                                     <div class="blog-meta-left">
                                         <ul>
-                                            <li><i class="far fa-comments"></i>Publié le 17 juillet 2025</li>
+                                            <li><i class="far fa-calendar-alt"></i>Publié le 17 juillet 2025</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -229,7 +221,7 @@ include_once 'models/header.php';
                                 <div class="blog-meta mt-4">
                                     <div class="blog-meta-left">
                                         <ul>
-                                            <li><i class="far fa-comments"></i>Publié le 14 juillet 2025</li>
+                                            <li><i class="far fa-calendar-alt"></i>Publié le 14 juillet 2025</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -237,9 +229,9 @@ include_once 'models/header.php';
                                     <p class="mb-10">
                                         La Direction générale et tout le personnel , fortement engagés dans le processus de mise en place d'un système de management et d'amélioration continue de la qualité intégrant les exigences de conformité en référence aux normes
                                     <ul class="service-single-list">
-                                        <li> <i class="fas fa-certificate"></i> ISO 9001:2015 sur la qualité des prestations</li>
-                                        <li> <i class="fas fa-certificate"></i> ISO 14001 :2015 sur la protection de l'environnement</li>
-                                        <li> <i class="fas fa-certificate"></i> ISO 45001:2018 sur la santé et la sécurité au travail</li>
+                                        <li> <i class="far fa-check-circle"></i> ISO 9001:2015 sur la qualité des prestations</li>
+                                        <li> <i class="far fa-check-circle"></i> ISO 14001 :2015 sur la protection de l'environnement</li>
+                                        <li> <i class="far fa-check-circle"></i> ISO 45001:2018 sur la santé et la sécurité au travail</li>
                                     </ul>
 
 
@@ -277,7 +269,7 @@ include_once 'models/header.php';
                                 <div class="blog-meta mt-4">
                                     <div class="blog-meta-left">
                                         <ul>
-                                            <li><i class="far fa-comments"></i>Publié le 14 juillet 2025</li>
+                                            <li><i class="far fa-calendar-alt"></i>Publié le 14 juillet 2025</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -326,7 +318,7 @@ include_once 'models/header.php';
                                 <div class="blog-meta mt-4">
                                     <div class="blog-meta-left">
                                         <ul>
-                                            <li><i class="far fa-comments"></i>Publié le 20 juin 2025</li>
+                                            <li><i class="far fa-calendar-alt"></i>Publié le 20 juin 2025</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -382,7 +374,7 @@ include_once 'models/header.php';
                             <h5 class="widget-title">Rechercher</h5>
                             <div class="search-form">
                                 <input type="text" class="form-control" placeholder="Rechercher par mots-clés..." name="search" id="search" required>
-                                <button type="button"><i class="far fa-search"></i></button>
+                                <button type="button" aria-label="Rechercher"><i class="far fa-search"></i></button>
                             </div>
                         </div>
 
@@ -461,10 +453,10 @@ include_once 'models/header.php';
                         <div class="widget social-share">
                             <h5 class="widget-title">Suivez-nous</h5>
                             <div class="social-share-link">
-                                <a href="https://web.facebook.com/sobaps/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://api.whatsapp.com/send/?phone=%2B22996863877&text&type=phone_number&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                                <a href="https://www.linkedin.com/company/sobaps-sa/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="https://www.youtube.com/@SoBAPSSA" target="_blank"><i class="fab fa-youtube"></i></a>
+                                <a href="https://web.facebook.com/sobaps/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://api.whatsapp.com/send/?phone=%2B22996863877&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="https://www.linkedin.com/company/sobaps-sa/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.youtube.com/@SoBAPSSA" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                             </div>
                         </div>
 
@@ -512,13 +504,12 @@ include_once 'models/header.php';
                             </div>
                         </div>
 
-                        <div class="widget-banner mt-30 mb-50" style="background-image:url(assets/img/widget/tunis.jpg)">
-                            <div class="banner-content">
-                                <h3 style="font-size: 35px !important;">Le Forum Pharmaceutique International </h3>
-                                <hr>
-                                <h3> Rendez-vous exceptionnel à <span>Tunis</span></h3>
-                                <hr>
-                                <h3 style="font-size: 25px !important;text-align: center;">Du 01 et 02 Mai 2025</h3>
+                        <div class="sb-event">
+                            <img src="assets/img/widget/tunis.jpg" alt="Le Forum Pharmaceutique International à Tunis">
+                            <div class="sb-event-body">
+                                <span class="sb-event-tag"><i class="far fa-calendar-alt"></i> Du 01 au 02 mai 2025</span>
+                                <h3>Le Forum Pharmaceutique International</h3>
+                                <p>Rendez-vous exceptionnel à <span class="montexte">Tunis</span></p>
                             </div>
                         </div>
 
@@ -549,9 +540,9 @@ include_once 'models/header.php';
 
                                 Un véritable tremplin pour :
                             <ul class="service-single-list">
-                                <li><i class="fa fa-check-circle"></i>Renforcer les collaborations internationales,</li>
-                                <li><i class="fa fa-check-circle"></i>Mettre en avant les innovations pharmaceutiques,</li>
-                                <li><i class="fa fa-check-circle"></i>Promouvoir le développement durable dans le domaine de la santé,</li>
+                                <li><i class="far fa-check-circle"></i>Renforcer les collaborations internationales,</li>
+                                <li><i class="far fa-check-circle"></i>Mettre en avant les innovations pharmaceutiques,</li>
+                                <li><i class="far fa-check-circle"></i>Promouvoir le développement durable dans le domaine de la santé,</li>
                             </ul>
                             <br>
                             Ces Talks, ces conférences et présentations ont conforté les participants et les partenaires sur le rôle du pharmacien dans la mise en œuvre et l'exécution d'une couverture sanitaire universelle, donnant accès à des services de santé essentiels de qualité et à des médicaments essentiels, sûrs, efficaces, à coût abordable.

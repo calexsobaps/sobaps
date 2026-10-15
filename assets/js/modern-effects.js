@@ -58,12 +58,20 @@
        --------------------------------------------------------------- */
     var mainNav = document.querySelector(".main-navigation");
     var navbar = mainNav && mainNav.querySelector(".navbar");
+    var mainNavCollapse = document.getElementById("main_nav");
     function reserveNav() {
         if (!mainNav || !navbar || navbar.classList.contains("fixed-top")) return;
+        if (mainNavCollapse && mainNavCollapse.matches(".show, .collapsing")) return; // jamais mesurer le menu ouvert
         mainNav.style.minHeight = navbar.offsetHeight + "px";
     }
     reserveNav();
     window.addEventListener("resize", reserveNav);
+
+    if (mainNavCollapse) {
+        mainNavCollapse.addEventListener("show.bs.collapse", function () { document.documentElement.classList.add("sb-nav-open"); });
+        mainNavCollapse.addEventListener("hide.bs.collapse", function () { document.documentElement.classList.remove("sb-nav-open"); });
+        mainNavCollapse.addEventListener("hidden.bs.collapse", reserveNav);
+    }
 
     // Ferme le menu mobile après un clic sur un lien
     if (navbar) {
@@ -103,18 +111,23 @@
             .removeAttr("data-wow-duration data-wow-delay").css({ visibility: "", animationName: "" });
 
         $hero.trigger("destroy.owl.carousel");
+        // Photo dans un cadre arrondi, couleurs d'origine (aucun filtre)
         $hero.find(".hero-single").each(function () {
             var bg = this.style.backgroundImage;
             if (bg) {
                 var layer = el("div", "sb-hero-bg");
                 layer.style.backgroundImage = bg;
                 this.style.backgroundImage = "none";
-                this.insertBefore(layer, this.firstChild);
+                var holder = el("div", "sb-hero-media");
+                holder.appendChild(layer);
+                this.insertBefore(holder, this.firstChild);
             }
         });
 
         var total = $hero.find(".hero-single").length;
         var $section = $hero.closest(".hero-section");
+        $section.addClass("sb-hero-split");
+        if (total < 2) $section.addClass("sb-single");
         var counter = el("div", "sb-hero-counter", "<b>01</b><span>/ " + String(total).padStart(2, "0") + "</span>");
         var bar = el("div", "sb-hero-bar", "<i></i>");
         var cue = el("a", "sb-scroll-cue");
@@ -125,12 +138,23 @@
         if (next && !next.id) next.id = "sb-after-hero";
         bar.style.setProperty("--sb-slide-time", SLIDE_TIME + "ms");
 
+        var userPaused = false;
         function restartBar() {
             var i = bar.firstChild;
             i.classList.remove("run");
             void i.offsetWidth;
-            if (!reduceMotion) i.classList.add("run");
+            if (!reduceMotion && !userPaused && total > 1) i.classList.add("run");
         }
+
+        // Seule la diapositive visible est atteignable au clavier / lecteur d'écran
+        function syncSlidesA11y() {
+            $hero.find(".owl-item").each(function () {
+                var on = this.classList.contains("active");
+                this.inert = !on;
+                this.setAttribute("aria-hidden", on ? "false" : "true");
+            });
+        }
+        $hero.on("initialized.owl.carousel translated.owl.carousel refreshed.owl.carousel", syncSlidesA11y);
 
         $hero.on("initialized.owl.carousel changed.owl.carousel", function (e) {
             if (!e.namespace || !e.page) return;
@@ -141,11 +165,11 @@
 
         $hero.owlCarousel({
             items: 1,
-            loop: true,
+            loop: total > 1,
             margin: 0,
-            nav: true,
-            dots: true,
-            autoplay: !reduceMotion,
+            nav: total > 1,
+            dots: total > 1,
+            autoplay: !reduceMotion && total > 1,
             autoplayTimeout: SLIDE_TIME,
             autoplayHoverPause: false,
             smartSpeed: 900,
@@ -157,9 +181,20 @@
                 "<i class='fas fa-arrow-right'></i>"
             ]
         });
+        syncSlidesA11y();
+        $section.find(".owl-prev").attr("aria-label", "Diapositive précédente");
+        $section.find(".owl-next").attr("aria-label", "Diapositive suivante");
+        $section.find(".owl-dot").each(function (i) { this.setAttribute("aria-label", "Diapositive " + (i + 1)); });
+        $section.on("focusin", function () {
+            if (userPaused) return;
+            userPaused = true;
+            $hero.trigger("stop.owl.autoplay");
+            bar.firstChild.classList.remove("run");
+        });
 
         // Le slider se met en pause si l'onglet n'est pas visible
         document.addEventListener("visibilitychange", function () {
+            if (userPaused || total < 2) return;
             $hero.trigger(document.hidden ? "stop.owl.autoplay" : "play.owl.autoplay", [SLIDE_TIME]);
             if (!document.hidden) restartBar();
         });
@@ -173,18 +208,21 @@
             if (e.key === "ArrowLeft") $hero.trigger("prev.owl.carousel");
         });
 
-        // Léger parallaxe du contenu
-        if (!reduceMotion) {
-            window.addEventListener("scroll", function () {
-                var y = window.scrollY;
-                if (y > window.innerHeight) return;
-                $hero.find(".owl-item.active .hero-content").css({
-                    transform: "translate3d(0," + (y * 0.25) + "px,0)",
-                    opacity: Math.max(0, 1 - y / 700)
-                });
-            }, { passive: true });
-        }
     }
+
+    /* ---------------------------------------------------------------
+       4b. En-têtes de pages : la photo passe dans un cadre (couleurs d'origine)
+       --------------------------------------------------------------- */
+    document.querySelectorAll(".site-breadcrumb").forEach(function (n) {
+        var bg = n.style.backgroundImage;
+        if (!bg || bg === "none") return;
+        var media = el("div", "sb-page-media");
+        media.style.backgroundImage = bg;
+        media.setAttribute("aria-hidden", "true");
+        n.style.background = "";
+        n.insertBefore(media, n.firstChild);
+    });
+
 
     /* ---------------------------------------------------------------
        5. Révélation au scroll
@@ -194,7 +232,7 @@
         ".counter-box", ".case-item", ".blockqoute", ".about-left", ".about-right",
         ".about-list li", ".banner-thumb", ".banner-info", ".footer-widget-box",
         ".appointment-content", ".choose-content", ".hero-static .hero-content",
-        ".testimonial-slider", ".partner-wrapper"
+        ".testimonial-slider", ".partner-wrapper", ".sb-glossary-item", ".contact-info"
     ].join(",");
 
     var revealEls = Array.prototype.filter.call(document.querySelectorAll(revealSel), function (n) {
@@ -227,7 +265,7 @@
     }
 
     /* ---------------------------------------------------------------
-       6. Tilt 3D des cartes + halo qui suit le curseur (desktop)
+       6. Léger tilt 3D des cartes (desktop)
        --------------------------------------------------------------- */
     if (finePointer && !reduceMotion) {
         document.querySelectorAll(".service-item, .blog-item, .feature-item, .team-item, .case-item").forEach(function (card) {
@@ -240,7 +278,7 @@
                 cancelAnimationFrame(raf);
                 raf = requestAnimationFrame(function () {
                     card.style.transition = "transform .15s ease-out, box-shadow .6s";
-                    card.style.transform = "perspective(1000px) rotateX(" + (-y * 6) + "deg) rotateY(" + (x * 6) + "deg) translateY(-8px)";
+                    card.style.transform = "perspective(1200px) rotateX(" + (-y * 3) + "deg) rotateY(" + (x * 3) + "deg) translateY(-6px)";
                 });
             });
             card.addEventListener("mouseleave", function () {
@@ -250,20 +288,6 @@
             });
         });
 
-        var glow = el("div");
-        glow.id = "sb-glow";
-        document.body.appendChild(glow);
-        var gx = 0, gy = 0, tx = 0, ty = 0, glowOn = false;
-        window.addEventListener("mousemove", function (e) {
-            tx = e.clientX; ty = e.clientY;
-            if (!glowOn) { glowOn = true; glow.style.opacity = 1; loop(); }
-        }, { passive: true });
-        document.addEventListener("mouseleave", function () { glow.style.opacity = 0; });
-        function loop() {
-            gx += (tx - gx) * 0.12; gy += (ty - gy) * 0.12;
-            glow.style.transform = "translate3d(" + gx + "px," + gy + "px,0)";
-            requestAnimationFrame(loop);
-        }
     }
 
     /* ---------------------------------------------------------------
@@ -296,7 +320,7 @@
             var f = ov.querySelectorAll("button, a[href], [tabindex]:not([tabindex='-1'])");
             if (!f.length) return;
             var first = f[0], last = f[f.length - 1];
-            if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+            if (e.shiftKey && (document.activeElement === first || document.activeElement === ov.querySelector(".sb-modal"))) { e.preventDefault(); last.focus(); }
             else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
         }
     });
@@ -323,17 +347,18 @@
         ov.addEventListener("click", function (e) {
             if (e.target === ov || e.target.closest("[data-sb-close]")) closeOverlay(ov);
         });
+        ov.querySelector(".sb-modal").setAttribute("tabindex", "-1");
         if (!opts.image) ov.querySelector(".sb-modal").style.gridTemplateColumns = "1fr";
         return ov;
     }
     window.sbModal = function (opts) { var ov = makeModal(opts); openOverlay(ov); return ov; };
 
     // Popup de bienvenue (page d'accueil, une fois par session)
-    if ($hero.length) {
+    if ($hero.closest(".sb-hero-home").length) {
         var ss = storage("sessionStorage");
         var seen = ss && ss.getItem("sb-welcome");
         if (!seen) {
-            setTimeout(function () {
+            var showWelcome = function () {
                 if (document.querySelector(".sb-overlay.open")) return;
                 window.sbModal({
                     image: "assets/img/slider/OCE_3837.JPG",
@@ -347,6 +372,16 @@
                     ]
                 });
                 try { ss && ss.setItem("sb-welcome", "1"); } catch (e) { }
+            };
+            setTimeout(function () {
+                if (!/(^|;\s*)cookieConsent=/.test(document.cookie)) {
+                    ["btn-accept-all", "btn-decline-all"].forEach(function (id) {
+                        var b = document.getElementById(id);
+                        if (b) b.addEventListener("click", function () { setTimeout(showWelcome, 1200); }, { once: true });
+                    });
+                    return;
+                }
+                showWelcome();
             }, 4500);
         }
     }
@@ -384,6 +419,7 @@
             pre.onload = pre.onerror = function () {
                 if (items[idx] !== src) return;
                 img.src = src;
+                img.alt = "Photo " + (idx + 1) + " sur " + items.length;
                 spin.style.display = "none";
                 requestAnimationFrame(function () { img.classList.add("in"); });
             };
@@ -458,8 +494,8 @@
             (href.match(/vimeo\.com\/(\d+)/) ? "https://player.vimeo.com/video/" + RegExp.$1 + "?autoplay=1" : href);
         var ov = el("div", "sb-overlay sb-lightbox");
         ov.innerHTML =
-            '<div class="sb-lb-stage"><div style="width:min(1100px,92vw);aspect-ratio:16/9;border-radius:18px;overflow:hidden;box-shadow:0 40px 100px rgba(0,0,0,.6)">' +
-            '<iframe src="' + src + '" style="width:100%;height:100%;border:0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Vidéo"></iframe></div></div>' +
+            '<div class="sb-lb-stage"><div class="sb-lb-frame">' +
+            '<iframe src="' + src + '" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Vidéo"></iframe></div></div>' +
             '<button type="button" class="sb-lb-btn sb-lb-close" aria-label="Fermer"><i class="fas fa-times"></i></button>';
         ov.querySelector(".sb-lb-close").onclick = function () { closeOverlay(ov); };
         ov.querySelector(".sb-lb-stage").addEventListener("click", function (ev) { if (ev.target === this) closeOverlay(ov); });
@@ -493,5 +529,19 @@
         var timer = setTimeout(hide, ms);
         t.addEventListener("click", function () { clearTimeout(timer); hide(); });
     };
+
+    /* ---------------------------------------------------------------
+       11. Formulaires d'abonnement
+       --------------------------------------------------------------- */
+    document.querySelectorAll(".newsletter-form, .subscribe-form form").forEach(function (f) {
+        f.addEventListener("submit", function (e) {
+            e.preventDefault();
+            var i = f.querySelector("input[type=email]");
+            if (!i) return;
+            if (!i.value || !i.checkValidity()) { i.reportValidity(); return; }
+            window.location.href = "mailto:contact@sobaps.bj?subject=" + encodeURIComponent("Abonnement aux actualités SoBAPS") +
+                "&body=" + encodeURIComponent("Merci de m’inscrire avec l’adresse : " + i.value);
+        });
+    });
 
 })(jQuery);
