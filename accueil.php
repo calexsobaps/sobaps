@@ -5,6 +5,7 @@ include_once 'models/header.php';
 include_once 'function/mail.php';
 ?>
 <main class="main">
+    <h1 class="visually-hidden">SoBAPS S.A — Société Béninoise pour l’Approvisionnement en Produits de Santé</h1>
 
     <div class="hero-section sb-hero-home">
         <div class="hero-slider owl-carousel owl-theme">
@@ -13,18 +14,18 @@ include_once 'function/mail.php';
                     <div class="row align-items-center">
                         <div class="col-md-8 col-lg-8">
                             <div class="hero-content">
-                                <h6 class="hero-sub-title wow animate__animated animate__fadeInUp"
+                                <h6 role="none" class="hero-sub-title wow animate__animated animate__fadeInUp"
                                     data-wow-duration="1s" data-wow-delay=".25s">Grossiste pharmaceutique public · Bénin</h6>
-                                <h1 class="hero-title wow animate__animated animate__fadeInUp"
+                                <h2 class="hero-title wow animate__animated animate__fadeInUp"
                                     data-wow-duration="1s" data-wow-delay=".50s">
                                     Bienvenue à la <span>SoBAPS&nbsp;S.A</span> <br>Votre partenaire pour&nbsp;la&nbsp;santé
-                                </h1>
-                                <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                                </h2>
+                                <ul class="sb-checks wow animate__animated animate__fadeInUp" data-wow-duration="1s"
                                     data-wow-delay=".75s">
-                                    <span><i class="fa fa-check-circle"></i></span>&ensp;Votre partenaire de confiance en produits de santé
-                                    <br> <span><i class="fa fa-check-circle"></i></span>&ensp;Des solutions fiables pour une santé meilleure
-                                    <br> <span><i class="fa fa-check-circle"></i></span>&ensp;Nous sommes ici pour répondre à vos besoins en matière de santé
-                                </p>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i>Votre partenaire de confiance en produits de santé</li>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i>Des solutions fiables pour une santé meilleure</li>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i>Nous sommes ici pour répondre à vos besoins en matière de santé</li>
+                                </ul>
                                 <div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s"
                                     data-wow-delay="1s">
                                     <a href="contact" class="theme-btn">Contactez-nous<i
@@ -42,18 +43,18 @@ include_once 'function/mail.php';
                     <div class="row align-items-center">
                         <div class="col-md-8 col-lg-8">
                             <div class="hero-content">
-                                <h6 class="hero-sub-title wow animate__animated animate__fadeInUp"
+                                <h6 role="none" class="hero-sub-title wow animate__animated animate__fadeInUp"
                                     data-wow-duration="1s" data-wow-delay=".25s">Qualité &amp; durabilité</h6>
                                 <h2 class="hero-title wow animate__animated animate__fadeInUp"
                                     data-wow-duration="1s" data-wow-delay=".50s">
                                     Approvisionnement de <span>Qualité Certifiée</span><br>Et Durable
                                 </h2>
-                                <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                                <ul class="sb-checks wow animate__animated animate__fadeInUp" data-wow-duration="1s"
                                     data-wow-delay=".75s">
-                                    <span><i class="fa fa-check-circle"></i></span>&ensp;Fournir des produits de santé de qualité à nos clients pour une meilleure santé
-                                    <br> <span><i class="fa fa-check-circle"></i></span>&ensp;Le professionnalisme au service de vos besoins d’approvisionnement
-                                    <br> <span><i class="fa fa-check-circle"></i></span>&ensp;L'excellence au service de votre chaîne d'approvisionnement
-                                </p>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i>Fournir des produits de santé de qualité à nos clients pour une meilleure santé</li>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i>Le professionnalisme au service de vos besoins d’approvisionnement</li>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i>L'excellence au service de votre chaîne d'approvisionnement</li>
+                                </ul>
                                 <div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s"
                                     data-wow-delay="1s">
                                     <a href="contact" class="theme-btn">Contactez-nous<i
@@ -69,18 +70,18 @@ include_once 'function/mail.php';
                     <div class="row align-items-center">
                         <div class="col-md-8 col-lg-8">
                             <div class="hero-content">
-                                <h6 class="hero-sub-title wow animate__animated animate__fadeInUp"
+                                <h6 role="none" class="hero-sub-title wow animate__animated animate__fadeInUp"
                                     data-wow-duration="1s" data-wow-delay=".25s">Service client</h6>
                                 <h2 class="hero-title wow animate__animated animate__fadeInUp"
                                     data-wow-duration="1s" data-wow-delay=".50s">
                                     Un service client <span>Exceptionnel</span><br>et fiable
                                 </h2>
-                                <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                                <ul class="sb-checks wow animate__animated animate__fadeInUp" data-wow-duration="1s"
                                     data-wow-delay=".75s">
-                                    <span><i class="fa fa-check-circle"></i></span>&ensp;Engagés à soutenir nos partenaires avec des services personnalisés
-                                    <br> <span><i class="fa fa-check-circle"></i></span>&ensp;Plus qu’un service, une relation de confiance
-                                    <br> <span><i class="fa fa-check-circle"></i></span>&ensp;L’excellence relationnelle au cœur de notre engagement
-                                </p>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i>Engagés à soutenir nos partenaires avec des services personnalisés</li>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i>Plus qu’un service, une relation de confiance</li>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i>L’excellence relationnelle au cœur de notre engagement</li>
+                                </ul>
                                 <div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s"
                                     data-wow-delay="1s">
                                     <a href="contact" class="theme-btn">Contactez-nous<i
@@ -96,18 +97,18 @@ include_once 'function/mail.php';
                     <div class="row align-items-center">
                         <div class="col-md-8 col-lg-8">
                             <div class="hero-content">
-                                <h6 class="hero-sub-title wow animate__animated animate__fadeInUp"
+                                <h6 role="none" class="hero-sub-title wow animate__animated animate__fadeInUp"
                                     data-wow-duration="1s" data-wow-delay=".25s">Certifications internationales</h6>
                                 <h2 class="hero-title wow animate__animated animate__fadeInUp"
                                     data-wow-duration="1s" data-wow-delay=".50s">
                                     SoBAPS S.A, <span>triplement</span> certifiée
                                 </h2>
-                                <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                                <ul class="sb-checks wow animate__animated animate__fadeInUp" data-wow-duration="1s"
                                     data-wow-delay=".75s">
-                                    <span><i class="fa fa-check-circle"></i></span>&ensp;ISO 9001 : 2015 — Management de la qualité
-                                    <br> <span><i class="fa fa-check-circle"></i></span>&ensp;ISO 45001 : 2018 — Santé et sécurité au travail
-                                    <br> <span><i class="fa fa-check-circle"></i></span>&ensp;ISO 14001 : 2015 — Management environnemental
-                                </p>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i>ISO 9001 : 2015 — Management de la qualité</li>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i>ISO 45001 : 2018 — Santé et sécurité au travail</li>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i>ISO 14001 : 2015 — Management environnemental</li>
+                                </ul>
                                 <div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s"
                                     data-wow-delay="1s">
                                     <a href="contact" class="theme-btn">Contactez-nous<i
@@ -138,7 +139,7 @@ include_once 'function/mail.php';
                         </div>
                         <div class="about-experience">
                             <span style="font-size: 20px;"><i class="fa fa-home"></i></span>
-                            <h5>Siège<br> SoBAPS S.A</h5>
+                            <h5 role="none">Siège<br> SoBAPS S.A</h5>
                         </div>
                     </div>
                 </div>
@@ -295,7 +296,7 @@ include_once 'function/mail.php';
                     <div class="row align-items-center">
                         <div class="col-lg-12">
                             <div class="hero-content">
-                                <h6 class="hero-sub-title animate__ animate__fadeInUp animated">Renforcement de capacités</h6>
+                                <h6 role="none" class="hero-sub-title animate__ animate__fadeInUp animated">Renforcement de capacités</h6>
                                 <h2 class="hero-title animate__animated animate__fadeInUp">
                                     Investir dans <span> l'Humain</span> pour mieux servir la <span>Santé Publique</span>
                                 </h2>
@@ -321,7 +322,7 @@ include_once 'function/mail.php';
                         <div class="icon"><i class="fa fa-users"></i></div>
                         <div>
                             <span class="counter" data-count="+" data-to="150" data-speed="1000">150</span>
-                            <h6 class="title">+ Employés</h6>
+                            <h6 role="none" class="title">+ Employés</h6>
                         </div>
                     </div>
                 </div>
@@ -330,7 +331,7 @@ include_once 'function/mail.php';
                         <div class="icon"><i class="fa fa-handshake"></i></div>
                         <div>
                             <span class="counter" data-count="+" data-to="10" data-speed="1000">10</span>
-                            <h6 class="title">+ Partenaires</h6>
+                            <h6 role="none" class="title">+ Partenaires</h6>
                         </div>
                     </div>
                 </div>
@@ -339,7 +340,7 @@ include_once 'function/mail.php';
                         <div class="icon"><i class="fa fa-user-tie"></i></div>
                         <div>
                             <span class="counter" data-count="+" data-to="20" data-speed="1000">20</span>
-                            <h6 class="title">+ Experts</h6>
+                            <h6 role="none" class="title">+ Experts</h6>
                         </div>
                     </div>
                 </div>
@@ -348,7 +349,7 @@ include_once 'function/mail.php';
                         <div class="icon"><i class="fa fa-sm fa-home"></i></div>
                         <div>
                             <span class="counter" data-count="+" data-to="03" data-speed="1000">03</span>
-                            <h6 class="title">Agences</h6>
+                            <h6 role="none" class="title">Agences</h6>
                         </div>
                     </div>
                 </div>
@@ -577,7 +578,7 @@ include_once 'function/mail.php';
                 <div class="col-12 mb-2">
                     <blockquote class="blockqoute sb-quote-lg">
                         La vision de la SoBAPS S.A est d’être à l’horizon 2028, une société pharmaceutique de référence, bien gouvernée, résiliente et au rayonnement sous-régional assurant la disponibilité permanente des produits de santé de qualité et financièrement accessibles aux populations.
-                        <h6 class="blockqoute-author">Dr Dèhoumon Louis KOUKPEMEDJI</h6>
+                        <h6 role="none" class="blockqoute-author">Dr Dèhoumon Louis KOUKPEMEDJI</h6>
                     </blockquote>
                 </div>
             </div>
@@ -592,7 +593,7 @@ include_once 'function/mail.php';
                     <div class="row align-items-center">
                         <div class="col-md-8 col-lg-8">
                             <div class="hero-content">
-                                <h6 class="hero-sub-title">Notre engagement</h6>
+                                <h6 role="none" class="hero-sub-title">Notre engagement</h6>
                                 <h2 class="hero-title animate__animated animate__fadeInUp">
                                     L’engagement <span>Fort</span> de la SoBAPS S.A pour la <span>Santé au Bénin</span>
                                 </h2>
@@ -709,7 +710,7 @@ include_once 'function/mail.php';
                         <img src="./assets/img/team/dg.png" alt="Dr. Dèhoumon Louis KOUKPEMEDJI">
                         <div class="team-content">
                             <div class="team-bio">
-                                <h6><a class="text-white" href="sobaps#directeur">Dr. Dèhoumon Louis KOUKPEMEDJI</a></h6>
+                                <h3><a class="text-white" href="sobaps#directeur">Dr. Dèhoumon Louis KOUKPEMEDJI</a></h3>
                                 <span>Directeur Général</span>
                             </div>
                         </div>
@@ -724,7 +725,7 @@ include_once 'function/mail.php';
                             <img src="<?php echo $c['img']; ?>" alt="<?php echo $c['nom']; ?>">
                             <div class="team-content">
                                 <div class="team-bio">
-                                    <h6><?php echo $c['nom']; ?></h6>
+                                    <h3><?php echo $c['nom']; ?></h3>
                                     <span><?php echo isset($roles[$c['poste']]) ? $roles[$c['poste']] : $c['poste']; ?></span>
                                 </div>
                             </div>

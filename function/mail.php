@@ -73,7 +73,7 @@ function MonMail($token)
                 return;
             }
             var button = document.getElementById("envoyer");
-            if (button) button.disabled = true;
+            if (button) { button.disabled = true; button.setAttribute("aria-busy", "true"); }
 
             $.ajax({
                 type: "POST",
@@ -92,7 +92,7 @@ function MonMail($token)
                     notify("Envoi impossible", message, "error");
                 },
                 complete: function() {
-                    if (button) button.disabled = false;
+                    if (button) { button.disabled = false; button.removeAttribute("aria-busy"); }
                 }
             });
         });

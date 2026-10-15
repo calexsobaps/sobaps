@@ -373,7 +373,7 @@ include_once 'models/header.php';
                         <div class="widget search">
                             <h5 class="widget-title">Rechercher</h5>
                             <div class="search-form">
-                                <input type="text" class="form-control" placeholder="Rechercher par mots-clés..." name="search" id="search" required>
+                                <input type="text" class="form-control" placeholder="Rechercher par mots-clés..." name="search" id="search" aria-label="Rechercher dans les actualités" required>
                                 <button type="button" aria-label="Rechercher"><i class="far fa-search"></i></button>
                             </div>
                         </div>
@@ -382,7 +382,7 @@ include_once 'models/header.php';
                             <h5 class="widget-title">Posts récents</h5>
                             <div class="recent-post-single">
                                 <div class="recent-post-img">
-                                    <img src="./assets/img/recipe/lettre.jpg" alt="thumb">
+                                    <img src="./assets/img/recipe/lettre.jpg" alt="">
                                 </div>
                                 <div class="recent-post-bio">
                                     <h6><a href="#postdg"> Reconnaissance ministérielle</a></h6>
@@ -392,7 +392,7 @@ include_once 'models/header.php';
 
                             <div class="recent-post-single">
                                 <div class="recent-post-img">
-                                    <img src="./assets/img/recipe/para2.jpg" alt="thumb">
+                                    <img src="./assets/img/recipe/para2.jpg" alt="">
                                 </div>
                                 <div class="recent-post-bio">
                                     <h6><a href="#postap">Focus Métier sur l'approvisionnement </a></h6>
@@ -402,7 +402,7 @@ include_once 'models/header.php';
 
                             <div class="recent-post-single">
                                 <div class="recent-post-img">
-                                    <img src="./assets/img/recipe/3j.jpg" alt="thumb">
+                                    <img src="./assets/img/recipe/3j.jpg" alt="">
                                 </div>
                                 <div class="recent-post-bio">
                                     <h6><a href="#post1">Supervision administrative ...</a></h6>
@@ -411,7 +411,7 @@ include_once 'models/header.php';
                             </div>
                             <div class="recent-post-single">
                                 <div class="recent-post-img">
-                                    <img src="./assets/img/recipe/4j.jpg" alt="thumb">
+                                    <img src="./assets/img/recipe/4j.jpg" alt="">
                                 </div>
                                 <div class="recent-post-bio">
                                     <h6><a href="#post2">Session immersive sur l’identification...</a></h6>
@@ -420,7 +420,7 @@ include_once 'models/header.php';
                             </div>
                             <div class="recent-post-single">
                                 <div class="recent-post-img">
-                                    <img src="./assets/img/recipe/1s.jpg" alt="thumb">
+                                    <img src="./assets/img/recipe/1s.jpg" alt="">
                                 </div>
                                 <div class="recent-post-bio">
                                     <h6><a href="#post3">Pour une SoBAPS S.A plus performante</a></h6>
@@ -429,7 +429,7 @@ include_once 'models/header.php';
                             </div>
                             <div class="recent-post-single">
                                 <div class="recent-post-img">
-                                    <img src="./assets/img/recipe/2S.jpg" alt="thumb">
+                                    <img src="./assets/img/recipe/2S.jpg" alt="">
                                 </div>
                                 <div class="recent-post-bio">
                                     <h6><a href="#post4">Formation adressée à l'équipe de la SoBAPS S.A</a></h6>
@@ -440,7 +440,7 @@ include_once 'models/header.php';
 
                             <div class="recent-post-single">
                                 <div class="recent-post-img">
-                                    <img src="./assets/img/recipe/1m1.jpg" alt="thumb">
+                                    <img src="./assets/img/recipe/1m1.jpg" alt="">
                                 </div>
                                 <div class="recent-post-bio">
                                     <h6><a href="#post5">La SoBAPS S.A renforce les compétences de ses équipes</a></h6>
@@ -485,22 +485,22 @@ include_once 'models/header.php';
                         <div class="widget sidebar-tag">
                             <h5 class="widget-title">Tags</h5>
                             <div class="tag-list">
-                                <a href="javascript:void(0)">SoBAPS S.A</a>
-                                <a href="javascript:void(0)">Produit de Santé</a>
-                                <a href="javascript:void(0)">Approvisionnement</a>
-                                <a href="javascript:void(0)">Distribution</a>
-                                <a href="javascript:void(0)">Santé Benin</a>
-                                <a href="javascript:void(0)">Amélioration Continue</a>
-                                <a href="javascript:void(0)">Agences Regionales</a>
-                                <a href="javascript:void(0)">Formation Professionnelle</a>
-                                <a href="javascript:void(0)">ACAME</a>
-                                <a href="javascript:void(0)">Développement Durable</a>
-                                <a href="javascript:void(0)">Partenariat Stratégique</a>
-                                <a href="javascript:void(0)">Afrique</a>
-                                <a href="javascript:void(0)">Renforcement de Capacités</a>
-                                <a href="javascript:void(0)">ISO 9001:2015</a>
-                                <a href="javascript:void(0)">ISO 14001:2015</a>
-                                <a href="javascript:void(0)">ISO 45001:2018</a>
+                                <span>SoBAPS S.A</span>
+                                <span>Produit de Santé</span>
+                                <span>Approvisionnement</span>
+                                <span>Distribution</span>
+                                <span>Santé Benin</span>
+                                <span>Amélioration Continue</span>
+                                <span>Agences Regionales</span>
+                                <span>Formation Professionnelle</span>
+                                <span>ACAME</span>
+                                <span>Développement Durable</span>
+                                <span>Partenariat Stratégique</span>
+                                <span>Afrique</span>
+                                <span>Renforcement de Capacités</span>
+                                <span>ISO 9001:2015</span>
+                                <span>ISO 14001:2015</span>
+                                <span>ISO 45001:2018</span>
                             </div>
                         </div>
 
@@ -608,37 +608,34 @@ include_once 'models/header.php';
 </main>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        event.preventDefault();
         const searchInput = document.getElementById('search');
-
+        if (!searchInput) return;
+        const paragraphs = Array.from(document.querySelectorAll('.main p'));
+        const originals = paragraphs.map(p => p.innerHTML);
         searchInput.addEventListener('input', function() {
-            const searchTerm = searchInput.value.trim().toLowerCase();
-            const mainDiv = document.querySelector('.main');
-            const paragraphs = mainDiv.querySelectorAll('p');
-
+            const term = searchInput.value.trim();
+            paragraphs.forEach((p, i) => { p.innerHTML = originals[i]; });
+            if (term === '') return;
+            const rx = new RegExp('(' + term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'i');
+            let first = null;
             paragraphs.forEach(p => {
-                p.innerHTML = p.textContent;
+                const walker = document.createTreeWalker(p, NodeFilter.SHOW_TEXT);
+                const nodes = [];
+                while (walker.nextNode()) nodes.push(walker.currentNode);
+                nodes.forEach(node => {
+                    const parts = node.data.split(rx);
+                    if (parts.length < 2) return;
+                    const frag = document.createDocumentFragment();
+                    parts.forEach((part, k) => {
+                        if (!part) return;
+                        if (k % 2) { const m = document.createElement('mark'); m.textContent = part; frag.appendChild(m); }
+                        else frag.appendChild(document.createTextNode(part));
+                    });
+                    node.replaceWith(frag);
+                    if (!first) first = p;
+                });
             });
-
-            if (searchTerm === '') return;
-
-            let found = false;
-
-            paragraphs.forEach(p => {
-                const text = p.textContent.toLowerCase();
-                if (text.includes(searchTerm)) {
-                    const regex = new RegExp(`(${searchTerm})`, 'gi');
-                    p.innerHTML = p.textContent.replace(regex, '<mark>$1</mark>');
-
-                    if (!found) {
-                        p.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'center'
-                        });
-                        found = true;
-                    }
-                }
-            });
+            if (first) first.scrollIntoView({ behavior: 'smooth', block: 'center' });
         });
     });
 </script>

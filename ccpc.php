@@ -15,7 +15,7 @@ include_once 'models/header.php';
                             <div class="hero-content">
                                 <h1 class="hero-title wow animate__animated animate__fadeInUp"
                                     data-wow-duration="1s" data-wow-delay=".50s">
-                                    Critères <span>d'accès aux produits</span> SoBAPS&nbsp;S.A
+                                    Nos <span>produits</span> de santé
                                 </h1>
                                 <div class="hero-btn">
                                     <a class="theme-btn" href="#catalogue">Catalogue des prix <i class="far fa-arrow-down"></i></a>
@@ -36,7 +36,7 @@ include_once 'models/header.php';
                     <div class="row align-items-center rows">
                         <div class="col-lg-12">
                             <div class="hero-content">
-                                <h6 class="hero-sub-title animate__ animate__fadeInUp animated">Note d'Information</h6>
+                                <h6 role="none" class="hero-sub-title animate__ animate__fadeInUp animated">Note d'Information</h6>
                                 <h2 class="hero-title animate__animated animate__fadeInUp">
                                     Critères d'accès <span>aux produits de santé</span> de la SoBAPS S.A
                                 </h2>
@@ -312,7 +312,7 @@ include_once 'models/header.php';
                     <div class="row align-items-center">
                         <div class="col-lg-12">
                             <div class="hero-content">
-                                <h6 class="hero-sub-title">Canevas de besoins</h6>
+                                <h6 role="none" class="hero-sub-title">Téléchargement</h6>
                                 <h2 class="hero-title animate__animated animate__fadeInUp">
                                     <span>Canevas de besoins</span> 2025
                                 </h2>

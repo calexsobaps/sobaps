@@ -85,7 +85,7 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                     </div>
                 </div>
                 <hr>
-                <div class="col-md-4 mb-4 mt-5">
+                <div class="col-lg-4 mb-4 mt-4 mt-lg-5">
                     <div class="contact-content">
 
                         <div class="contact-info">
@@ -93,7 +93,7 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                                 <i class="fal fa-phone"></i>
                             </div>
                             <div class="contact-info-content">
-                                <h5>Téléphone 1</h5>
+                                <h3>Téléphone 1</h3>
                                 <p><a href="tel:+2290191484040">+229 01 91 48 40 40</a></p>
                             </div>
                         </div>
@@ -102,7 +102,7 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                                 <i class="fal fa-phone"></i>
                             </div>
                             <div class="contact-info-content">
-                                <h5>Téléphone 2</h5>
+                                <h3>Téléphone 2</h3>
                                 <p><a href="tel:+2290199430303">+229 01 99 43 03 03</a></p>
                             </div>
                         </div>
@@ -111,7 +111,7 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                                 <i class="fal fa-envelope"></i>
                             </div>
                             <div class="contact-info-content">
-                                <h5>Email</h5>
+                                <h3>Email</h3>
                                 <p><a href="mailto:cotonou@soaps.bj">cotonou@soaps.bj</a></p>
                             </div>
                         </div>
@@ -120,13 +120,13 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                                 <i class="fal fa-clock"></i>
                             </div>
                             <div class="contact-info-content">
-                                <h5>Horaires d'ouverture</h5>
+                                <h3>Horaires d'ouverture</h3>
                                 <p>Lun - Dim (08h - 18h)</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8 mt-5">
+                <div class="col-lg-8 mt-lg-5">
                     <div class="contact-map" style="margin-top: 0px !important;">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7930.468048079724!2d2.461690013669344!3d6.363751534701071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103caad412560cef%3A0x9d9339e0fd16818f!2sAgence%20R%C3%A9gionale%20SoBAPS%20Cotonou!5e0!3m2!1sfr!2sbj!4v1701698249111!5m2!1sfr!2sbj"

@@ -50,7 +50,7 @@ include_once 'function/mail.php';
                                             <i class="fal fa-map-marker-alt"></i>
                                         </div>
                                         <div class="contact-info-content">
-                                            <h5>Direction Générale</h5>
+                                            <h3>Direction Générale</h3>
                                             <p> Quartier Enagnon-Cotonou,<br>01 BP 3280 RP Cotonou-Bénin</p>
                                         </div>
                                     </div>
@@ -59,7 +59,7 @@ include_once 'function/mail.php';
                                             <i class="fal fa-phone"></i>
                                         </div>
                                         <div class="contact-info-content">
-                                            <h5>Téléphone</h5>
+                                            <h3>Téléphone</h3>
                                             <p><a href="tel:+2290195773232">(+229) 01 95 77 32 32</a><br><a href="tel:+2290167043333">(+229) 01 67 04 33 33</a></p>
                                         </div>
                                     </div>
@@ -68,7 +68,7 @@ include_once 'function/mail.php';
                                             <i class="fal fa-envelope"></i>
                                         </div>
                                         <div class="contact-info-content">
-                                            <h5>Email</h5>
+                                            <h3>Email</h3>
                                             <p><a href="mailto:contact@sobaps.bj">contact@sobaps.bj</a></p>
                                         </div>
                                     </div>
@@ -77,7 +77,7 @@ include_once 'function/mail.php';
                                             <i class="fal fa-clock"></i>
                                         </div>
                                         <div class="contact-info-content">
-                                            <h5>Horaires d'ouverture</h5>
+                                            <h3>Horaires d'ouverture</h3>
                                             <p>Lun - Ven (08h - 17h-30)</p>
                                         </div>
                                     </div>
