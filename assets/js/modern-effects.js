@@ -103,24 +103,23 @@
             .removeAttr("data-wow-duration data-wow-delay").css({ visibility: "", animationName: "" });
 
         $hero.trigger("destroy.owl.carousel");
-        var isHome = $hero.closest(".sb-hero-home").length > 0;
+        // Photo dans un cadre arrondi, couleurs d'origine (aucun filtre)
         $hero.find(".hero-single").each(function () {
             var bg = this.style.backgroundImage;
             if (bg) {
                 var layer = el("div", "sb-hero-bg");
                 layer.style.backgroundImage = bg;
                 this.style.backgroundImage = "none";
-                var holder = layer;
-                if (isHome) {
-                    holder = el("div", "sb-hero-media");
-                    holder.appendChild(layer);
-                }
+                var holder = el("div", "sb-hero-media");
+                holder.appendChild(layer);
                 this.insertBefore(holder, this.firstChild);
             }
         });
 
         var total = $hero.find(".hero-single").length;
         var $section = $hero.closest(".hero-section");
+        $section.addClass("sb-hero-split");
+        if (total < 2) $section.addClass("sb-single");
         var counter = el("div", "sb-hero-counter", "<b>01</b><span>/ " + String(total).padStart(2, "0") + "</span>");
         var bar = el("div", "sb-hero-bar", "<i></i>");
         var cue = el("a", "sb-scroll-cue");
@@ -147,11 +146,11 @@
 
         $hero.owlCarousel({
             items: 1,
-            loop: true,
+            loop: total > 1,
             margin: 0,
-            nav: true,
-            dots: true,
-            autoplay: !reduceMotion,
+            nav: total > 1,
+            dots: total > 1,
+            autoplay: !reduceMotion && total > 1,
             autoplayTimeout: SLIDE_TIME,
             autoplayHoverPause: false,
             smartSpeed: 900,
@@ -193,16 +192,27 @@
     }
 
     /* ---------------------------------------------------------------
-       4b. Bandeaux photo en duotone vert / blanc
+       4b. En-têtes de pages : la photo passe dans un cadre (couleurs d'origine)
        --------------------------------------------------------------- */
-    document.querySelectorAll(".site-breadcrumb, .coming-soon, .widget-banner").forEach(function (n) {
-        var bg = getComputedStyle(n).backgroundImage;
+    document.querySelectorAll(".site-breadcrumb").forEach(function (n) {
+        var bg = n.style.backgroundImage;
         if (!bg || bg === "none") return;
-        var layer = el("div", "sb-duo");
-        layer.style.backgroundImage = bg;
-        n.insertBefore(layer, n.firstChild);
-        n.classList.add("sb-has-duo");
+        var media = el("div", "sb-page-media");
+        media.style.backgroundImage = bg;
+        media.setAttribute("aria-hidden", "true");
+        n.style.background = "";
+        n.insertBefore(media, n.firstChild);
     });
+
+    // Compte à rebours terminé : on masque les compteurs à zéro
+    var countdown = document.getElementById("countdown");
+    if (countdown) {
+        setTimeout(function () {
+            var nums = countdown.querySelectorAll("h2");
+            var done = nums.length && Array.prototype.every.call(nums, function (h) { return h.textContent.trim() === "0"; });
+            if (done) countdown.style.display = "none";
+        }, 1500);
+    }
 
     /* ---------------------------------------------------------------
        5. Révélation au scroll
@@ -315,7 +325,7 @@
         }).join("");
         ov.innerHTML =
             '<div class="sb-modal">' +
-            (opts.image ? '<div class="sb-modal-media sb-has-duo"><div class="sb-duo" style="background-image:url(\'' + opts.image + '\')"></div>' +
+            (opts.image ? '<div class="sb-modal-media" style="background-image:url(\'' + opts.image + '\')">' +
                 (opts.badge ? '<div class="sb-badge">' + opts.badge + '</div>' : '') + '</div>' : '') +
             '<div class="sb-modal-body">' +
             (opts.eyebrow ? '<div class="sb-eyebrow">' + opts.eyebrow + '</div>' : '') +

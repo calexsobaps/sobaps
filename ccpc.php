@@ -346,7 +346,7 @@ include_once 'models/header.php';
     </div>
 
 
-    <div class="hero-section testimonial-area bg py-120" id="canevas">
+    <div class="hero-section sb-band-grey" id="canevas">
         <div class="hero-static">
             <div class="hero-single">
                 <div class="container">

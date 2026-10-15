@@ -504,13 +504,12 @@ include_once 'models/header.php';
                             </div>
                         </div>
 
-                        <div class="widget-banner mt-30 mb-50" style="background-image:url(assets/img/widget/tunis.jpg)">
-                            <div class="banner-content">
-                                <h3 style="font-size: 35px !important;">Le Forum Pharmaceutique International </h3>
-                                <hr>
-                                <h3> Rendez-vous exceptionnel à <span>Tunis</span></h3>
-                                <hr>
-                                <h3 style="font-size: 25px !important;text-align: center;">Du 01 et 02 Mai 2025</h3>
+                        <div class="sb-event">
+                            <img src="assets/img/widget/tunis.jpg" alt="Le Forum Pharmaceutique International à Tunis">
+                            <div class="sb-event-body">
+                                <span class="sb-event-tag"><i class="far fa-calendar-alt"></i> Du 01 au 02 mai 2025</span>
+                                <h3>Le Forum Pharmaceutique International</h3>
+                                <p>Rendez-vous exceptionnel à <span class="montexte">Tunis</span></p>
                             </div>
                         </div>
 

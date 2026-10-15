@@ -19,16 +19,6 @@
     </div>
 </div>
 
-<!-- Filtre « monochrome vert » : transforme logos et pictogrammes en #009c39 (le blanc devient transparent) -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-    <filter id="sb-mono" color-interpolation-filters="sRGB">
-        <feColorMatrix type="matrix" values="0 0 0 0 0
-                                             0 0 0 0 0.6118
-                                             0 0 0 0 0.2235
-                                             -0.2126 -0.7152 -0.0722 1 0" />
-    </filter>
-</svg>
-
 <footer class="footer-area">
     <div class="footer-widget">
         <div class="container">
