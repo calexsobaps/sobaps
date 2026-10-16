@@ -129,7 +129,7 @@
             <div class="container">
                 <a class="navbar-brand sb-brand" href="accueil" aria-label="SoBAPS S.A — Accueil">
                     <img src="assets/img/logo/os.png" alt="SoBAPS" width="88" height="46">
-                    <span class="sb-brand-text">Société Béninoise pour<br>l’Approvisionnement en<br>Produits de Santé S.A</span>
+                    <span class="sb-brand-text">Société Béninoise pour<br>l’Approvisionnement en<br>Produits de Santé</span>
                 </a>
 
                 <div class="mobile-menu-right">

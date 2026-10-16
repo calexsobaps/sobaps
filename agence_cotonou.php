@@ -135,7 +135,7 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                 </div>
 
 
-                <div class="single-item-details">
+                <!-- <div class="single-item-details">
                     <nav>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
                             <button class="nav-link active" id="nav-tab1" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">Photos</button>
@@ -182,7 +182,7 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                         </div>
 
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>

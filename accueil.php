@@ -101,7 +101,7 @@ include_once 'function/mail.php';
                                     data-wow-duration="1s" data-wow-delay=".25s">Certifications internationales</h6>
                                 <h2 class="hero-title wow animate__animated animate__fadeInUp"
                                     data-wow-duration="1s" data-wow-delay=".50s">
-                                    SoBAPS S.A, <span>triplement</span> certifiée
+                                    SoBAPS S.A, <span>Triplement</span> certifiée
                                 </h2>
                                 <ul class="sb-checks wow animate__animated animate__fadeInUp" data-wow-duration="1s"
                                     data-wow-delay=".75s">
@@ -297,10 +297,10 @@ include_once 'function/mail.php';
                         <div class="col-lg-12">
                             <div class="hero-content">
                                 <h6 role="none" class="hero-sub-title animate__ animate__fadeInUp animated">Renforcement de capacités</h6>
-                                <h2 class="hero-title animate__animated animate__fadeInUp">
+                                <h2 class="hero-title animate__animated animate__fadeInUp text-center">
                                     Investir dans <span> l'Humain</span> pour mieux servir la <span>Santé Publique</span>
                                 </h2>
-                                <p class="animate__animated animate__fadeInUp about-text">
+                                <p class="animate__animated animate__fadeInUp about-text text-center">
                                     Une chaîne d’approvisionnement forte repose sur des hommes et des femmes bien formés.
                                     Ainsi, la SOBAPS S.A développe continuellement les compétences de son personnel grâce à <b>des formations certifiantes</b> et <b>des mises à niveau sur des normes ISO</b>
 
@@ -321,7 +321,7 @@ include_once 'function/mail.php';
                     <div class="counter-box">
                         <div class="icon"><i class="fa fa-users"></i></div>
                         <div>
-                            <span class="counter" data-count="+" data-to="150" data-speed="1000">150</span>
+                            <span class="counter" data-count="+" data-to="110" data-speed="1000">110</span>
                             <h6 role="none" class="title">+ Employés</h6>
                         </div>
                     </div>
@@ -470,7 +470,7 @@ include_once 'function/mail.php';
                             <h3 class="service-title">
                                 <a href="agence_cotonou">Agence régionale de Cotonou</a>
                             </h3>
-                            <p class="service-text">
+                            <p class="service-text text-justify">
                                 Elle est proche des centres nationaux de référence ainsi que des agences et programmes spécifiques de lutte contre les affections prioritaires au Bénin.
                             </p>
                             <div class="service-arrow">
@@ -491,7 +491,7 @@ include_once 'function/mail.php';
                             <h3 class="service-title">
                                 <a href="agence_parakou">Agence régionale de Parakou</a>
                             </h3>
-                            <p class="service-text">
+                            <p class="service-text text-justify">
                                 Une agence régionale à Parakou qui est un relais clé dans la partie nord-est du Bénin ainsi que quelques formations sanitaires de la région du centre-nord
                             </p>
                             <div class="service-arrow">
@@ -512,7 +512,7 @@ include_once 'function/mail.php';
                             <h3 class="service-title">
                                 <a href="agence_natitingou">Agence régionale de Natitingou</a>
                             </h3>
-                            <p class="service-text">
+                            <p class="service-text text-justify">
                                 La SoBAPS S.A dispose une agence régionale à Natitingou qui constitue un point d’appui essentiel pour desservir la partie nord-ouest du Bénin.
                             </p>
                             <div class="service-arrow">
@@ -531,9 +531,9 @@ include_once 'function/mail.php';
                 <div class="col-lg-6">
                     <div class="choose-content">
                         <div class="site-heading">
-                            <span class="site-title-tagline text-white">Mot du Directeur</span>
-                            <h2 class="site-title text-white mb-10">Dr Dèhoumon Louis KOUKPEMEDJI</h2>
-                            <p class="text-white font-weight-bold mb-4">
+                            <span class="site-title-tagline text-white">Mot du Directeur Général par intérim</span>
+                            <h2 class="site-title text-white mb-10">Dr. Gedéon MELSAH</h2>
+                            <p class="text-white font-weight-bold mb-4 text-justify">
                                 Chers internautes et chers partenaires,<br>
                                 En ma qualité de Directeur Général de la Société Béninoise pour l’Approvisionnement en Produits de Santé (SoBAPS) S.A, je suis heureux de vous souhaiter, à l’occasion de ce 04 septembre 2024 marquant le quatrième anniversaire du démarrage des activités de votre société, la bienvenue sur notre site web, une vitrine qui se veut être une plateforme d’échanges et d’information. <br>
                                 Créée par <b>décret n°2020-324 du 24 juin 2020</b>, la SoBAPS S.A est une société grossiste pharmaceutique publique qui a pour <strong>mission l’achat, le stockage et la distribution de produits de santé de qualité à un coût accessible aux populations</strong>.
@@ -576,9 +576,9 @@ include_once 'function/mail.php';
             </div>
             <div class="row">
                 <div class="col-12 mb-2">
-                    <blockquote class="blockqoute sb-quote-lg">
+                    <blockquote class="blockqoute sb-quote-lg text-justify">
                         La vision de la SoBAPS S.A est d’être à l’horizon 2028, une société pharmaceutique de référence, bien gouvernée, résiliente et au rayonnement sous-régional assurant la disponibilité permanente des produits de santé de qualité et financièrement accessibles aux populations.
-                        <h6 role="none" class="blockqoute-author">Dr Dèhoumon Louis KOUKPEMEDJI</h6>
+                        <h6 role="none" class="blockqoute-author">Dr Gedéon MELSAH</h6>
                     </blockquote>
                 </div>
             </div>
@@ -597,7 +597,7 @@ include_once 'function/mail.php';
                                 <h2 class="hero-title animate__animated animate__fadeInUp">
                                     L’engagement <span>Fort</span> de la SoBAPS S.A pour la <span>Santé au Bénin</span>
                                 </h2>
-                                <p class="animate__animated animate__fadeInUp">
+                                <p class="animate__animated animate__fadeInUp text-justify">
                                     La SoBAPS S.A place l’accès aux médicaments essentiels au cœur de sa mission, en adoptant une démarche stratégique et rigoureuse. Elle œuvre chaque jour pour assurer aux structures sanitaires béninoises un approvisionnement fiable, équitable et sécurisé, au service du bien-être des populations.
 
                                 </p>
@@ -668,8 +668,8 @@ include_once 'function/mail.php';
             $codir = array(
                 ["poste" => "C/DE", "nom" => "Mr. Gedéon MELSAH", "img" => "./assets/img/team/de.png", "link" => "#"],
                 ["poste" => "C/DC", "nom" => "Dr. Constantin GOUASSANGNI", "img" => "./assets/img/team/dc.jpg", "link" => "#"],
-                ["poste" => "C/CJ", "nom" => "Mme. Rose KOUDJO", "img" => "./assets/img/team/cj.png", "link" => "#"],
-                ["poste" => "C/DAF", "nom" => "Mr. Raymon DJOKPE", "img" => "./assets/img/team/daf.jpg", "link" => "#"],
+                ["poste" => "C/CJ", "nom" => "Poste à pourvoir", "img" => "", "link" => "#"],
+                ["poste" => "C/DAF", "nom" => "Mr. Joseph Dieudonné ZINVOEDO", "img" => "", "link" => "#"],
                 ["poste" => "CST", "nom" => "Mr. Félicien DOSSOU", "img" => "./assets/img/team/cst.png", "link" => "#"],
                 ["poste" => "C/PRMP", "nom" => "Mr. Léopold AFFEDJOU", "img" => "./assets/img/team/prmp.png", "link" => "#"],
                 ["poste" => "C/CSI", "nom" => "Mr. Hyacinthe TOKOU", "img" => "./assets/img/team/csi.jpg", "link" => "#"],
@@ -683,35 +683,35 @@ include_once 'function/mail.php';
             ?>
 
             <?php
-                        $motcle = array(
-                            "DG" => "Directeur Général (DG)",
-                            "C/DE" => "Chef Cellule de la Direction de l'Exploitation (C/DE)",
-                            "C/DC" => "Chef Cellule de la Direction Commerciale (C/DC)",
-                            "C/DAF" => "Chef Cellule de l'Administration des Finances (C/DAF)",
-                            "CST" => "Chef Service Trésorerie (CST)",
-                            "C/CSI" => "Chef Cellule des Systèmes d'Information (C/CSI)",
-                            "C/RM" => "Chef Cellule du Management des Risques (C/RM)",
-                            "C/CAQMI" => "Chef Cellule de l'Assurance Qualité et du Management Intégré (C/CAQMI)",
-                            "C/CJ" => "Chef Cellule Juridique (C/CJ)",
-                            "C/PRMP" => "Chef Cellule des Personnes Responsables des Marchés Publics (C/PRMP)",
-                            "R/RPSE" => "Responsable à la Planification et au Suivi-Evaluation (R/RPSE)",
-                        );
+            $motcle = array(
+                "DG" => "Directeur Général (DG)",
+                "C/DE" => "Directeur de l'Exploitation (C/DE)",
+                "C/DC" => "Directeur Commerciale (C/DC)",
+                "C/DAF" => "Directeur de l'Administration et des Finances (C/DAF)",
+                "CST" => "Chef Service Trésorerie (CST)",
+                "C/CSI" => "Chef Cellule des Systèmes d'Information (C/CSI)",
+                "C/RM" => "Risk Manager (C/RM)",
+                "C/CAQMI" => "Chef Cellule de l'Assurance Qualité et du Management Intégré (C/CAQMI)",
+                "C/CJ" => "Chef Cellule Juridique (C/CJ)",
+                "C/PRMP" => "Personne Responsable des Marchés Publics (C/PRMP)",
+                "R/RPSE" => "Responsable à la Planification et au Suivi-Evaluation (R/RPSE)",
+            );
             ?>
             <?php
-                        $roles = array();
-                        foreach ($motcle as $k => $l) {
-                            $roles[$k] = trim(preg_replace('/\s*\([^)]*\)\s*$/', '', $l));
-                        }
+            $roles = array();
+            foreach ($motcle as $k => $l) {
+                $roles[$k] = trim(preg_replace('/\s*\([^)]*\)\s*$/', '', $l));
+            }
             ?>
 
             <div class="row justify-content-center sb-codir">
                 <div class="col-8 col-md-4 col-lg-3">
                     <div class="team-item sb-team-lead">
-                        <img src="./assets/img/team/dg.png" alt="Dr. Dèhoumon Louis KOUKPEMEDJI">
+                        <img src="./assets/img/team/de.png" alt="Dr. Gedéon MELSAH">
                         <div class="team-content">
                             <div class="team-bio">
-                                <h3><a class="text-white" href="sobaps#directeur">Dr. Dèhoumon Louis KOUKPEMEDJI</a></h3>
-                                <span>Directeur Général</span>
+                                <h3><a class="text-white" href="sobaps#directeur">Dr. Gedéon MELSAH</a></h3>
+                                <span>Directeur Général par intérim</span>
                             </div>
                         </div>
                     </div>
@@ -748,7 +748,7 @@ include_once 'function/mail.php';
                         <span class="site-title-tagline">Ensemble, pour un meilleur accès aux produits de santé</span>
                         <h2 class="site-title">Nos <span>Partenaires</span> Stratégiques</h2>
                         <div class="heading-divider"></div>
-                        <p class="about-text">La SoBAPS S.A. exprime sa profonde gratitude à l’ensemble de ses partenaires et collaborateurs pour leur engagement constant à nos côtés.
+                        <p class="about-text text-center">La SoBAPS S.A. exprime sa profonde gratitude à l’ensemble de ses partenaires et collaborateurs pour leur engagement constant à nos côtés.
                             <br>
                             Grâce à votre confiance, votre appui technique et votre collaboration active, nous poursuivons chaque jour notre mission : <span class="montexte">garantir un accès équitable, Sécurisé et Durable aux produits de santé essentiels au Bénin</span>.
                             <br>

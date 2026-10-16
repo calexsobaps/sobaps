@@ -8,7 +8,7 @@ include_once 'models/header.php';
 
     <div class="hero-section">
         <div class="hero-slider owl-carousel owl-theme">
-            <div class="hero-single" style="background-image: url(./assets/img/slider/IMG_1687@mac15.jpg)">
+            <div class="hero-single" style="background-image: url(./assets/img/slider/sobaps.jpg)">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-12 col-lg-12 text-center">
@@ -51,13 +51,13 @@ include_once 'models/header.php';
                         <div class="site-heading mb-3">
                             <h2 class="site-title my-3">Présentation de la SoBAPS S.A</h2>
                         </div>
-                        <p class="about-text">
+                        <p class="about-text text-justify">
                             Créée par décret <span class="montexte">n°2020-324 du 24 juin 2020</span>, la Société Béninoise pour l’Approvisionnement en Produits de Santé (SoBAPS S.A) a démarré ses activités le <span class="montexte">04 septembre 2020</span>
                             <br>Sa création résulte d’une série de réformes opérées dans le secteur de la santé.
                             <br>
                             La SoBAPS S.A est une initiative de l’Etat béninois, actionnaire unique. Elle est une société anonyme unipersonnelle, sans recours public à l’épargne, régie par les lois et règlements en vigueur en République du Bénin, notamment <span class="montexte">loi 2020-20 du 02 septembre 2020</span> portant création, organisation et fonctionnement des entreprises publiques en République du Bénin. D’un capital social de <span class="montexte">11 872 380 000 FCFA</span>, la société a pour objet l'approvisionnement, le stockage et la distribution en gros de produits de santé, en veillant à assurer une cession desdits produits à un prix accessible aux populations.
                         </p>
-                        <p class="about-text mt-4">
+                        <p class="about-text text-justify mt-4">
                             <span class="montexte">La SoBAPS S.A est implantée sur quatre sites</span> à savoir : un siège sis au quartier Enagnon Akpakpa et trois agences régionales dont une à Cotonou (enceinte du Ministère de la Santé), une à Parakou (non loin du Centre de santé Parakou) et une à Natitingou (enceinte de la Direction départementale de la santé de l’Atacora) à partir desquelles elle dessert l’ensemble des formations sanitaires publiques et privées sans but lucratif. La SoBAPS S.A continue de travailler à la maîtrise des nouvelles activités qui lui sont assignées, à savoir :
                             <br>
                             <span class="fw-bold">Les produits chimiques, les intrants vétérinaires, les réactifs et consommables de laboratoires.</span>
@@ -173,8 +173,8 @@ include_once 'models/header.php';
             <div class="row">
                 <div class="col-lg-12 mb-4">
                     <div class="site-heading">
-                        <span class="site-title-tagline">Mot du Directeur Général</span>
-                        <h2 class="site-title">Dr Dèhoumon Louis <span>KOUKPEMEDJI</span></h2>
+                        <span class="site-title-tagline">Mot du Directeur Général par intérim</span>
+                        <h2 class="site-title">Dr Gedéon <span>MELSAH</span></h2>
                         <div class="heading-divider"></div>
                     </div>
                 </div>
@@ -184,13 +184,13 @@ include_once 'models/header.php';
                     <div class="blog-single-wrapper">
                         <div class="blog-single-content">
                             <div class="blog-thumb-img sb-cover sb-cover-top">
-                                <img src="./assets/img/choose/dg.JPG" alt="Dr Dèhoumon Louis KOUKPEMEDJI, Directeur Général">
+                                <img src="./assets/img/team/de.png" alt="Dr Gedéon MELSAH, Directeur Général">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <blockquote class="blockqoute">
+                    <blockquote class="blockqoute text-justify">
                         Chers internautes et chers partenaires,
                         <br>
                         En ma qualité de Directeur Général de la Société Béninoise pour l’Approvisionnement en Produits de Santé (SoBAPS) S.A, je suis heureux de vous souhaiter, à l’occasion de ce 04 septembre 2024 marquant le quatrième anniversaire du démarrage des activités de votre société, la bienvenue sur notre site web, une vitrine qui se veut être une plateforme d’échanges et d’information.
