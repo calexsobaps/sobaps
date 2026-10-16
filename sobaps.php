@@ -206,7 +206,7 @@ include_once 'models/header.php';
                         Chers internautes et visiteurs, je vous invite à vous approprier tous les contours de ce site, qui vous permettra entre autres, de découvrir l’actualité de la société, de vous faire connaître les avis d’appels d’offres, les informations sur les produits distribués ainsi que les opportunités que la société offre. N’hésitez pas à nous remonter toutes vos préoccupations et observations à travers notre rubrique dédiée.
                         <br><br>
                         Ensemble, engageons-nous pour le renforcement et la résilience du système de santé au Bénin. <br>
-                        <h6 role="none" class="blockqoute-author">Dr Dèhoumon Louis KOUKPEMEDJI</h6>
+                        <h6 role="none" class="blockqoute-author">Dr Gedéon MELSAH</h6>
                     </blockquote>
                 </div>
             </div>
@@ -230,7 +230,7 @@ include_once 'models/header.php';
                     <div class="blog-single-wrapper">
                         <div class="blog-single-content">
                             <div class="blog-thumb-img">
-                                <a href="./assets/img/choose/rc.png" target="_blank" rel="noopener" aria-label="Ouvrir l’organigramme en grand (nouvel onglet)" style="display:block;cursor:zoom-in"><img src="./assets/img/choose/rc.png" alt="Organigramme de la SoBAPS S.A"></a>
+                                <a href="./assets/img/choose/organigramme.png" target="_blank" rel="noopener" aria-label="Ouvrir l’organigramme en grand (nouvel onglet)" style="display:block;cursor:zoom-in"><img src="./assets/img/choose/organigramme.png" alt="Organigramme de la SoBAPS S.A"></a>
                             </div>
                             <p class="d-lg-none text-center small mb-0">Touchez l’organigramme pour l’ouvrir en grand.</p>
                         </div>

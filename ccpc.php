@@ -19,7 +19,7 @@ include_once 'models/header.php';
                                 </h1>
                                 <div class="hero-btn">
                                     <a class="theme-btn" href="#catalogue">Catalogue des prix <i class="far fa-arrow-down"></i></a>
-                                    <a class="theme-btn theme-btn2" href="#canevas">Canevas 2025 <i class="far fa-arrow-down"></i></a>
+                                    <a class="theme-btn theme-btn2" href="#canevas">Canevas <?php echo date('Y'); ?> <i class="far fa-arrow-down"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -40,7 +40,7 @@ include_once 'models/header.php';
                                 <h2 class="hero-title animate__animated animate__fadeInUp">
                                     Critères d'accès <span>aux produits de santé</span> de la SoBAPS S.A
                                 </h2>
-                                <p class="animate__animated animate__fadeInUp about-text">
+                                <p class="animate__animated animate__fadeInUp about-text text-center">
                                     Les spécificités de nos produits nous obligent à définir des critères obligatoires pour leur accès.
                                 </p>
                                 <div>
@@ -150,7 +150,7 @@ include_once 'models/header.php';
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show"
                             aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
+                            <div class="accordion-body text-justify">
                                 L’Assurance Qualité consiste à garantir et à préserver la qualité du produit médical depuis la fabrication jusqu’à l’utilisateur final qu’est la population. La recherche de la qualité stricto sensu étant une préoccupation majeure pour la SoBAPS S.A, un Département chargé de l’Approvisionnement, et de la Logistique (DAL) dirigé par un Pharmacien a été créée à la Direction Générale depuis 2006. Par la suite un Département spécifique à l’Assurance Qualité directement rattaché à la Direction Générale a été créé en 2012.
                                 <br>
                                 S’il est vrai que le contrôle de qualité constitue un élément important dans l’assurance qualité, il ne permet cependant pas à lui seul d’assurer la qualité d’un produit.
@@ -206,7 +206,7 @@ include_once 'models/header.php';
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse"
                             aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
+                            <div class="accordion-body text-justify">
                                 <h4 class="mt-4">3.1 Personnel et responsabilité</h4> <br>
                                 Toutes les fonctions liées à la gestion de la qualité des produits médicaux à la SoBAPS S.A sont assurées par des pharmaciens : tout pharmacien veille au respect des bonnes pratiques des achats, stockage et distribution. Cependant, le pharmacien responsable Assurance Qualité joue un rôle prépondérant dans la mise en œuvre de la politique qualité. Sous la responsabilité du Directeur Général, il est chargé de définir, mettre en place et organiser l’ensemble des activités permettant de garantir le maintien de la qualité des produits médicaux approvisionnés, stockés et distribués par la SoBAPS S.A.
                                 <br>
@@ -314,7 +314,7 @@ include_once 'models/header.php';
                             <div class="hero-content">
                                 <h6 role="none" class="hero-sub-title">Téléchargement</h6>
                                 <h2 class="hero-title animate__animated animate__fadeInUp">
-                                    <span>Canevas de besoins</span> 2025
+                                    <span>Canevas de besoins</span> <?php echo date('Y'); ?>
                                 </h2>
                                 <p class="animate__animated animate__fadeInUp about-text">
                                     Notre canevas de besoins pour les produits de santé.

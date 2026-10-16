@@ -3591,7 +3591,7 @@ button.navbar-toggler {
   color: var(--sb-text) !important;
   font-size: 16.5px;
   line-height: 1.9;
-  text-align: left !important;
+  text-align: justify !important;
 }
 .shop-item-single .row > hr {
   display: none;

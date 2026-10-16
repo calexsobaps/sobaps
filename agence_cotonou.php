@@ -69,7 +69,7 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                 </div>
                 <div class="col-lg-6 mb-4">
                     <div class="single-item-info">
-                        <p class="mb-4">
+                        <p class="mb-4 text-justify">
                             L’Agence régionale de Cotonou est l’agence principale de la SoBAPS S.A pour sa contribution au chiffre d’affaires (environ 75% des ventes).
                             <br>
                             Elle est basée dans l’enceinte du Ministère de la santé à PK3 Akpakpa.
