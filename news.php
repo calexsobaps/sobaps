@@ -29,7 +29,7 @@ include_once 'models/header.php';
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 mb-3">
+                <div class="col-lg-8 mb-3 text-justify">
 
                     <div class="blog-single-wrapper">
                         <h3 class="blog-details-title mb-20" id="postdg">Reconnaissance ministérielle <br><span class="montexte">Un encouragement à poursuivre notre mission</span></br>

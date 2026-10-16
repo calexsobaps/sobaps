@@ -12,7 +12,7 @@ include_once 'models/header.php';
                     <span class="site-title-tagline">Publications</span>
                     <h1 class="sb-soon-title">Appels d’offres <span>&amp;</span> offres d’emploi</h1>
                     <p class="lead">Retrouvez bientôt ici toutes nos opportunités de collaboration pour renforcer ensemble la chaîne d’approvisionnement en produits de santé au Bénin.</p>
-                    <?php if (time() < strtotime("2025-11-30")): ?><div id="countdown" class="countdown-wrap my-4"></div><?php endif; ?>
+                    <?php if (time() < strtotime(date('Y-m-d'))): ?><div id="countdown" class="countdown-wrap my-4"></div><?php endif; ?>
                     <form class="newsletter-form">
                         <input type="email" class="input-newsletter form-control" placeholder="Entrez un mail valide"
                             name="email" autocomplete="off" id="email" aria-label="Votre email" required>
@@ -27,7 +27,7 @@ include_once 'models/header.php';
                 </div>
                 <div class="col-lg-6">
                     <div class="sb-soon-media">
-                        <img src="./assets/img/slider/slider_p.JPG" alt="Équipes de la SoBAPS S.A en magasin">
+                        <img src="./assets/img/slider/offre.png" alt="Offres d'emploi et appels d'offres">
                     </div>
                 </div>
             </div>

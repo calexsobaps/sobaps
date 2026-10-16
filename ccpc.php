@@ -8,7 +8,7 @@ include_once 'models/header.php';
 
     <div class="hero-section">
         <div class="hero-slider owl-carousel owl-theme">
-            <div class="hero-single" style="background-image: url(./assets/img/slider/magas.jpg)">
+            <div class="hero-single" style="background-image: url(./assets/img/slider/ccpc.png)">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-12 col-lg-12 text-center">
@@ -19,7 +19,7 @@ include_once 'models/header.php';
                                 </h1>
                                 <div class="hero-btn">
                                     <a class="theme-btn" href="#catalogue">Catalogue des prix <i class="far fa-arrow-down"></i></a>
-                                    <a class="theme-btn theme-btn2" href="#canevas">Canevas <?php echo date('Y'); ?> <i class="far fa-arrow-down"></i></a>
+                                    <!-- <a class="theme-btn theme-btn2" href="#canevas">Canevas <?php echo date('Y'); ?> <i class="far fa-arrow-down"></i></a> -->
                                 </div>
                             </div>
                         </div>
@@ -75,13 +75,14 @@ include_once 'models/header.php';
                         </div>
                         <div class="service-content">
                             <h3 class="service-title">
-                                <a href="pdfs/MEDICAMENTS.pdf" target="_blank">Médicaments et produits de santé humaine</a>
+                                <a href="javascript:void(0);" target="_self">Médicaments et produits de santé humaine</a>
                             </h3>
                             <p class="service-text">
                                 Catalogue des prix de cession, à télécharger au format PDF.
                             </p>
                             <div class="service-arrow">
-                                <a href="pdfs/MEDICAMENTS.pdf" target="_blank" class="theme-btn">Télécharger le PDF <i class="far fa-download"></i></a>
+                                <!-- <a href="pdfs/MEDICAMENTS.pdf" target="_blank" class="theme-btn">Télécharger le PDF <i class="far fa-download"></i></a> -->
+                                <a href="javascript:void(0);" target="_self" class="theme-btn">Bientôt disponible</a>
                             </div>
                         </div>
                     </div>
@@ -93,13 +94,14 @@ include_once 'models/header.php';
                         </div>
                         <div class="service-content">
                             <h3 class="service-title">
-                                <a href="pdfs/OXY.pdf" target="_blank">Oxygène médical et accessoires</a>
+                                <a href="javascript:void(0);" target="_self">Oxygène médical et accessoires</a>
                             </h3>
                             <p class="service-text">
                                 Catalogue des prix de cession, à télécharger au format PDF.
                             </p>
                             <div class="service-arrow">
-                                <a href="pdfs/OXY.pdf" target="_blank" class="theme-btn">Télécharger le PDF <i class="far fa-download"></i></a>
+                                <!-- <a href="pdfs/OXY.pdf" target="_blank" class="theme-btn">Télécharger le PDF <i class="far fa-download"></i></a> -->
+                                <a href="javascript:void(0);" target="_self" class="theme-btn">Bientôt disponible</a>
                             </div>
                         </div>
                     </div>
@@ -111,13 +113,14 @@ include_once 'models/header.php';
                         </div>
                         <div class="service-content">
                             <h3 class="service-title">
-                                <a href="pdfs/VET.pdf" target="_blank">Produits de santé animale</a>
+                                <a href="javascript:void(0);" target="_self">Produits de santé animale</a>
                             </h3>
                             <p class="service-text">
                                 Catalogue des prix de cession, à télécharger au format PDF.
                             </p>
                             <div class="service-arrow">
-                                <a href="pdfs/VET.pdf" target="_blank" class="theme-btn">Télécharger le PDF <i class="far fa-download"></i></a>
+                                <!-- <a href="pdfs/VET.pdf" target="_blank" class="theme-btn">Télécharger le PDF <i class="far fa-download"></i></a> -->
+                                <a href="javascript:void(0);" target="_self" class="theme-btn">Bientôt disponible</a>
                             </div>
                         </div>
                     </div>
@@ -305,7 +308,7 @@ include_once 'models/header.php';
     </div>
 
 
-    <div class="hero-section sb-band-grey" id="canevas">
+    <!-- <div class="hero-section sb-band-grey" id="canevas">
         <div class="hero-static">
             <div class="hero-single">
                 <div class="container">
@@ -328,7 +331,7 @@ include_once 'models/header.php';
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 </main>
 <?php

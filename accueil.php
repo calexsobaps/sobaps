@@ -317,7 +317,7 @@ include_once 'function/mail.php';
     <div class="counter-area pt-70 pb-70">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-4 col-sm-6">
                     <div class="counter-box">
                         <div class="icon"><i class="fa fa-users"></i></div>
                         <div>
@@ -326,7 +326,7 @@ include_once 'function/mail.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-4 col-sm-6">
                     <div class="counter-box">
                         <div class="icon"><i class="fa fa-handshake"></i></div>
                         <div>
@@ -335,7 +335,7 @@ include_once 'function/mail.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
+                <!-- <div class="col-lg-4 col-sm-6">
                     <div class="counter-box">
                         <div class="icon"><i class="fa fa-user-tie"></i></div>
                         <div>
@@ -343,7 +343,7 @@ include_once 'function/mail.php';
                             <h6 role="none" class="title">+ Experts</h6>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-lg-3 col-sm-6">
                     <div class="counter-box">
                         <div class="icon"><i class="fa fa-sm fa-home"></i></div>
@@ -604,7 +604,7 @@ include_once 'function/mail.php';
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-4">
-                            <img src="./assets/img/slider/mag.jpg" alt="Allée de stockage d’un entrepôt de la SoBAPS S.A">
+                            <img src="./assets/img/slider/medicale.png" alt="Image médicale">
                         </div>
                     </div>
                 </div>
@@ -628,20 +628,15 @@ include_once 'function/mail.php';
             </div>
             <?php
             $vue = array(
-                "Produits de santé",
-                "Produits pharmaceutiques",
-                "Médicaments",
+                "Médicaments génériques",
                 "Consommables médicaux",
-                "Produits chimiques",
-                "Grossiste pharmaceutique",
-                "Antimitotique",
+                "Consommables de laboratoire",
                 "Dispositifs médicaux",
-                "Spécialités pharmaceutiques",
                 "Réactifs",
-                "Équipements de laboratoire",
-                "Antirétroviraux",
-                "Oxygène médical",
-                "Antibiotique"
+                "Produits chimiques",
+                "Produits de santé animale",
+                "Produits ostéosynthèse",
+                "Oxygène médical By Biolynx"
             );
 
             ?>
@@ -668,12 +663,13 @@ include_once 'function/mail.php';
             $codir = array(
                 ["poste" => "C/DE", "nom" => "Mr. Gedéon MELSAH", "img" => "./assets/img/team/de.png", "link" => "#"],
                 ["poste" => "C/DC", "nom" => "Dr. Constantin GOUASSANGNI", "img" => "./assets/img/team/dc.jpg", "link" => "#"],
-                ["poste" => "C/CJ", "nom" => "Poste à pourvoir", "img" => "", "link" => "#"],
-                ["poste" => "C/DAF", "nom" => "Mr. Joseph Dieudonné ZINVOEDO", "img" => "", "link" => "#"],
+                // ["poste" => "C/CJ", "nom" => "Poste à pourvoir", "img" => "", "link" => "#"],
+                ["poste" => "C/DAF", "nom" => "Mr. Joseph Dieudonné ZINVOEDO", "img" => "./assets/img/team/daf.png", "link" => "#"],
                 ["poste" => "CST", "nom" => "Mr. Félicien DOSSOU", "img" => "./assets/img/team/cst.png", "link" => "#"],
+                ["poste" => "CCMP", "nom" => "Mme. Aïssatou OROU YOROU", "img" => "./assets/img/team/ccmp.png", "link" => "#"],
                 ["poste" => "C/PRMP", "nom" => "Mr. Léopold AFFEDJOU", "img" => "./assets/img/team/prmp.png", "link" => "#"],
                 ["poste" => "C/CSI", "nom" => "Mr. Hyacinthe TOKOU", "img" => "./assets/img/team/csi.jpg", "link" => "#"],
-                ["poste" => "C/RM", "nom" => "Mr. Ismaël MIGAN", "img" => "./assets/img/team/RM.jpg", "link" => "#"],
+                ["poste" => "C/RM", "nom" => "Mr. Ismaël MIGAN", "img" => "./assets/img/team/RM.png", "link" => "#"],
                 ["poste" => "C/CAQMI", "nom" => "Dr. Molly D'OLIVEIRA", "img" => "./assets/img/team/AQ.jpg", "link" => "#"],
                 ["poste" => "Pharmacien assistant PRMP", "nom" => "Jamal ADOMOU", "img" => "./assets/img/team/jamal.png", "link" => "#"],
                 ["poste" => "Pharmacien assistant PRMP", "nom" => "Janice GBAGUIDI", "img" => "./assets/img/team/janice.png", "link" => "#"],
@@ -693,6 +689,7 @@ include_once 'function/mail.php';
                 "C/RM" => "Risk Manager (C/RM)",
                 "C/CAQMI" => "Chef Cellule de l'Assurance Qualité et du Management Intégré (C/CAQMI)",
                 "C/CJ" => "Chef Cellule Juridique (C/CJ)",
+                "CCMP" => "Chef Cellule de Contrôle des Marchés Publics (CCMP)",
                 "C/PRMP" => "Personne Responsable des Marchés Publics (C/PRMP)",
                 "R/RPSE" => "Responsable à la Planification et au Suivi-Evaluation (R/RPSE)",
             );

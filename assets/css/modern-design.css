@@ -1862,7 +1862,7 @@ button.navbar-toggler {
   width: 100%;
   display: block;
   margin: 0 auto;
-  aspect-ratio: 4 / 5;
+  /* aspect-ratio: 4 / 5; */
   max-height: 560px;
   object-fit: cover;
   border-radius: var(--sb-radius-lg);
