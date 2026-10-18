@@ -245,7 +245,7 @@
         ".counter-box", ".case-item", ".blockqoute", ".about-left", ".about-right",
         ".about-list li", ".banner-thumb", ".banner-info", ".footer-widget-box",
         ".appointment-content", ".choose-content", ".hero-static .hero-content",
-        ".testimonial-slider", ".partner-wrapper", ".sb-glossary-item", ".contact-info"
+        ".testimonial-slider", ".partner-wrapper", ".sb-partner-col", ".sb-glossary-item", ".contact-info"
     ].join(",");
 
     var revealEls = Array.prototype.filter.call(document.querySelectorAll(revealSel), function (n) {

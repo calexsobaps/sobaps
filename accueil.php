@@ -737,10 +737,10 @@ include_once 'function/mail.php';
 
 
 
-    <div class="team-area">
+    <div class="team-area pb-120" id="partenaires">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 mb-4">
+                <div class="col-lg-12">
                     <div class="site-heading text-center sb-partners">
                         <span class="site-title-tagline">Ensemble, pour un meilleur accès aux produits de santé</span>
                         <h2 class="site-title">Nos <span>Partenaires</span> Stratégiques</h2>
@@ -753,6 +753,27 @@ include_once 'function/mail.php';
                         </p>
                     </div>
                 </div>
+            </div>
+            <?php
+            $partenaires = array(
+                ["sigle" => "PNLP", "nom" => "Programme National de Lutte contre le Paludisme", "icon" => "fa-mosquito"],
+                ["sigle" => "PNLS", "nom" => "Programme National de Lutte contre le SIDA", "icon" => "fa-ribbon"],
+                ["sigle" => "ANSSP", "nom" => "Agence Nationale des Soins de Santé Primaires", "icon" => "fa-house-medical"],
+                ["sigle" => "UNICEF", "nom" => "UNICEF Bénin", "icon" => "fa-children"],
+                ["sigle" => "OMS Bénin", "nom" => "Organisation Mondiale de la Santé - Bénin", "icon" => "fa-earth-africa"],
+            );
+            ?>
+            <p class="sb-partner-eyebrow">Ils nous font confiance</p>
+            <div class="row g-4 justify-content-center sb-partner-grid">
+                <?php foreach ($partenaires as $p) { ?>
+                    <div class="col-6 col-md-4 col-lg sb-partner-col">
+                        <article class="sb-partner">
+                            <div class="sb-partner-mark" aria-hidden="true"><i class="fas <?php echo $p['icon']; ?>"></i></div>
+                            <h3 class="sb-partner-sigle"><?php echo $p['sigle']; ?></h3>
+                            <p class="sb-partner-name"><?php echo $p['nom']; ?></p>
+                        </article>
+                    </div>
+                <?php } ?>
             </div>
         </div>
     </div>
