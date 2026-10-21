@@ -5,7 +5,7 @@ include_once 'models/header.php';
 ?>
 <main class="main">
 
-    <div class="site-breadcrumb" style="background: url(./assets/img/slider/1751641210984.jpg)">
+    <div class="site-breadcrumb" style="background: url(./assets/img/breadcrumb/actualites.svg)">
         <div class="container">
             <h1 class="breadcrumb-title">Actualités</h1>
             <ul class="breadcrumb-menu">
