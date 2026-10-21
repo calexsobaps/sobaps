@@ -215,12 +215,12 @@ include_once 'function/mail.php';
                 <div class="col-md-6 ">
                     <div class="feature-item">
                         <div class="feature-icon">
-                            <i class="fa fa-medkit"></i>
+                            <i class="fa fa-capsules"></i>
                         </div>
                         <div class="feature-content">
-                            <h4>Lutte contre la COVID-19</h4>
-                            <p>La COVID-19 détruit tout sur son passage. Restons vigilants en respectant les gestes barrières.</p>
-                            <br> <a class="theme-btn" href="news#covid"> Lire plus &ensp;<i class="fa fa-arrow-right"></i></a>
+                            <h4>Nos gammes de produits</h4>
+                            <p>Médicaments génériques, dispositifs médicaux, réactifs, oxygène médical… Découvrez nos neuf familles de produits de santé.</p>
+                            <br> <a class="theme-btn" href="#specialisations"> Découvrir &ensp;<i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -612,7 +612,7 @@ include_once 'function/mail.php';
         </div>
     </div>
 
-    <div class="testimonial-area bg py-120">
+    <div class="testimonial-area bg py-120" id="specialisations">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mx-auto">
