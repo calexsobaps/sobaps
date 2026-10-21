@@ -756,22 +756,29 @@ include_once 'function/mail.php';
             </div>
             <?php
             $partenaires = array(
-                ["sigle" => "PNLP", "nom" => "Programme National de Lutte contre le Paludisme", "icon" => "fa-mosquito"],
-                ["sigle" => "PNLS", "nom" => "Programme National de Lutte contre le SIDA", "icon" => "fa-ribbon"],
+                ["sigle" => "PNLP", "nom" => "Programme National de Lutte contre le Paludisme", "icon" => "fa-mosquito", "logo" => "assets/img/partner/pnlp.png", "url" => "https://pnlp.sn/"],
+                ["sigle" => "PNLS", "nom" => "Programme National de Lutte contre le SIDA", "icon" => "fa-ribbon", "logo" => "assets/img/partner/pnls.png", "url" => "https://www.pnlsci.com/"],
                 ["sigle" => "ANSSP", "nom" => "Agence Nationale des Soins de Santé Primaires", "icon" => "fa-house-medical"],
-                ["sigle" => "UNICEF", "nom" => "UNICEF Bénin", "icon" => "fa-children"],
-                ["sigle" => "OMS Bénin", "nom" => "Organisation Mondiale de la Santé - Bénin", "icon" => "fa-earth-africa"],
+                ["sigle" => "UNICEF", "nom" => "UNICEF Bénin", "icon" => "fa-children", "logo" => "assets/img/partner/unicef.png", "url" => "https://www.unicef.org/benin/"],
+                ["sigle" => "OMS Bénin", "nom" => "Organisation Mondiale de la Santé - Bénin", "icon" => "fa-earth-africa", "logo" => "assets/img/partner/oms.png", "url" => "https://www.afro.who.int/fr/countries/benin"],
             );
             ?>
             <p class="sb-partner-eyebrow">Ils nous font confiance</p>
             <div class="row g-4 justify-content-center sb-partner-grid">
-                <?php foreach ($partenaires as $p) { ?>
+                <?php foreach ($partenaires as $p) {
+                    $tag = !empty($p['url']) ? 'a' : 'article';
+                    $attrs = !empty($p['url']) ? ' href="' . $p['url'] . '" target="_blank" rel="noopener" title="Visiter le site : ' . $p['nom'] . '"' : '';
+                ?>
                     <div class="col-6 col-md-4 col-lg sb-partner-col">
-                        <article class="sb-partner">
-                            <div class="sb-partner-mark" aria-hidden="true"><i class="fas <?php echo $p['icon']; ?>"></i></div>
+                        <<?php echo $tag . $attrs; ?> class="sb-partner<?php echo !empty($p['logo']) ? ' sb-partner--logo' : ''; ?>">
+                            <?php if (!empty($p['logo'])) { ?>
+                                <div class="sb-partner-logo"><img src="<?php echo $p['logo']; ?>" alt="Logo <?php echo $p['sigle']; ?>" loading="lazy"></div>
+                            <?php } else { ?>
+                                <div class="sb-partner-mark" aria-hidden="true"><i class="fas <?php echo $p['icon']; ?>"></i></div>
+                            <?php } ?>
                             <h3 class="sb-partner-sigle"><?php echo $p['sigle']; ?></h3>
                             <p class="sb-partner-name"><?php echo $p['nom']; ?></p>
-                        </article>
+                        </<?php echo $tag; ?>>
                     </div>
                 <?php } ?>
             </div>
