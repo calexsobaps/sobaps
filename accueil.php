@@ -628,23 +628,34 @@ include_once 'function/mail.php';
             </div>
             <?php
             $vue = array(
-                "Médicaments génériques",
-                "Consommables médicaux",
-                "Consommables de laboratoire",
-                "Dispositifs médicaux",
-                "Réactifs",
-                "Produits chimiques",
-                "Produits de santé animale",
-                "Produits ostéosynthèse",
-                "Oxygène médical By Biolynx"
+                ["titre" => "Médicaments génériques", "icon" => "fa-capsules", "desc" => "Médicaments essentiels de qualité, disponibles à des prix accessibles pour toutes les populations."],
+                ["titre" => "Consommables médicaux", "icon" => "fa-syringe", "desc" => "Seringues, gants, pansements et matériel à usage unique pour les soins au quotidien."],
+                ["titre" => "Consommables de laboratoire", "icon" => "fa-vials", "desc" => "Tubes, pipettes, lames et petit matériel pour les analyses de biologie médicale."],
+                ["titre" => "Dispositifs médicaux", "icon" => "fa-stethoscope", "desc" => "Équipements et instruments pour le diagnostic, le suivi et le traitement des patients."],
+                ["titre" => "Réactifs", "icon" => "fa-flask-vial", "desc" => "Réactifs de diagnostic et tests rapides pour des résultats fiables."],
+                ["titre" => "Produits chimiques", "icon" => "fa-flask", "desc" => "Produits chimiques à usage pharmaceutique et de laboratoire, conformes aux exigences de qualité."],
+                ["titre" => "Produits de santé animale", "icon" => "fa-paw", "desc" => "Médicaments et produits vétérinaires pour la santé des élevages et des animaux."],
+                ["titre" => "Produits d’ostéosynthèse", "icon" => "fa-bone", "desc" => "Implants, plaques, vis et clous pour la chirurgie orthopédique et traumatologique."],
+                ["titre" => "Oxygène médical", "icon" => "fa-lungs", "desc" => "Oxygène à usage médical pour les établissements de santé.", "badge" => "By Biolynx"],
             );
-
             ?>
-            <ul class="sb-chips">
-                <?php foreach ($vue as $v) { ?>
-                    <li><?php echo $v; ?></li>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 sb-sectors">
+                <?php foreach ($vue as $i => $v) { ?>
+                    <div class="col sb-sector-col">
+                        <article class="sb-sector">
+                            <div class="sb-sector-top">
+                                <div class="sb-sector-icon" aria-hidden="true"><i class="fas <?php echo $v['icon']; ?>"></i></div>
+                                <span class="sb-sector-num" aria-hidden="true"><?php echo str_pad($i + 1, 2, '0', STR_PAD_LEFT); ?></span>
+                            </div>
+                            <h3 class="sb-sector-title"><?php echo $v['titre']; ?></h3>
+                            <?php if (!empty($v['badge'])) { ?>
+                                <span class="sb-sector-badge"><?php echo $v['badge']; ?></span>
+                            <?php } ?>
+                            <p class="sb-sector-desc"><?php echo $v['desc']; ?></p>
+                        </article>
+                    </div>
                 <?php } ?>
-            </ul>
+            </div>
         </div>
     </div>
 
