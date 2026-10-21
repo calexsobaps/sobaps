@@ -215,12 +215,12 @@ include_once 'function/mail.php';
                 <div class="col-md-6 ">
                     <div class="feature-item">
                         <div class="feature-icon">
-                            <i class="fa fa-medkit"></i>
+                            <i class="fa fa-capsules"></i>
                         </div>
                         <div class="feature-content">
-                            <h4>Lutte contre la COVID-19</h4>
-                            <p>La COVID-19 détruit tout sur son passage. Restons vigilants en respectant les gestes barrières.</p>
-                            <br> <a class="theme-btn" href="news#covid"> Lire plus &ensp;<i class="fa fa-arrow-right"></i></a>
+                            <h4>Nos gammes de produits</h4>
+                            <p>Médicaments génériques, dispositifs médicaux, réactifs, oxygène médical… Découvrez nos neuf familles de produits de santé.</p>
+                            <br> <a class="theme-btn" href="#specialisations"> Découvrir &ensp;<i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -612,7 +612,7 @@ include_once 'function/mail.php';
         </div>
     </div>
 
-    <div class="testimonial-area bg py-120">
+    <div class="testimonial-area bg py-120" id="specialisations">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mx-auto">
@@ -801,78 +801,31 @@ include_once 'function/mail.php';
         </div>
     </div>
 
+    <?php
+    include_once 'models/actualites.php';
+    $dernieres = array_slice(array_values(array_filter($actualites, function ($a) {
+        return $a['groupe'] === 'sante';
+    })), 0, 3);
+    ?>
     <div class="blog-area pb-120">
         <div class="container">
             <div class="row rows">
                 <div class="col-lg-6 mx-auto">
                     <div class="site-heading text-center">
-                        <span class="site-title-tagline">Blog</span>
-                        <h2 class="site-title">Actualités & <span>Nouveautés</span></h2>
+                        <span class="site-title-tagline">Actualités</span>
+                        <h2 class="site-title">L’actualité de la <span>santé</span> au Bénin</h2>
                         <div class="heading-divider"></div>
                         <p>
-                            Soyez informé des dernières actualités de la SoBAPS S.A
+                            Les dernières informations du secteur de la santé au Bénin
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="blog-item">
-                        <div class="blog-item-img">
-                            <img src="assets/img/blog/17_07_2025.jpg" alt="" class="monimage">
-                        </div>
-                        <div class="blog-item-info">
-                            <div class="blog-item-meta">
-                                <ul>
-                                    <li><a href="news#post1"><i class="far fa-calendar-alt"></i>Publié le 18 juillet 2025</a></li>
-                                </ul>
-                            </div>
-                            <h4 class="blog-title">
-                                <a href="news#post1">Supervision administrative des agences régionales de la SoBAPS S.A</a>
-                            </h4>
-                            <a class="blog-btn" href="news#post1">Lire la suite<i class="far fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="blog-item">
-                        <div class="blog-item-img">
-                            <img src="assets/img/blog/14_07_2025.jpg" alt="" class="monimage">
-                        </div>
-                        <div class="blog-item-info">
-                            <div class="blog-item-meta">
-                                <ul>
-                                    <li><a href="news#post2"><i class="far fa-calendar-alt"></i>Publié le 17 juillet 2025</a></li>
-                                </ul>
-                            </div>
-                            <h4 class="blog-title">
-                                <a href="news#post2">Session immersive sur l’identification et la quantification des besoins en produits de santé</a>
-                            </h4>
-                            <a class="blog-btn" href="news#post2">Lire la suite<i class="far fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="blog-item">
-                        <div class="blog-item-img">
-                            <img src="assets/img/blog/11_07_2025.jpg" alt="" class="monimage">
-                        </div>
-                        <div class="blog-item-info">
-                            <div class="blog-item-meta">
-                                <ul>
-                                    <li><a href="news#post4"><i class="far fa-calendar-alt"></i>Publié le 14 juillet 2025</a></li>
-                                </ul>
-                            </div>
-                            <h4 class="blog-title">
-                                <a href="news#post4">Formation pour l’équipe de la SoBAPS S.A afin de renforcer la culture d’entreprise et soutenir ses objectifs</a>
-                            </h4>
-                            <a class="blog-btn" href="news#post4">Lire la suite<i class="far fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="sb-news-grid">
+                <?php foreach ($dernieres as $a) sb_news_card($a, $themes_actu); ?>
+            </div>
+            <div class="text-center mt-5">
+                <a href="news" class="theme-btn">Toutes les actualités <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </div>
