@@ -10,8 +10,8 @@ $images = array_filter(is_dir($imagesDir) ? scandir($imagesDir) : [], function (
 });
 
 $images = array_values($images);
-// Retire les doublons exacts (et la photo déjà utilisée en en-tête)
-$seen = [md5_file(__DIR__ . '/assets/img/slider/Image25.jpeg') => true];
+// Retire les doublons exacts
+$seen = [];
 $images = array_values(array_filter($images, function ($f) use ($imagesDir, &$seen) {
     $h = md5_file($imagesDir . $f);
     if (isset($seen[$h])) return false;
@@ -29,7 +29,7 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
 
 <main class="main">
 
-    <div class="site-breadcrumb" style="background: url(./assets/img/slider/Image25.jpeg)">
+    <div class="site-breadcrumb" style="background: url(./assets/img/breadcrumb/phototheque.jpg)">
         <div class="container">
             <h1 class="breadcrumb-title">Photo<span>thèque</span></h1>
             <ul class="breadcrumb-menu">
