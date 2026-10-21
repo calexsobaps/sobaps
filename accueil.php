@@ -532,7 +532,7 @@ include_once 'function/mail.php';
                     <div class="choose-content">
                         <div class="site-heading">
                             <span class="site-title-tagline text-white">Mot du Directeur Général par intérim</span>
-                            <h2 class="site-title text-white mb-10">Dr. Gedéon MELSAH</h2>
+                            <h2 class="site-title text-white mb-10">Dr. Gedéon MENSAH</h2>
                             <p class="text-white font-weight-bold mb-4 text-justify">
                                 Chers internautes et chers partenaires,<br>
                                 En ma qualité de Directeur Général de la Société Béninoise pour l’Approvisionnement en Produits de Santé (SoBAPS) S.A, je suis heureux de vous souhaiter, à l’occasion de ce 04 septembre 2024 marquant le quatrième anniversaire du démarrage des activités de votre société, la bienvenue sur notre site web, une vitrine qui se veut être une plateforme d’échanges et d’information. <br>
@@ -578,7 +578,7 @@ include_once 'function/mail.php';
                 <div class="col-12 mb-2">
                     <blockquote class="blockqoute sb-quote-lg text-justify">
                         La vision de la SoBAPS S.A est d’être à l’horizon 2028, une société pharmaceutique de référence, bien gouvernée, résiliente et au rayonnement sous-régional assurant la disponibilité permanente des produits de santé de qualité et financièrement accessibles aux populations.
-                        <h6 role="none" class="blockqoute-author">Dr Gedéon MELSAH</h6>
+                        <h6 role="none" class="blockqoute-author">Dr Gedéon MENSAH</h6>
                     </blockquote>
                 </div>
             </div>
@@ -672,7 +672,7 @@ include_once 'function/mail.php';
             </div>
             <?php
             $codir = array(
-                ["poste" => "C/DE", "nom" => "Mr. Gedéon MELSAH", "img" => "./assets/img/team/de.png", "link" => "#"],
+                ["poste" => "C/DE", "nom" => "Mr. Gedéon MENSAH", "img" => "./assets/img/team/de.png", "link" => "#"],
                 ["poste" => "C/DC", "nom" => "Dr. Constantin GOUASSANGNI", "img" => "./assets/img/team/dc.jpg", "link" => "#"],
                 // ["poste" => "C/CJ", "nom" => "Poste à pourvoir", "img" => "", "link" => "#"],
                 ["poste" => "C/DAF", "nom" => "Mr. Joseph Dieudonné ZINVOEDO", "img" => "./assets/img/team/daf.png", "link" => "#"],
@@ -715,10 +715,10 @@ include_once 'function/mail.php';
             <div class="row justify-content-center sb-codir">
                 <div class="col-8 col-md-4 col-lg-3">
                     <div class="team-item sb-team-lead">
-                        <img src="./assets/img/team/de.png" alt="Dr. Gedéon MELSAH">
+                        <img src="./assets/img/team/de.png" alt="Dr. Gedéon MENSAH">
                         <div class="team-content">
                             <div class="team-bio">
-                                <h3><a class="text-white" href="sobaps#directeur">Dr. Gedéon MELSAH</a></h3>
+                                <h3><a class="text-white" href="sobaps#directeur">Dr. Gedéon MENSAH</a></h3>
                                 <span>Directeur Général par intérim</span>
                             </div>
                         </div>

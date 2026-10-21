@@ -174,7 +174,7 @@ include_once 'models/header.php';
                 <div class="col-lg-12 mb-4">
                     <div class="site-heading">
                         <span class="site-title-tagline">Mot du Directeur Général par intérim</span>
-                        <h2 class="site-title">Dr Gedéon <span>MELSAH</span></h2>
+                        <h2 class="site-title">Dr Gedéon <span>MENSAH</span></h2>
                         <div class="heading-divider"></div>
                     </div>
                 </div>
@@ -184,7 +184,7 @@ include_once 'models/header.php';
                     <div class="blog-single-wrapper">
                         <div class="blog-single-content">
                             <div class="blog-thumb-img sb-cover sb-cover-top">
-                                <img src="./assets/img/team/de.png" alt="Dr Gedéon MELSAH, Directeur Général">
+                                <img src="./assets/img/team/de.png" alt="Dr Gedéon MENSAH, Directeur Général">
                             </div>
                         </div>
                     </div>
@@ -206,7 +206,7 @@ include_once 'models/header.php';
                         Chers internautes et visiteurs, je vous invite à vous approprier tous les contours de ce site, qui vous permettra entre autres, de découvrir l’actualité de la société, de vous faire connaître les avis d’appels d’offres, les informations sur les produits distribués ainsi que les opportunités que la société offre. N’hésitez pas à nous remonter toutes vos préoccupations et observations à travers notre rubrique dédiée.
                         <br><br>
                         Ensemble, engageons-nous pour le renforcement et la résilience du système de santé au Bénin. <br>
-                        <h6 role="none" class="blockqoute-author">Dr Gedéon MELSAH</h6>
+                        <h6 role="none" class="blockqoute-author">Dr Gedéon MENSAH</h6>
                     </blockquote>
                 </div>
             </div>
