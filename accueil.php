@@ -47,7 +47,7 @@ include_once 'function/mail.php';
                                     data-wow-duration="1s" data-wow-delay=".25s">Qualité &amp; durabilité</h6>
                                 <h2 class="hero-title wow animate__animated animate__fadeInUp"
                                     data-wow-duration="1s" data-wow-delay=".50s">
-                                    Approvisionnement de <span>Qualité Certifiée</span><br>Et Durable
+                                    Approvisionnement de <span>qualité certifiée</span><br>et durable
                                 </h2>
                                 <ul class="sb-checks wow animate__animated animate__fadeInUp" data-wow-duration="1s"
                                     data-wow-delay=".75s">
@@ -74,7 +74,7 @@ include_once 'function/mail.php';
                                     data-wow-duration="1s" data-wow-delay=".25s">Service client</h6>
                                 <h2 class="hero-title wow animate__animated animate__fadeInUp"
                                     data-wow-duration="1s" data-wow-delay=".50s">
-                                    Un service client <span>Exceptionnel</span><br>et fiable
+                                    Un service client <span>exceptionnel</span><br>et fiable
                                 </h2>
                                 <ul class="sb-checks wow animate__animated animate__fadeInUp" data-wow-duration="1s"
                                     data-wow-delay=".75s">
@@ -101,7 +101,7 @@ include_once 'function/mail.php';
                                     data-wow-duration="1s" data-wow-delay=".25s">Certifications internationales</h6>
                                 <h2 class="hero-title wow animate__animated animate__fadeInUp"
                                     data-wow-duration="1s" data-wow-delay=".50s">
-                                    SoBAPS S.A, <span>Triplement</span> certifiée
+                                    SoBAPS S.A, <span>triplement</span> certifiée
                                 </h2>
                                 <ul class="sb-checks wow animate__animated animate__fadeInUp" data-wow-duration="1s"
                                     data-wow-delay=".75s">
@@ -168,7 +168,7 @@ include_once 'function/mail.php';
                 <div class="col-lg-12">
                     <div class="site-heading">
                         <span class="site-title-tagline">Nos Produits</span>
-                        <h2 class="site-title">Politique Assurance <br><span>Qualité des médicaments</span> à la SoBAPS S.A</h2>
+                        <h2 class="site-title">Politique d’assurance <br><span>qualité des médicaments</span> à la SoBAPS S.A</h2>
                         <div class="heading-divider"></div>
                     </div>
                 </div>
@@ -182,7 +182,7 @@ include_once 'function/mail.php';
                         </div>
                         <div class="feature-content">
                             <h4>Critères d'accès</h4>
-                            <p>Nos exigences vis à vis de nos partenaires pour accéder à nos produits sont diverses.</p>
+                            <p>Nos exigences vis-à-vis de nos partenaires pour accéder à nos produits sont diverses.</p>
                             <br> <a class="theme-btn" href="pdfs/MED.pdf" download> Télécharger le document&ensp;<i class="fa fa-file-pdf"></i></a>
 
                         </div>
@@ -195,7 +195,7 @@ include_once 'function/mail.php';
                         </div>
                         <div class="feature-content">
                             <h4>Catalogue de prix</h4>
-                            <p>Nous mettons à la disposition de notre clientèle, un catalogue de prix complet.</p>
+                            <p>Nous mettons à la disposition de notre clientèle un catalogue de prix complet.</p>
                             <br> <a class="theme-btn" href="ccpc#catalogue"> Voir plus &ensp;<i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -207,7 +207,7 @@ include_once 'function/mail.php';
                         </div>
                         <div class="feature-content">
                             <h4>Politique de qualité</h4>
-                            <p>Nous conservons la qualité de nos produits et exigeons les mêmes politiques de qualité à nos partenaires.</p>
+                            <p>Nous conservons la qualité de nos produits et exigeons les mêmes politiques de qualité de nos partenaires.</p>
                             <br> <a class="theme-btn" href="ccpc#politique"> Lire plus &ensp;<i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -218,8 +218,8 @@ include_once 'function/mail.php';
                             <i class="fa fa-medkit"></i>
                         </div>
                         <div class="feature-content">
-                            <h4>Lutte contre COVID-19</h4>
-                            <p>COVID-19 détruit tout sur son passage. Restons vigilant en respectant les gestes barrières.</p>
+                            <h4>Lutte contre la COVID-19</h4>
+                            <p>La COVID-19 détruit tout sur son passage. Restons vigilants en respectant les gestes barrières.</p>
                             <br> <a class="theme-btn" href="news#covid"> Lire plus &ensp;<i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -236,10 +236,10 @@ include_once 'function/mail.php';
                 <div class="col-lg-12 mx-auto">
                     <div class="site-heading text-center">
                         <span class="site-title-tagline">Notre engagement </span>
-                        <h2 class="site-title">Pour une qualité <span>Irréprochable</span></h2>
+                        <h2 class="site-title">Pour une qualité <span>irréprochable</span></h2>
                         <div class="heading-divider"></div>
                         <p>
-                            La SOBAPS SA place la qualité au cœur de ses opérations, en s’appuyant sur des standards internationaux rigoureux pour garantir la sécurité, l’efficacité et la traçabilité des produits de santé. </p>
+                            La SoBAPS S.A place la qualité au cœur de ses opérations, en s’appuyant sur des standards internationaux rigoureux pour garantir la sécurité, l’efficacité et la traçabilité des produits de santé. </p>
                     </div>
                 </div>
             </div>
@@ -262,7 +262,7 @@ include_once 'function/mail.php';
                                     <div class="icon"><i class="fa fa-barcode"></i></div>
                                     <div class="text">
                                         <h4>Gestion des lots et traçabilité renforcée</h4>
-                                        <p>Procédures structurées pour assurer l’identification, le suivi et la traçabilité complète des produits, de l’entrée en stock à la distribution finale</p>
+                                        <p>Procédures structurées pour assurer l’identification, le suivi et la traçabilité complète des produits, de l’entrée en stock à la distribution finale.</p>
                                     </div>
                                 </li>
 
@@ -298,11 +298,11 @@ include_once 'function/mail.php';
                             <div class="hero-content">
                                 <h6 role="none" class="hero-sub-title animate__ animate__fadeInUp animated">Renforcement de capacités</h6>
                                 <h2 class="hero-title animate__animated animate__fadeInUp text-center">
-                                    Investir dans <span> l'Humain</span> pour mieux servir la <span>Santé Publique</span>
+                                    Investir dans <span>l’humain</span> pour mieux servir la <span>santé publique</span>
                                 </h2>
                                 <p class="animate__animated animate__fadeInUp about-text text-center">
                                     Une chaîne d’approvisionnement forte repose sur des hommes et des femmes bien formés.
-                                    Ainsi, la SOBAPS S.A développe continuellement les compétences de son personnel grâce à <b>des formations certifiantes</b> et <b>des mises à niveau sur des normes ISO</b>
+                                    Ainsi, la SoBAPS S.A développe continuellement les compétences de son personnel grâce à <b>des formations certifiantes</b> et <b>des mises à niveau sur les normes ISO</b>.
 
                                 </p>
                             </div>
@@ -317,7 +317,7 @@ include_once 'function/mail.php';
     <div class="counter-area pt-70 pb-70">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-4">
                     <div class="counter-box">
                         <div class="icon"><i class="fa fa-users"></i></div>
                         <div>
@@ -326,7 +326,7 @@ include_once 'function/mail.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-4">
                     <div class="counter-box">
                         <div class="icon"><i class="fa fa-handshake"></i></div>
                         <div>
@@ -335,7 +335,7 @@ include_once 'function/mail.php';
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-lg-4 col-sm-6">
+                <!-- <div class="col-4">
                     <div class="counter-box">
                         <div class="icon"><i class="fa fa-user-tie"></i></div>
                         <div>
@@ -344,7 +344,7 @@ include_once 'function/mail.php';
                         </div>
                     </div>
                 </div> -->
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-4">
                     <div class="counter-box">
                         <div class="icon"><i class="fa fa-sm fa-home"></i></div>
                         <div>
@@ -433,7 +433,7 @@ include_once 'function/mail.php';
                             Contactez-nous
                         </h2>
                         <p class="text-dark">
-                            Vous pouvez nous contacter par téléphone, email ou formulaire de contact !
+                            Vous pouvez nous contacter par téléphone, par e-mail ou via le formulaire de contact.
                         </p>
                         <div class="appointment-form">
 
@@ -492,7 +492,7 @@ include_once 'function/mail.php';
                                 <a href="agence_parakou">Agence régionale de Parakou</a>
                             </h3>
                             <p class="service-text text-justify">
-                                Une agence régionale à Parakou qui est un relais clé dans la partie nord-est du Bénin ainsi que quelques formations sanitaires de la région du centre-nord
+                                Située à Parakou, cette agence régionale est un relais clé pour la partie nord-est du Bénin ainsi que pour quelques formations sanitaires de la région du centre-nord.
                             </p>
                             <div class="service-arrow">
                                 <a href="agence_parakou" class="theme-btn">Lire plus <i class="far fa-arrow-right"></i></a>
@@ -513,7 +513,7 @@ include_once 'function/mail.php';
                                 <a href="agence_natitingou">Agence régionale de Natitingou</a>
                             </h3>
                             <p class="service-text text-justify">
-                                La SoBAPS S.A dispose une agence régionale à Natitingou qui constitue un point d’appui essentiel pour desservir la partie nord-ouest du Bénin.
+                                La SoBAPS S.A dispose d’une agence régionale à Natitingou qui constitue un point d’appui essentiel pour desservir la partie nord-ouest du Bénin.
                             </p>
                             <div class="service-arrow">
                                 <a href="agence_natitingou" class="theme-btn">Lire plus <i class="far fa-arrow-right"></i></a>
@@ -569,7 +569,7 @@ include_once 'function/mail.php';
                         <h2 class="site-title">La <span>Vision</span> de la SoBAPS S.A</h2>
                         <div class="heading-divider"></div>
                         <p>
-                            Pour réaliser son rêve, la société s’appuie sur la qualité des produits de santé fournis aux populations, l’expertise de son personnel et le développement de son système d’informations aux fins d’accroître la portée de l’information sur la disponibilité des produits de santé.
+                            Pour réaliser son rêve, la société s’appuie sur la qualité des produits de santé fournis aux populations, l’expertise de son personnel et le développement de son système d’information aux fins d’accroître la portée de l’information sur la disponibilité des produits de santé.
                         </p>
                     </div>
                 </div>
@@ -577,7 +577,7 @@ include_once 'function/mail.php';
             <div class="row">
                 <div class="col-12 mb-2">
                     <blockquote class="blockqoute sb-quote-lg text-justify">
-                        La vision de la SoBAPS S.A est d’être à l’horizon 2028, une société pharmaceutique de référence, bien gouvernée, résiliente et au rayonnement sous-régional assurant la disponibilité permanente des produits de santé de qualité et financièrement accessibles aux populations.
+                        La vision de la SoBAPS S.A est d’être, à l’horizon 2028, une société pharmaceutique de référence, bien gouvernée, résiliente et au rayonnement sous-régional assurant la disponibilité permanente des produits de santé de qualité et financièrement accessibles aux populations.
                         <h6 role="none" class="blockqoute-author">Dr Gedéon MENSAH</h6>
                     </blockquote>
                 </div>
@@ -595,7 +595,7 @@ include_once 'function/mail.php';
                             <div class="hero-content">
                                 <h6 role="none" class="hero-sub-title">Notre engagement</h6>
                                 <h2 class="hero-title animate__animated animate__fadeInUp">
-                                    L’engagement <span>Fort</span> de la SoBAPS S.A pour la <span>Santé au Bénin</span>
+                                    L’engagement <span>fort</span> de la SoBAPS S.A pour la <span>Santé au Bénin</span>
                                 </h2>
                                 <p class="animate__animated animate__fadeInUp text-justify">
                                     La SoBAPS S.A place l’accès aux médicaments essentiels au cœur de sa mission, en adoptant une démarche stratégique et rigoureuse. Elle œuvre chaque jour pour assurer aux structures sanitaires béninoises un approvisionnement fiable, équitable et sécurisé, au service du bien-être des populations.
@@ -621,7 +621,7 @@ include_once 'function/mail.php';
                         <h2 class="site-title">Secteur & <span>Spécialisations</span></h2>
                         <div class="heading-divider"></div>
                         <p>
-                            Commerce de gros de préparations pharmaceutiques <br>Entreprise publique et Distribution en gros de produits de santé
+                            Commerce de gros de préparations pharmaceutiques <br>Entreprise publique de distribution en gros de produits de santé
                         </p>
                     </div>
                 </div>
@@ -664,7 +664,7 @@ include_once 'function/mail.php';
             <div class="row">
                 <div class="col-lg-12 mb-4">
                     <div class="site-heading">
-                        <span class="site-title-tagline">Equipe dirigeante</span>
+                        <span class="site-title-tagline">Équipe dirigeante</span>
                         <h2 class="site-title">Les Membres du <span>Codir</span> de la SoBAPS S.A</h2>
                         <div class="heading-divider"></div>
                     </div>
@@ -672,15 +672,15 @@ include_once 'function/mail.php';
             </div>
             <?php
             $codir = array(
-                ["poste" => "C/DE", "nom" => "Mr. Gedéon MENSAH", "img" => "./assets/img/team/de.png", "link" => "#"],
+                ["poste" => "C/DE", "nom" => "M. Gedéon MENSAH", "img" => "./assets/img/team/de.png", "link" => "#"],
                 ["poste" => "C/DC", "nom" => "Dr. Constantin GOUASSANGNI", "img" => "./assets/img/team/dc.jpg", "link" => "#"],
                 // ["poste" => "C/CJ", "nom" => "Poste à pourvoir", "img" => "", "link" => "#"],
-                ["poste" => "C/DAF", "nom" => "Mr. Joseph Dieudonné ZINVOEDO", "img" => "./assets/img/team/daf.png", "link" => "#"],
-                ["poste" => "CST", "nom" => "Mr. Félicien DOSSOU", "img" => "./assets/img/team/cst.png", "link" => "#"],
-                ["poste" => "CCMP", "nom" => "Mme. Aïssatou OROU YOROU", "img" => "./assets/img/team/ccmp.png", "link" => "#"],
-                ["poste" => "C/PRMP", "nom" => "Mr. Léopold AFFEDJOU", "img" => "./assets/img/team/prmp.png", "link" => "#"],
-                ["poste" => "C/CSI", "nom" => "Mr. Hyacinthe TOKOU", "img" => "./assets/img/team/csi.jpg", "link" => "#"],
-                ["poste" => "C/RM", "nom" => "Mr. Ismaël MIGAN", "img" => "./assets/img/team/RM.png", "link" => "#"],
+                ["poste" => "C/DAF", "nom" => "M. Joseph Dieudonné ZINVOEDO", "img" => "./assets/img/team/daf.png", "link" => "#"],
+                ["poste" => "CST", "nom" => "M. Félicien DOSSOU", "img" => "./assets/img/team/cst.png", "link" => "#"],
+                ["poste" => "CCMP", "nom" => "Mme Aïssatou OROU YOROU", "img" => "./assets/img/team/ccmp.png", "link" => "#"],
+                ["poste" => "C/PRMP", "nom" => "M. Léopold AFFEDJOU", "img" => "./assets/img/team/prmp.png", "link" => "#"],
+                ["poste" => "C/CSI", "nom" => "M. Hyacinthe TOKOU", "img" => "./assets/img/team/csi.jpg", "link" => "#"],
+                ["poste" => "C/RM", "nom" => "M. Ismaël MIGAN", "img" => "./assets/img/team/RM.png", "link" => "#"],
                 ["poste" => "C/CAQMI", "nom" => "Dr. Molly D'OLIVEIRA", "img" => "./assets/img/team/AQ.jpg", "link" => "#"],
                 ["poste" => "Pharmacien assistant PRMP", "nom" => "Jamal ADOMOU", "img" => "./assets/img/team/jamal.png", "link" => "#"],
                 ["poste" => "Pharmacien assistant PRMP", "nom" => "Janice GBAGUIDI", "img" => "./assets/img/team/janice.png", "link" => "#"],
@@ -693,7 +693,7 @@ include_once 'function/mail.php';
             $motcle = array(
                 "DG" => "Directeur Général (DG)",
                 "C/DE" => "Directeur de l'Exploitation (C/DE)",
-                "C/DC" => "Directeur Commerciale (C/DC)",
+                "C/DC" => "Directeur Commercial (C/DC)",
                 "C/DAF" => "Directeur de l'Administration et des Finances (C/DAF)",
                 "CST" => "Chef Service Trésorerie (CST)",
                 "C/CSI" => "Chef Cellule des Systèmes d'Information (C/CSI)",
@@ -702,7 +702,7 @@ include_once 'function/mail.php';
                 "C/CJ" => "Chef Cellule Juridique (C/CJ)",
                 "CCMP" => "Chef Cellule de Contrôle des Marchés Publics (CCMP)",
                 "C/PRMP" => "Personne Responsable des Marchés Publics (C/PRMP)",
-                "R/RPSE" => "Responsable à la Planification et au Suivi-Evaluation (R/RPSE)",
+                "R/RPSE" => "Responsable à la Planification et au Suivi-Évaluation (R/RPSE)",
             );
             ?>
             <?php
@@ -730,7 +730,7 @@ include_once 'function/mail.php';
                 <?php foreach ($codir as $c) { ?>
                     <div class="col-6 col-md-4 col-lg-3">
                         <div class="team-item">
-                            <img src="<?php echo $c['img']; ?>" alt="<?php echo $c['nom']; ?>">
+                            <img src="<?php echo is_file($c['img']) ? $c['img'] : './assets/img/team/avatar.svg'; ?>" alt="<?php echo $c['nom']; ?>">
                             <div class="team-content">
                                 <div class="team-bio">
                                     <h3><?php echo $c['nom']; ?></h3>
@@ -758,7 +758,7 @@ include_once 'function/mail.php';
                         <div class="heading-divider"></div>
                         <p class="about-text text-center">La SoBAPS S.A. exprime sa profonde gratitude à l’ensemble de ses partenaires et collaborateurs pour leur engagement constant à nos côtés.
                             <br>
-                            Grâce à votre confiance, votre appui technique et votre collaboration active, nous poursuivons chaque jour notre mission : <span class="montexte">garantir un accès équitable, Sécurisé et Durable aux produits de santé essentiels au Bénin</span>.
+                            Grâce à votre confiance, votre appui technique et votre collaboration active, nous poursuivons chaque jour notre mission : <span class="montexte">garantir un accès équitable, sécurisé et durable aux produits de santé essentiels au Bénin</span>.
                             <br>
                             Ensemble, nous bâtissons un système de santé plus fort, au service de toutes les populations.
                         </p>
@@ -768,7 +768,7 @@ include_once 'function/mail.php';
             <?php
             $partenaires = array(
                 ["sigle" => "Ministère de la Santé", "nom" => "Ministère de la Santé - République du Bénin", "icon" => "fa-landmark", "logo" => "assets/img/partner/ministere-sante.png", "url" => "https://sante.gouv.bj/"],
-                ["sigle" => "ABMed", "nom" => "Agence Béninoise du Médicament et des autres produits de Santé", "icon" => "fa-pills", "logo" => "assets/img/partner/abmed.png", "url" => "https://abmed.bj/"],
+                ["sigle" => "ABMed", "nom" => "Agence Béninoise du Médicament et des autres produits de santé", "icon" => "fa-pills", "logo" => "assets/img/partner/abmed.png", "url" => "https://abmed.bj/"],
                 ["sigle" => "ANTS", "nom" => "Agence Nationale pour la Transfusion Sanguine", "icon" => "fa-droplet", "logo" => "assets/img/partner/ants.png", "url" => "https://antsbenin.org"],
                 ["sigle" => "CNHU-HKM", "nom" => "Centre National Hospitalier Universitaire Hubert Koutoukou MAGA", "icon" => "fa-hospital", "logo" => "assets/img/partner/cnhu.png"],
                 ["sigle" => "CHIC", "nom" => "Centre Hospitalier International de Calavi", "icon" => "fa-hospital", "url" => "https://chichopital.bj/"],
@@ -824,7 +824,7 @@ include_once 'function/mail.php';
                         <div class="blog-item-info">
                             <div class="blog-item-meta">
                                 <ul>
-                                    <li><a href="news#post1"><i class="far fa-calendar-alt"></i>Publié le 18 Juillet 2025</a></li>
+                                    <li><a href="news#post1"><i class="far fa-calendar-alt"></i>Publié le 18 juillet 2025</a></li>
                                 </ul>
                             </div>
                             <h4 class="blog-title">
@@ -843,7 +843,7 @@ include_once 'function/mail.php';
                         <div class="blog-item-info">
                             <div class="blog-item-meta">
                                 <ul>
-                                    <li><a href="news#post2"><i class="far fa-calendar-alt"></i>Publié le 17 Juillet 2025</a></li>
+                                    <li><a href="news#post2"><i class="far fa-calendar-alt"></i>Publié le 17 juillet 2025</a></li>
                                 </ul>
                             </div>
                             <h4 class="blog-title">
@@ -862,11 +862,11 @@ include_once 'function/mail.php';
                         <div class="blog-item-info">
                             <div class="blog-item-meta">
                                 <ul>
-                                    <li><a href="news#post4"><i class="far fa-calendar-alt"></i>Publié le 14 Juillet 2025</a></li>
+                                    <li><a href="news#post4"><i class="far fa-calendar-alt"></i>Publié le 14 juillet 2025</a></li>
                                 </ul>
                             </div>
                             <h4 class="blog-title">
-                                <a href="news#post4">Formation pour l’équipe de la SoBAPS S.A afin de renforcer la culture d’entreprise et soutenir ses objectifs.</a>
+                                <a href="news#post4">Formation pour l’équipe de la SoBAPS S.A afin de renforcer la culture d’entreprise et soutenir ses objectifs</a>
                             </h4>
                             <a class="blog-btn" href="news#post4">Lire la suite<i class="far fa-arrow-right"></i></a>
                         </div>

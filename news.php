@@ -48,7 +48,7 @@ include_once 'models/header.php';
                                 <div class="blog-meta mt-4">
                                     <div class="blog-meta-left">
                                         <ul>
-                                            <li><i class="far fa-calendar-alt"></i>Publié le 09 Août 2025</li>
+                                            <li><i class="far fa-calendar-alt"></i>Publié le 09 août 2025</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -85,7 +85,7 @@ include_once 'models/header.php';
                                 <div class="blog-meta mt-4">
                                     <div class="blog-meta-left">
                                         <ul>
-                                            <li><i class="far fa-calendar-alt"></i>Publié le 09 Août 2025</li>
+                                            <li><i class="far fa-calendar-alt"></i>Publié le 09 août 2025</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -157,7 +157,7 @@ include_once 'models/header.php';
                     </div>
 
                     <div class="blog-single-wrapper">
-                        <h3 class="blog-details-title mb-20" id="post2">Session immersive sur l’identification et la quantification des besoins en produits de santé sous le lead de <b>Mr Pierre de Vasson</b>, <b class="montexte">Expert formateur</b>.
+                        <h3 class="blog-details-title mb-20" id="post2">Session immersive sur l’identification et la quantification des besoins en produits de santé, animée par <b>M. Pierre de Vasson</b>, <b class="montexte">Expert formateur</b>.
                         </h3>
                         <div class="blog-single-content">
                             <div class="item-gallery">
@@ -227,10 +227,10 @@ include_once 'models/header.php';
                                 </div>
                                 <div class="blog-details">
                                     <p class="mb-10">
-                                        La Direction générale et tout le personnel , fortement engagés dans le processus de mise en place d'un système de management et d'amélioration continue de la qualité intégrant les exigences de conformité en référence aux normes
+                                        La Direction générale et tout le personnel se sont fortement engagés dans le processus de mise en place d'un système de management et d'amélioration continue de la qualité intégrant les exigences de conformité en référence aux normes :
                                     <ul class="service-single-list">
                                         <li> <i class="far fa-check-circle"></i> ISO 9001:2015 sur la qualité des prestations</li>
-                                        <li> <i class="far fa-check-circle"></i> ISO 14001 :2015 sur la protection de l'environnement</li>
+                                        <li> <i class="far fa-check-circle"></i> ISO 14001:2015 sur la protection de l'environnement</li>
                                         <li> <i class="far fa-check-circle"></i> ISO 45001:2018 sur la santé et la sécurité au travail</li>
                                     </ul>
 
@@ -284,7 +284,7 @@ include_once 'models/header.php';
 
                                     Ces compétences constituent des leviers fondamentaux pour renforcer la culture d’entreprise et accompagner efficacement la SoBAPS S.A dans l’atteinte de ses objectifs stratégiques.
                                     <br>
-                                    Capitaux de ces acquis, innovons dans nos pratiques managériales pour mieux porter nos missions au service de la santé publique.
+                                    Forts de ces acquis, innovons dans nos pratiques managériales pour mieux porter nos missions au service de la santé publique.
                                     </p>
                                     <hr>
                                 </div>
@@ -334,13 +334,13 @@ include_once 'models/header.php';
                                             <i class="far fa-check-circle"></i> Au Centre Humanitaire des Métiers de la Pharmacie (CHMP) pour son accompagnement constant et son professionnalisme,
                                         </li>
                                         <li>
-                                            <i class="far fa-check-circle"></i> A l’ABMed et à l’ANCQ pour leur engagement renouvelé,
+                                            <i class="far fa-check-circle"></i> À l’ABMed et à l’ANCQ pour leur engagement renouvelé,
                                         </li>
                                         <li>
                                             <i class="far fa-check-circle"></i> Aux formateurs Karl HOUNMENOU et Jean-Claude CASALEGNO pour la qualité de leurs interventions,
                                         </li>
                                         <li>
-                                            <i class="far fa-check-circle"></i> A toute l’équipe de la SoBAPS pour sa participation active.
+                                            <i class="far fa-check-circle"></i> À toute l’équipe de la SoBAPS pour sa participation active.
                                         </li>
                                     </ul>
                                     <br>
@@ -486,18 +486,18 @@ include_once 'models/header.php';
                             <h5 class="widget-title">Tags</h5>
                             <div class="tag-list">
                                 <span>SoBAPS S.A</span>
-                                <span>Produit de Santé</span>
+                                <span>Produits de santé</span>
                                 <span>Approvisionnement</span>
                                 <span>Distribution</span>
-                                <span>Santé Benin</span>
-                                <span>Amélioration Continue</span>
-                                <span>Agences Regionales</span>
-                                <span>Formation Professionnelle</span>
+                                <span>Santé Bénin</span>
+                                <span>Amélioration continue</span>
+                                <span>Agences régionales</span>
+                                <span>Formation professionnelle</span>
                                 <span>ACAME</span>
-                                <span>Développement Durable</span>
-                                <span>Partenariat Stratégique</span>
+                                <span>Développement durable</span>
+                                <span>Partenariat stratégique</span>
                                 <span>Afrique</span>
-                                <span>Renforcement de Capacités</span>
+                                <span>Renforcement de capacités</span>
                                 <span>ISO 9001:2015</span>
                                 <span>ISO 14001:2015</span>
                                 <span>ISO 45001:2018</span>
@@ -535,19 +535,19 @@ include_once 'models/header.php';
                             </div>
                             <br>
                             <p>
-                                Le mois de Mai a débuté avec un rendez-vous exceptionnel à Tunis, le Forum Pharmaceutique International, FIP 2025 le 01 et 02 Mai 2025.
+                                Le mois de mai a débuté avec un rendez-vous exceptionnel à Tunis : le Forum Pharmaceutique International (FIP 2025), les 1er et 2 mai 2025.
                                 <br><br>
 
                                 Un véritable tremplin pour :
                             <ul class="service-single-list">
                                 <li><i class="far fa-check-circle"></i>Renforcer les collaborations internationales,</li>
                                 <li><i class="far fa-check-circle"></i>Mettre en avant les innovations pharmaceutiques,</li>
-                                <li><i class="far fa-check-circle"></i>Promouvoir le développement durable dans le domaine de la santé,</li>
+                                <li><i class="far fa-check-circle"></i>Promouvoir le développement durable dans le domaine de la santé.</li>
                             </ul>
                             <br>
-                            Ces Talks, ces conférences et présentations ont conforté les participants et les partenaires sur le rôle du pharmacien dans la mise en œuvre et l'exécution d'une couverture sanitaire universelle, donnant accès à des services de santé essentiels de qualité et à des médicaments essentiels, sûrs, efficaces, à coût abordable.
+                            Ces talks, conférences et présentations ont conforté les participants et les partenaires sur le rôle du pharmacien dans la mise en œuvre et l'exécution d'une couverture sanitaire universelle, donnant accès à des services de santé essentiels de qualité et à des médicaments essentiels, sûrs, efficaces, à coût abordable.
                             <br><br>
-                            Une belle opportunité d'échanges professionnels, de renforcements des connaissances, et des capacités pour la SoBAPS S.A.
+                            Une belle opportunité d'échanges professionnels, de renforcement des connaissances et des capacités pour la SoBAPS S.A.
                             </p>
                         </div>
 

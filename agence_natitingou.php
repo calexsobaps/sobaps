@@ -110,7 +110,7 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
                             </div>
                             <div class="contact-info-content">
                                 <h3>Email</h3>
-                                <p><a href="mailto:natitingou@soaps.bj">natitingou@soaps.bj</a></p>
+                                <p><a href="mailto:natitingou@sobaps.bj">natitingou@sobaps.bj</a></p>
                             </div>
                         </div>
                         <div class="contact-info">

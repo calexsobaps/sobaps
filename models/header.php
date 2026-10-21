@@ -39,7 +39,7 @@
                 </div>
                 <div class="header-top-right">
                     <div class="header-top-social">
-                        <span>Suivez-nous:</span>
+                        <span>Suivez-nous :</span>
                         <a href="https://web.facebook.com/sobaps/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://api.whatsapp.com/send/?phone=%2B22996863877&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                         <a href="https://www.linkedin.com/company/sobaps-sa/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
