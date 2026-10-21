@@ -29,7 +29,7 @@ $imagesToShow = array_slice($images, $start, $imagesPerPage);
 
 <main class="main">
 
-    <div class="site-breadcrumb" style="background: url(./assets/img/breadcrumb/phototheque.jpg)">
+    <div class="site-breadcrumb" style="background: url(./assets/img/breadcrumb/phototheque.svg)">
         <div class="container">
             <h1 class="breadcrumb-title">Photo<span>thèque</span></h1>
             <ul class="breadcrumb-menu">
