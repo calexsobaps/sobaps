@@ -756,6 +756,11 @@ include_once 'function/mail.php';
             </div>
             <?php
             $partenaires = array(
+                ["sigle" => "Ministère de la Santé", "nom" => "Ministère de la Santé - République du Bénin", "icon" => "fa-landmark", "logo" => "assets/img/partner/ministere-sante.png", "url" => "https://sante.gouv.bj/"],
+                ["sigle" => "ABMed", "nom" => "Agence Béninoise du Médicament et des autres produits de Santé", "icon" => "fa-pills", "logo" => "assets/img/partner/abmed.png", "url" => "https://abmed.bj/"],
+                ["sigle" => "ANTS", "nom" => "Agence Nationale pour la Transfusion Sanguine", "icon" => "fa-droplet", "logo" => "assets/img/partner/ants.png", "url" => "https://antsbenin.org"],
+                ["sigle" => "CNHU-HKM", "nom" => "Centre National Hospitalier Universitaire Hubert Koutoukou MAGA", "icon" => "fa-hospital", "logo" => "assets/img/partner/cnhu.png"],
+                ["sigle" => "CHIC", "nom" => "Centre Hospitalier International de Calavi", "icon" => "fa-hospital", "url" => "https://chichopital.bj/"],
                 ["sigle" => "PNLP", "nom" => "Programme National de Lutte contre le Paludisme", "icon" => "fa-mosquito", "logo" => "assets/img/partner/pnlp.png", "url" => "https://pnlp.sn/"],
                 ["sigle" => "PNLS", "nom" => "Programme National de Lutte contre le SIDA", "icon" => "fa-ribbon", "logo" => "assets/img/partner/pnls.png", "url" => "https://www.pnlsci.com/"],
                 ["sigle" => "ANSSP", "nom" => "Agence Nationale des Soins de Santé Primaires", "icon" => "fa-house-medical"],
@@ -764,12 +769,12 @@ include_once 'function/mail.php';
             );
             ?>
             <p class="sb-partner-eyebrow">Ils nous font confiance</p>
-            <div class="row g-4 justify-content-center sb-partner-grid">
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4 justify-content-center sb-partner-grid">
                 <?php foreach ($partenaires as $p) {
                     $tag = !empty($p['url']) ? 'a' : 'article';
                     $attrs = !empty($p['url']) ? ' href="' . $p['url'] . '" target="_blank" rel="noopener" title="Visiter le site : ' . $p['nom'] . '"' : '';
                 ?>
-                    <div class="col-6 col-md-4 col-lg sb-partner-col">
+                    <div class="col sb-partner-col">
                         <<?php echo $tag . $attrs; ?> class="sb-partner<?php echo !empty($p['logo']) ? ' sb-partner--logo' : ''; ?>">
                             <?php if (!empty($p['logo'])) { ?>
                                 <div class="sb-partner-logo"><img src="<?php echo $p['logo']; ?>" alt="Logo <?php echo $p['sigle']; ?>" loading="lazy"></div>

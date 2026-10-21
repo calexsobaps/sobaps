@@ -3658,7 +3658,7 @@ button.navbar-toggler {
   height: 1px;
   background: var(--sb-line);
 }
-.sb-partner-grid > [class*="col-"] {
+.sb-partner-grid > .sb-partner-col {
   display: flex;
 }
 .sb-partner {
