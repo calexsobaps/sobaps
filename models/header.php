@@ -180,9 +180,9 @@
                                 <li><a class="dropdown-item" href="ccpc#politique">
                                         <i class="fas fa-award me-2"></i>Politique de qualité
                                     </a></li>
-                                <li><a class="dropdown-item" href="ccpc#canevas">
+                                <!-- <li><a class="dropdown-item" href="ccpc#canevas">
                                         <i class="fas fa-clipboard-list me-2"></i>Canevas de besoins
-                                    </a></li>
+                                    </a></li> -->
                             </ul>
                         </li>
 
@@ -237,7 +237,7 @@
 
                     <div class="header-nav-right">
                         <div class="header-btn">
-                            <a href="#" class="theme-btn">
+                            <a href="https://commande.sobaps.bj/" class="theme-btn" target="_blank">
                                 <i class="fas fa-user me-2"></i>Accès Client
                             </a>
                         </div>

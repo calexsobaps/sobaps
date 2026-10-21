@@ -82,7 +82,6 @@ include_once 'models/header.php';
                             </p>
                             <div class="service-arrow">
                                 <!-- <a href="pdfs/MEDICAMENTS.pdf" target="_blank" class="theme-btn">Télécharger le PDF <i class="far fa-download"></i></a> -->
-                                <a href="javascript:void(0);" target="_self" class="theme-btn">Bientôt disponible</a>
                             </div>
                         </div>
                     </div>
@@ -101,7 +100,6 @@ include_once 'models/header.php';
                             </p>
                             <div class="service-arrow">
                                 <!-- <a href="pdfs/OXY.pdf" target="_blank" class="theme-btn">Télécharger le PDF <i class="far fa-download"></i></a> -->
-                                <a href="javascript:void(0);" target="_self" class="theme-btn">Bientôt disponible</a>
                             </div>
                         </div>
                     </div>
@@ -120,7 +118,6 @@ include_once 'models/header.php';
                             </p>
                             <div class="service-arrow">
                                 <!-- <a href="pdfs/VET.pdf" target="_blank" class="theme-btn">Télécharger le PDF <i class="far fa-download"></i></a> -->
-                                <a href="javascript:void(0);" target="_self" class="theme-btn">Bientôt disponible</a>
                             </div>
                         </div>
                     </div>
