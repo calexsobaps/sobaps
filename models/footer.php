@@ -37,7 +37,7 @@
                         <h2 class="footer-widget-title">Liens utiles</h2>
                         <ul class="footer-list">
                             <li><a href="accueil"><i class="fas fa-chevron-right"></i> Accueil</a></li>
-                            <li><a href="sobaps"><i class="fas fa-chevron-right"></i> SoBAPS S.A ?</a></li>
+                            <li><a href="sobaps"><i class="fas fa-chevron-right"></i> La SoBAPS S.A</a></li>
                             <li><a href="ccpc#catalogue"><i class="fas fa-chevron-right"></i> Catalogue des prix</a></li>
                             <li><a href="offre#emploi"><i class="fas fa-chevron-right"></i> Offre d’emploi</a></li>
                             <li><a href="ccpc#critere"><i class="fas fa-chevron-right"></i> Critères d’accès</a></li>
@@ -68,7 +68,7 @@
             <div class="row">
                 <div class="col-lg-6 align-self-center">
                     <p class="copyright-text">
-                        &copy; Copyright <span id="date"></span> <a href="accueil">SoBAPS S.A</a> Tous droits reservés.
+                        &copy; Copyright <span id="date"></span> <a href="accueil">SoBAPS S.A</a> Tous droits réservés.
                     </p>
                 </div>
             </div>

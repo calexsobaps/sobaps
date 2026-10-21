@@ -131,8 +131,8 @@ include_once 'models/header.php';
             <div class="row rows">
                 <div class="col-lg-12">
                     <div class="site-heading">
-                        <span class="site-title-tagline">Politique d'assurrance qualité</span>
-                        <h2 class="site-title">Politique <span>Assurance Qualité</span> des médicaments <br>A la SoBAPS S.A </h2>
+                        <span class="site-title-tagline">Politique d'assurance qualité</span>
+                        <h2 class="site-title">Politique d’<span>assurance qualité</span> des médicaments <br>à la SoBAPS S.A </h2>
                         <div class="heading-divider"></div>
                         <p>
                         </p>
@@ -151,7 +151,7 @@ include_once 'models/header.php';
                         <div id="collapseOne" class="accordion-collapse collapse show"
                             aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body text-justify">
-                                L’Assurance Qualité consiste à garantir et à préserver la qualité du produit médical depuis la fabrication jusqu’à l’utilisateur final qu’est la population. La recherche de la qualité stricto sensu étant une préoccupation majeure pour la SoBAPS S.A, un Département chargé de l’Approvisionnement, et de la Logistique (DAL) dirigé par un Pharmacien a été créée à la Direction Générale depuis 2006. Par la suite un Département spécifique à l’Assurance Qualité directement rattaché à la Direction Générale a été créé en 2012.
+                                L’Assurance Qualité consiste à garantir et à préserver la qualité du produit médical depuis la fabrication jusqu’à l’utilisateur final qu’est la population. La recherche de la qualité stricto sensu étant une préoccupation majeure pour la SoBAPS S.A, un Département chargé de l’Approvisionnement et de la Logistique (DAL), dirigé par un pharmacien, a été créé à la Direction Générale depuis 2006. Par la suite, un Département spécifique à l’Assurance Qualité directement rattaché à la Direction Générale a été créé en 2012.
                                 <br>
                                 S’il est vrai que le contrôle de qualité constitue un élément important dans l’assurance qualité, il ne permet cependant pas à lui seul d’assurer la qualité d’un produit.
                                 <br>
@@ -188,11 +188,11 @@ include_once 'models/header.php';
                                     <li><i class="far fa-check-circle monochrome"></i>Norme ISO 17025 pour les laboratoires</li>
                                     <li><i class="far fa-check-circle monochrome"></i>Norme ISO pour les matériels, produits de diagnostic et équipements médicaux</li>
                                     <li><i class="far fa-check-circle monochrome"></i>MQAS OMS</li>
-                                    <li><i class="far fa-check-circle monochrome"></i>Convention de Viennes pour les narcotiques</li>
+                                    <li><i class="far fa-check-circle monochrome"></i>Convention de Vienne pour les narcotiques</li>
                                     <li><i class="far fa-check-circle monochrome"></i>Les pharmacopées internationalement reconnues</li>
                                 </ul>
                                 <br>
-                                La SoBAPS S.A se conforme aussi aux politiques assurances qualité de ses partenaires notamment celle du Fonds Mondial.
+                                La SoBAPS S.A se conforme aussi aux politiques d’assurance qualité de ses partenaires, notamment celle du Fonds Mondial.
                             </div>
                         </div>
                     </div>
@@ -226,23 +226,23 @@ include_once 'models/header.php';
                                 <br>
                                 Ces procédures sont accessibles aux différents départements mais la distribution des documents est contrôlée.
                                 <br>
-                                La formation aux procédures assurance qualité est réalisée de façon constante au sein de chaque département et la vérification de la mise en œuvre des procédures est réalisée à travers des exercices d’auto-évaluations périodiques par le responsable Assurance Qualité.
+                                La formation aux procédures assurance qualité est réalisée de façon constante au sein de chaque département et la vérification de la mise en œuvre des procédures est réalisée à travers des exercices d’autoévaluations périodiques par le responsable Assurance Qualité.
                                 <br>
                                 <h4 class="mt-4">3.3 Le processus d’assurance qualité des produits médicaux</h4><br>
-                                Le processus d’assurance qualité des produits médicaux à la Centrale d’Achat des Médicaments Essentiels et consommable médicaux du BENIN, est formulé autour des axes procéduraux décrits ci-après:
+                                Le processus d’assurance qualité des produits médicaux à la Centrale d’Achat des Médicaments Essentiels et consommables médicaux du Bénin est formulé autour des axes procéduraux décrits ci-après :
                                 <br>
                                 <h5 class="montexte mt-4">A. Préqualification des fournisseurs</h5><br>
-                                La pré qualification est faite sur la base d’une analyse des dossiers techniques et administratifs des différents fournisseurs (couple produit/fabricant par fournisseur).
+                                La préqualification est faite sur la base d’une analyse des dossiers techniques et administratifs des différents fournisseurs (couple produit/fabricant par fournisseur).
                                 <br>
                                 <h5 class="montexte mt-4">B. Analyse des échantillons lors de la préqualification</h5><br>
-                                L’appréciation de la qualité et de la conformité des échantillons de produits médicaux fournis lors de la pré qualification se font par:
+                                L’appréciation de la qualité et de la conformité des échantillons de produits médicaux fournis lors de la préqualification se font par :
                                 <br>
                                 <ul class="service-single-list">
                                     <li><i class="far fa-check-circle monochrome"></i> La vérification de la conformité de l’échantillon aux spécifications techniques exigées par le CAAO</li>
                                     <li><i class="far fa-check-circle monochrome"></i> L’envoi aux formations sanitaires des échantillons de certains consommables médicaux pour requérir leur appréciation après utilisation-test</li>
                                 </ul>
                                 <br>
-                                <h5 class="montexte mt-4">C. Respect des conditions spécifiques de transport et de stockage propre aux médicaments</h5>
+                                <h5 class="montexte mt-4">C. Respect des conditions spécifiques de transport et de stockage propres aux médicaments</h5>
                                 <br>
                                 La conformité aux Bonnes Pratiques de Distribution est assurée par un ensemble de mesures décrites dans les procédures opératoires normalisées, par la supervision, la formation du personnel ainsi qu’une évaluation périodique des pratiques.
                                 <br>
@@ -268,11 +268,11 @@ include_once 'models/header.php';
                                 <br>
                                 Des outils de gestion des stocks sont utilisés : les fiches de stock, la fiche de suivi des stocks et le logiciel SAGE 100 Edition pilotée.
                                 <br>
-                                A partir de ces outils, des paramètres de gestion tels que le calcul des sorties mensuelles moyennes, la définition de seuils d’alerte et de sécurité, les inventaires périodiques sont mis en place afin d’assurer un suivi optimale du stock de produits médicaux distribués par la SoBAPS S.A.
+                                À partir de ces outils, des paramètres de gestion tels que le calcul des sorties mensuelles moyennes, la définition de seuils d’alerte et de sécurité, les inventaires périodiques sont mis en place afin d’assurer un suivi optimal du stock de produits médicaux distribués par la SoBAPS S.A.
                                 <br>
                                 <h5 class="montexte mt-4">H. Gestion des périmés, casses et avaries</h5>
                                 <br>
-                                Des mesures sont prises afin de retirer du stock tout produit impropre à la consommation en vue de leur destruction suivant la règlementation en vigueur.
+                                Des mesures sont prises afin de retirer du stock tout produit impropre à la consommation en vue de sa destruction suivant la règlementation en vigueur.
                                 <br>
                                 <h5 class="montexte mt-4">I. Monitoring</h5>
                                 <br>
@@ -287,7 +287,7 @@ include_once 'models/header.php';
                                 <br>
                                 <h5 class="montexte mt-4">J. Traçabilité et rappel de lot</h5>
                                 <br>
-                                La traçabilité des lots est assurée à l’aide du système informatique depuis la réception jusqu’à la livraison des produits ce qui permet une mise en œuvre aisée de la procédure de rappel de lot.
+                                La traçabilité des lots est assurée à l’aide du système informatique depuis la réception jusqu’à la livraison des produits, ce qui permet une mise en œuvre aisée de la procédure de rappel de lot.
                                 <br>
                                 <h4 class="mt-4">3.4 Audit/auto-évaluation et plan d’action</h4> <br>
 
@@ -295,7 +295,7 @@ include_once 'models/header.php';
                                 <br>
                                 L’autoévaluation est assurée sous la forme d’un audit interne croisé et couvre toutes les opérations pharmaceutiques de la SoBAPS S.A.
                                 <br>
-                                Suite aux audits, les observations et recommandations sont prises en compte et les plans d’actions correctives et préventives sont élaborés et gérés par le responsable Assurance Qualité ; leur mise en œuvre est également coordonnée par le responsable Assurance Qualité.
+                                À la suite des audits, les observations et recommandations sont prises en compte et les plans d’actions correctives et préventives sont élaborés et gérés par le responsable Assurance Qualité ; leur mise en œuvre est également coordonnée par le responsable Assurance Qualité.
                             </div>
                         </div>
                     </div>

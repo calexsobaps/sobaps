@@ -78,7 +78,7 @@ include_once 'function/mail.php';
                                         </div>
                                         <div class="contact-info-content">
                                             <h3>Horaires d'ouverture</h3>
-                                            <p>Lun - Ven (08h - 17h-30)</p>
+                                            <p>Lun - Ven (08h - 17h30)</p>
                                         </div>
                                     </div>
                                 </div>

@@ -5043,8 +5043,9 @@ body.sb-lock {
     padding-right: 18px !important;
   }
   .counter-area .row > [class*="col-"] {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    padding-inline: 4px;
   }
   .counter-box {
     flex-direction: column;
@@ -5155,5 +5156,32 @@ body.sb-lock {
   }
   .newsletter-form button {
     width: 100%;
+  }
+}
+
+/* Texte justifié : jamais sur les titres ni dans les cartes étroites ; césure sur
+   grand écran ; aligné à gauche sur mobile et tablette pour éviter les grands
+   espaces entre les mots */
+.text-justify :is(h1, h2, h3, h4, h5, h6),
+.about-text :is(h1, h2, h3, h4, h5, h6),
+.service-text.text-justify,
+.about-list li .text p,
+.sb-cert-code,
+.sb-cert-title,
+.sb-cert > p {
+  text-align: left !important;
+}
+.text-justify,
+.about-text,
+.single-item-info {
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+@media (max-width: 1199.98px) {
+  .text-justify,
+  .about-text,
+  .single-item-info,
+  .single-item-info p {
+    text-align: left !important;
   }
 }
